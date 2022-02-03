@@ -1,0 +1,52 @@
+name: Update licenses
+
+# Controls when the workflow will run
+on:
+  schedule:
+    - cron:  '0 8 15 * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  get-licenses:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check-out mainsail-docs repo
+        uses: actions/checkout@v2
+        with:
+          path: ./docs    
+    
+      - name: Check-out Mainsail repo
+        uses: actions/checkout@v2
+        with:
+          path: ./mainsail
+          repository: mainsail-crew/mainsail
+
+      - name: Install Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: |
+          cd mainsail
+          npm ci
+          npm i npm-license-crawler -g
+        
+      - name: Generate license information and commit
+        run: |
+          npm-license-crawler --production --onlyDirectDependencies --omitVersion --dependencies --json ${GITHUB_WORKSPACE}/docs/_data/licenses.json
+          sed -e 's/\*//g' -i ${GITHUB_WORKSPACE}/docs/_data/licenses.json
+          cd ${GITHUB_WORKSPACE}/docs
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          
+          if [[ -n $(git status -s) ]]; then 
+            git add .
+            git commit -m "updated license information"
+            git push
+          fi
+          
+          
