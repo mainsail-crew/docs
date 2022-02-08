@@ -6,7 +6,7 @@ nav_order: 50
 has_children: false
 permalink: /features/localization
 description: >-
-    Mainsail is available in many different localizations translated by our community.
+    Mainsail is available in many different localizations translated by the community.
 ---
 
 # {{ page.title }}
@@ -25,7 +25,7 @@ In the "GENERAL" section, select your preferred language.
 
 ## Missing a translation or found an incorrect translation?
 
-You are welcome to help us improve the translations. You can find instructions on how to do that over [here](/development/localization)
+You are welcome to help us improve the translations. You can find instructions on how to do that over [here](/development/localization).
 
 Get in touch with us on our Discord server. We will assign you a translator role for your language and inform you in advance when a new Mainsail version will be released, so that you can make the changes. 
 {: .info}
