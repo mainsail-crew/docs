@@ -17,11 +17,11 @@ description: >-
 
 To change the language, go to the "Interface Settings" by clicking on the two gears at the top right.
 
-![](img/header-settings.png)
+![Settings button (two gears) in the header](img/header-settings.png)
 
 In the "GENERAL" section, select your preferred language.
 
-![](img/settings-language.png)
+![Settings window, General section](img/settings-language.png)
 
 ## Missing a translation or found an incorrect translation?
 
