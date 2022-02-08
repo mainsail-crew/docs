@@ -6,7 +6,7 @@ nav_order: 50
 has_children: false
 permalink: /settings/console
 description: >-
-    An attempt to describe all console settings.
+    An attempt to describe all console specific settings.
 ---
 # {{ page.title }}
 {{ page.description }}
@@ -20,7 +20,7 @@ For more information about the functionality of the console, please read the [fe
 In order to change the settings, click on the two gears in the upper right corner and in the upcoming settings window click on the {{ page.title }} category.  
 ![settings gears](img/header-settings.png){: width="400px" }
 
-![](img/settings-console.png)
+![Settings window, console](img/settings-console.png)
 
 ## Direction
 Change the direction of the console output. From top to bottom or vice versa.
@@ -41,11 +41,11 @@ Specify the height of the console panel on the dashboard in pixels, so that it f
 
 With console filters you can suppress entries from the console.
 
-![](img/settings-console-filters.png)
+![Console filters dropdown](img/settings-console-filters.png)
 
  The filters can be enabled and disabled in the settings or directly in the console panel via the funnel icon.
 
-![](img/settings-console-filters2.png)
+![Console filters settings](img/settings-console-filters2.png)
 
 Mainsail lets you define, edit, delete your own filters, but also comes with predefined ones:
 
@@ -61,6 +61,6 @@ The status messages can be switched in the Timelapse settings.
 
 ### Custom Filters
 
-![](img/settings-console-filters3.png)
+![Console filter creation](img/settings-console-filters3.png)
 
 Get to this view, by clicking on the "ADD FILTER" button to create your own console filters with regular expressions.

@@ -29,17 +29,17 @@ Start typing in the Console. To submit a command press <span class="key">Enter</
 
 By clicking on the "?" icon in the title bar, you will get a list of possible commands and descriptions.
 
-![](img/console-command-questionmark.png)
+![Help button](img/console-command-questionmark.png)
 
 You can filter this list via the search text.
 
-![](img/console-command-list.png)
+![Command list](img/console-command-list.png)
 
 ## Filter console output
 
 Select filters by clicking the funnel button to suppress entries in the console output.
 
-![](img/console-command-filter.png)
+![Filtering command list](img/console-command-filter.png)
 
 Mainsail currently comes with one predefined filter for temperature status messages. However, you can define additional filters in the settings.
 
