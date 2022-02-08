@@ -15,28 +15,28 @@ description: >-
 
 ## Rearrange panels and show/hide them
 To customize the dashboard panels, go to the settings by clicking on the two gears at the top right.
-![](img/header-settings.png)
+![settings gears](img/header-settings.png)
 
 Go to the "DASHBOARD" section.
-![](img/settings-dashboard.png)
+![Settings window, dashboard](img/settings-dashboard.png)
 
 There the different elements can be selected and deselected and moved around.
 
 Please note that different settings can ebe set **for each device class**. The device classes also have **different column layouts**. So, for example, it is possible to hide some panels on mobile devices that are displayed on desktops, in a different order.
 
-![](img/settings-rearrange-dashboard.gif)
+![dashboard reorganisation](img/settings-rearrange-dashboard.gif)
 
 ## Collapsible panels
 
 The panels on the dashboard can be collapsed to temporarily save space and expand them again when needed. Mainsail remembers the last setting.
 
-![](img/dashboard-panel-collapse.gif)
+![collapsible panels](img/dashboard-panel-collapse.gif)
 
 ## Subpanels
 
 In some panels it is possible to switch subpanels on and off.
 
-![](img/dashboard-subpanel-collapse.gif)
+![collapsible subpanels](img/dashboard-subpanel-collapse.gif)
 
 ## Macro Management
 
