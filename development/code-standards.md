@@ -31,7 +31,7 @@ Add this integration by:
 
 So it looks like this:
 
-![Jetbrains prettier config](img/prettier-config-jetbrains.png)
+![Jetbrains prettier config](../assets/img/prettier-config-jetbrains.png)
 
 ### VSCode
 
