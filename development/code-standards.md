@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Code standards
+nav_order: 1
 parent: Development
 has_children: false
 permalink: /development/code-standards
@@ -24,7 +25,7 @@ To make it easier for yourself, you can use the intergrations of the Jetbrains I
 ### Jetbrains IDE
 
 Add this integration by:
-- Adding the prettier plugin through plugins. 
+- Adding the [prettier plugin](https://plugins.jetbrains.com/plugin/10456-prettier) through plugins. 
 - Going to Preferences -> Languages and Frameworks -> Prettier.
 - Set 'Run for files' to `{**/*,*}.{js,ts,jsx,tsx,vue,scss,css}`
 - Tick the `On save` and `On 'Reformat code' action` boxes
@@ -36,7 +37,7 @@ So it looks like this:
 ### VSCode
 
 Add this integration by:
-- Adding the prettier extension
+- Adding the [prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - Setting the `editor.defaultFormatter` preference to `esbenp.prettier-vscode`
 
 ## Linting
