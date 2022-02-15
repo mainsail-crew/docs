@@ -110,15 +110,15 @@ webcam3.txt => -p 8083
 ```
 
 __INFO__  
-MainsailOS comes setup with four nginx reverse proxies for port 8080 through 8083, so you can configure 4 webcams with this guide. 
-For more webcams you will need to edit the nginx configuration, which is not recommended.  It can be easy to make a mistake when editing nginx, which will also  cause Mainsail to stop working.  
+MainsailOS comes setup with four NGINX reverse proxies for port 8080 through 8083, so you can configure 4 webcams with this guide. 
+For more webcams you will need to edit the NGINX configuration, which is not recommended.  It can be easy to make a mistake when editing NGINX, which will also  cause Mainsail to stop working.  
 If you need more than four webcams, visit us on [Discord](https://discord.gg/skWTwTD){:target="_blank"} and we will help you.
 {: .warning}
 
 ## 4. Test that it works
 Restart `webcamd` by clicking the power button icon in the upper right corner of Mainsail and click `Webcamd` to restart it. 
 Find your second camera under `http://<your-ip>/webcam2/`.
-If it doesn't work, check in the webcam log in the filemanager log section for details.
+If it doesn't work, check in the webcam log in the file manager log section for details.
 
 If it works, you can use the URLs in Mainsail:
 
