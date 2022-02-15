@@ -9,16 +9,17 @@ redirect_from: /quicktips/update-manager
 description: >-
   Perform updates of Mainsail, Klipper, Moonraker and your system from within Mainsail.
 ---
- 
+ # {{ page.title }}
+{{ page.description }}
+
+## Moonraker.conf
+
+To enable updates in Mainsail's web interface, add the following section to your printer's `moonraker.conf`:
 
 ```
-[update_manager]
-
-[update_manager client mainsail]
-type: web
-repo: mainsail-crew/mainsail
-path: ~/mainsail
+repo: test
 ```
+
 Restart the Moonraker service and the Update Manager will appear in Mainsail's machine settings.
 
 ![Update Manager](img/update-manager.png)
