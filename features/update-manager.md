@@ -17,8 +17,7 @@ description: >-
 To enable updates in Mainsail's web interface, add the following section to your printer's `moonraker.conf`:
 
 ```
-[update_manager]
-
+[update_manager]  
 [update_manager client mainsail]
 type: web
 repo: mainsail-crew/mainsail
