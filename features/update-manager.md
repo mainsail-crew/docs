@@ -18,7 +18,7 @@ description: >-
 
 To enable updates in Mainsail's web interface, add the following section to your printer's `moonraker.conf`:
 
-```yaml
+```
 [update_manager]
 
 [update_manager client mainsail]
@@ -29,7 +29,7 @@ path: ~/mainsail
 
 Restart the Moonraker service and the Update Manager will appear in Mainsail's machine settings.
 
-![](img/update-manager.png)
+![Update Manager](img/update-manager.png)
 
 
 You can find further information on this topic by visiting the [Moonraker documentation](https://github.com/Arksine/moonraker/blob/master/docs/configuration.md#update_manager){:target="_blank"}.
