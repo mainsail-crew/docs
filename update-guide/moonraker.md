@@ -28,7 +28,6 @@ If you want to update Moonraker using the update manager, you need to add the fo
 
 ```
 [update_manager]
-
 [update_manager client mainsail]
 type: web
 repo: mainsail-crew/mainsail
@@ -42,8 +41,8 @@ As of December 2020, Moonraker is added as a systemd service during installation
 ```
 This allows logging to `stdout` which can be viewed with the command `journalctl -u moonraker` in your terminal.
 
-### Update Moonraker's dependencies
-Updating Moonraker's dependecencies manually is only needed if you see missing modules in the Moonraker log.  You can run the following command to update Moonraker's dependencies:
+### Update Moonraker’s dependencies
+Updating Moonraker’s dependecencies manually is only needed if you see missing modules in the Moonraker log.  You can run the following command to update Moonraker's dependencies:
 ```bash
 ~/moonraker/scripts/install-moonraker.sh -r
 ```
