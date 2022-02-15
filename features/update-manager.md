@@ -17,7 +17,8 @@ description: >-
 To enable updates in Mainsail's web interface, add the following section to your printer's `moonraker.conf`:
 
 ```
-repo: test
+repo: mainsail-crew/mainsail
+path: ~/mainsail
 ```
 
 Restart the Moonraker service and the Update Manager will appear in Mainsail's machine settings.
