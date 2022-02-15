@@ -18,9 +18,9 @@ wget -q -O mainsail.zip https://github.com/mainsail-crew/mainsail/releases/lates
 
 ### Updating from 0.2.2 to 0.2.3 or higher
 
-If you are updating from Mainsail version 0.2.2 to a newer version, you must move the file `gui.json` from the `gcodes` directory to the `klipper_config' directory.
+If you are updating from Mainsail version 0.2.2 to a newer version, you must move the file `gui.json` from the `gcodes` directory to the `klipper_config` directory.
 
-This is only necessary when updating from 0.2.2 to 0.2.3 or higher. If you use MainsailOS, the virtual_sdcard directory is `gcode_files` instead of `sdcard`.
+This is only necessary when updating from 0.2.2 to 0.2.3 or higher. If you use MainsailOS, the `virtual_sdcard` directory is `gcode_files` instead of `sdcard`.
 ```
 mv ~/sdcard/gui.json ~/klipper_config/
 ```
