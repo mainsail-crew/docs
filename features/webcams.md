@@ -8,7 +8,7 @@ permalink: /features/webcams
 redirect_from:
   - /quicktips/multicam
 description: >-
-    How to setup multiple Webcams with mainsailOS.
+    How to setup multiple Webcams with MainsailOS.
 ---
 
 # {{ page.title }}
@@ -43,7 +43,7 @@ You should now have two identical files with different names:
 2. `/home/pi/klipper_config/webcam2.txt`
 
 ## Edit the original configuration file for a specific camera
-Find the path to the camera by its ID. This makes it easier to stop `dev/video0` and `/dev/video1` from being switchedin the future.
+Find the path to the camera by its ID. This makes it easier to stop `dev/video0` and `/dev/video1` from being switched in the future.
 
 In a terminal, run the command `ls /dev/v4l/by-id`, copy your camera id and paste it into the editor in Mainsail. For example:
 
@@ -75,13 +75,13 @@ camera_usb_options="-r 640x480 -f 10 -d /dev/v4l/by-id/<device long id>"
 The `device long id` should match the camera name from running `lsusb`.
 
 __Note__  
-If you are using a Raspberry Pi branded camera, set camera="raspi" at the top of the file and you do not have to reference the cameras by device ID.{: .info}
+If you are using a Raspberry Pi branded camera, set `camera="raspi"` at the top of the file and you do not have to reference the cameras by device ID.{: .info}
 
 ## 3. Editing the second configuration file
 When using a second camera, you must add the port `mjpg_streamer` runs under and the device.
 
 __Note__  
-If you are using one Raspberry Pi branded camera and a different USB camera you don't need to reference them by ID, as camera="raspi" and camera="usb" is enough.
+If you are using one Raspberry Pi branded camera and a different USB camera you don't need to reference them by ID, as `camera="raspi"` and `camera="usb"` is enough.
 {: .info}
 
 Similar to finding the first camera, run `ls` and copy the ID of the second camera:
