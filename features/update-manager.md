@@ -1,11 +1,16 @@
-
+---
+layout: default
+title: Update Manager
+parent: Features
+nav_order: 20
+has_children: false
+permalink: /features/update-manager
+redirect_from: /quicktips/update-manager
+description: >-
+  Perform updates of Mainsail, Klipper, Moonraker and your system from within Mainsail.
+---
  
-# {{ page.title }}
-{{ page.description }}
 
-## Moonraker.conf
-
-To enable updates in Mainsail's web interface, add the following section to your printer's `moonraker.conf`:
 ```
 [update_manager]
 
