@@ -5,8 +5,7 @@ parent: Features
 nav_order: 50
 has_children: false
 permalink: /features/hide-gcode_macros
-redirect_from:
-  - /quicktips/hide-gcode_macros
+redirect_from: /quicktips/hide-gcode_macros
 description: >-
   You can show and hide G-Code macros in the interface settings
 ---
