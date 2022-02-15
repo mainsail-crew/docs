@@ -19,6 +19,7 @@ To enable updates in Mainsail's web interface, add the following section to your
 
 ```
 [update_manager]
+hj
 
 [update_manager client mainsail]
 type: web
