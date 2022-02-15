@@ -4,9 +4,9 @@ title: Hide macros, outputs or fans
 parent: Features
 nav_order: 50
 has_children: false
-permalink: /features/hide-gcode_macros
+permalink: /features/hide-gcode5_macros
 redirect_from:
-  - /quicktips/hide-gcode_macros
+  - /quicktips/hide-gcode6_macros
 description: >-
   You can show and hide G-Code macros in the interface settings
 ---
@@ -17,14 +17,14 @@ description: >-
 Did you know, that you can also hide G-Code macros by prefixing the name with an underscore?
 
 ```
-[gcode_macro MY_AWESOME_GCODE]
-gcode:
+[gcode1_macro MY_AWESOME_GCODE]
+gcode2:
 	_MY_HELPER_CODE
 ```
 
 ```
-[gcode_macro _MY_HELPER_CODE]
-gcode:
+[gcode3_macro _MY_HELPER_CODE]
+gcode4:
 	M300
 ```
 
