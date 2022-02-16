@@ -74,7 +74,7 @@ which will yield images such as this one:
 
 There, find the pin you're trying to replace. The old pin maps use the digital number of the pin. For example, if your old pin was `ar10`, looking at the image you will find that the `D10` pin corresponds to `PB4`. Replace all pins in your config accordingly, and finally remove the `pin_map:` configuration parameter from your `mcu` section.
 
-Alternatively, you can copy an appropriate `[board_pins]` block from [this location](https://github.com/Klipper3d/klipper/blob/master/config/sample-aliases.cfg) to your config. If you're using multiple Arduinos, make sure to add the appropriate mcu to each block like so:
+Alternatively, you can copy an appropriate `[board_pins]` block from [this location](https://github.com/Klipper3d/klipper/blob/master/config/sample-aliases.cfg) to your config. If you're using multiple Arduinos, make sure to add the appropriate `mcu` to each block like so:
 
 ```yaml
 [board_pins arduino-mega]
