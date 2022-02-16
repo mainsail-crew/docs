@@ -27,7 +27,7 @@ To make it easier for yourself, you can use the intergrations of the Jetbrains I
 Add this integration by:
 - Adding the [prettier plugin](https://plugins.jetbrains.com/plugin/10456-prettier) through plugins. 
 - Going to Preferences -> Languages and Frameworks -> Prettier.
-- Set 'Run for files' to `{**/*,*}.{js,ts,jsx,tsx,vue,scss,css}`
+- Set 'Run for files' to `{**/*,*}.{js,ts,jsx,tsx,vue,scss,css,yml,md,html}`
 - Tick the `On save` and `On 'Reformat code' action` boxes
 
 So it looks like this:
