@@ -17,9 +17,9 @@ Do **not** use an OctoPi image as it can cause unforeseen (avoidable) problems.
 Don't forget to enable SSH and configure a network if using Wi-Fi.
 {: .info}
 
-It is recommended to use a clean [Raspberry Pi OS 32-bit Lite](https://downloads.raspberrypi.org/raspios_lite_armhf_latest){:target="_blank"} image (previously called Raspbian). 
+It is recommended to use a clean [Raspberry Pi OS 32-bit Lite](https://downloads.raspberrypi.org/raspios_lite_armhf_latest){:target="_blank"} image. 
 
-We recommend you follow the RaspberryOS official [documentation](https://www.raspberrypi.org/documentation/installation/installing-images/){:target="_blank"}  to flash and install the operating system to your SD card. 
+We recommend you follow the Raspberry Pi OS official [documentation](https://www.raspberrypi.org/documentation/installation/installing-images/){:target="_blank"}  to flash and install the operating system to your SD card. 
 
 Once you have finished the installation and are connected via SSH, you can continue.
 
