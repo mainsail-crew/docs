@@ -10,7 +10,7 @@ has_toc: false
 ---
 
 # PolicyKit Permissions
-Since Jan 28th '22, Moonraker has changed the way to communicate with system services to D-Bus instead of previously `sudo` commands.
+Since Jan 28 '22, Moonraker has changed the way to communicate with system services to D-Bus instead of previously `sudo` commands.
 
 After updating Moonraker you might be presented this warning message:
 
