@@ -149,7 +149,7 @@ server {
 ```
 Save the file with `CTRL+O` and close the editor with `CTRL+X`.
 
-Create directory for static files and active nginx config:
+Create directory for static files and active NGINX config:
 
 ```
 mkdir ~/mainsail
@@ -158,13 +158,13 @@ sudo ln -s /etc/nginx/sites-available/mainsail /etc/nginx/sites-enabled/
 sudo systemctl restart nginx
 ```
 
-Now you can check again the API if it works with the reverse proxy. Open the url `http://\<printer-ip\>/printer/info` in your browser. if you see a content like this:
+Now you can check again the API if it works with the reverse proxy. Open the URL `http://\<printer-ip\>/printer/info` in your browser. if you see a content like this:
 
 ```
 {"result": {"state_message": "Printer is ready", "klipper_path": "/home/pi/klipper", "config_file": "/home/pi/klipper_config/printer.cfg", "software_version": "v0.9.1-785-g1be19177", "hostname": "raspberrypi", "cpu_info": "4 core ARMv7 Processor rev 4 (v7l)", "state": "ready", "python_path": "/home/pi/klippy-env/bin/python", "log_file": "/home/pi/klipper_log/klippy.log"}}
 ```
 
-Now we can install Mainsail (static httpdocs).
+Now we can install Mainsail.
 
 ## Install `httpdocs`
 
@@ -184,7 +184,7 @@ if you want to get the full experience with Mainsail and Klipper `virtual_sdcard
 [Macro Link](../../configurations/necessary-cfg.md){: .btn target="_blank"}
 
 
-## Change the Hostname (optional)
+## Change the hostname (optional)
 
 to use the hostname instate of the IP, you can install the avahi-daemon:
 
