@@ -10,7 +10,7 @@ permalink: /setup/pre-flight
 
 # Preflight Checklist 
 
-You may wish to review the list below to make sure you have not missed any important steps during the setup process.
+Please review the list below to make sure you have not missed any important steps during the setup process.
 
 | Installed software components: | Configured: | Completed: |
 | :-- | :-- | :-- |
