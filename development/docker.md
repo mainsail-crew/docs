@@ -24,9 +24,11 @@ https://docs.docker.com/docker-for-mac/install/
 https://docs.docker.com/docker-for-windows/install/
 
 ## Start
-1. Look into the docker/config folder. Copy the ".example" without the "example ending".
-2. Edit the configs to your likings. They are inital setup for a minimal setup environment with simulavr.
-3. In the root directory of mainsail run
+1. Go into the mainsail folder
+2. Run `cp .env.development.local.example .env` to have a base `.env` file
+3. Look into the docker/config folder. Copy the ".example" without the "example ending".
+4. Edit the configs to your likings. They are inital setup for a minimal setup environment with simulavr.
+5. In the root directory of mainsail run
 ```shell
 #docker-compose build --no-cache #for building completely new !NOT NEEDED EVERY TIME!
 docker-compose up
