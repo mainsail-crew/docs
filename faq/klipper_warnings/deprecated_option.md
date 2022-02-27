@@ -12,9 +12,9 @@ has_toc: false
 # Deprecated Options
 
 ###### default_parameter
-## Removal of `default_parameter_` for gcode macros.
+## Removal of `default_parameter_` for G-Code macros.
 
-In the past, default parameters for gcode macros were defined like so:
+In the past, default parameters for G-Code macros were defined like so:
 
 ```yaml
 [gcode_macro PRINT_START]
@@ -32,10 +32,10 @@ gcode:
 ```
 {% endraw %}
 Take note of the following important aspects:
-- Parameters passed to gcode macros are stored in the `params` object. So if your macro is called with `VALUE=50`, `params.VALUE` will contain the value 50. After the deprecation, only the `params` object will contain these values.
+- Parameters passed to G-Code macros are stored in the `params` object. So if your macro is called with `VALUE=50`, `params.VALUE` will contain the value 50. After the deprecation, only the `params` object will contain these values.
 - Make sure to name your "set variable" something else as the name of the variable in the `params` object (see how I used `EXTRUDER_TEMP` for the "set variable" and `EXTRUDER` for the actual macro parameter above) to avoid confusion and possible parsing errors.
-- If you want to pass a default, add `|default(<default value>)` to the end of the params variable (see above, where my default value is 10). 
-- To ensure that `EXTRUDER_TEMP` will have an integer value, add `|int` to the end of the command, to turn passed parameters (if they exist) and the default into an integer. Depending on what kind of parameter you're passing, there are `|int` `|float` `|bool` or `|string` converters available. Make sure that you convert to int if you want to compare the values in your gcode macro.
+- If you want to pass a default, add `|default(<default value>)` to the end of the `params` variable (see above, where my default value is 10). 
+- To ensure that `EXTRUDER_TEMP` will have an integer value, add `|int` to the end of the command, to turn passed parameters (if they exist) and the default into an integer. Depending on what kind of parameter you're passing, there are `|int` `|float` `|bool` or `|string` converters available. Make sure that you convert to int if you want to compare the values in your G-Code macro.
 
 The above description was provided by our community member [FHeilmann](https://github.com/FHeilmann){:target="_blank"} and we have his permission to publish it here. Thanks a lot!  
 [Source](https://gist.github.com/FHeilmann/a8097b3e908e85de7255bbe6246ddfd5){:target="_blank"}.
