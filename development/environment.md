@@ -18,7 +18,7 @@ If that is not the case, go ahead and fork Mainsail now.
 Copy the `.env.development.local.example` file and omit the `.example` at the end. \
 The file is located in the root directory of the Mainsail project.
 
-Now edit the `.env.development.local` file to reflect your printers network configuration. \
+Now edit the `.env.development.local` file to reflect your printers network configuration.
 
 _Example:_ If the IP of your printer is `192.168.1.10`, modify it like this:
 ```
@@ -51,7 +51,7 @@ Make sure you run node >=15.9.0
 {: .info}
 
 Open your preferred terminal application and navigate into the Mainsail root directory. \
-Run the follwing command to install all required modules and dependencies:
+Run the following command to install all required modules and dependencies:
 ```shell
 npm install
 ```
