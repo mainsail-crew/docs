@@ -15,7 +15,7 @@ description: >-
 ## How to contribute
 
 You can contribute in a couple of different ways:
-1. Create/Update translations using an i18n translation tool.<br />
+1. Create/Update translations using an i18n translation tool. \
    (For Example: [BabelEdit](https://www.codeandweb.com/babeledit), [i18N-Manager](https://www.electronjs.org/apps/i18n-manager))
 2. Create/Update translations using [VSCode](https://code.visualstudio.com/) and [i18n Ally](https://github.com/lokalise/i18n-ally).
 
@@ -25,10 +25,7 @@ on github or create an [issue](https://github.com/mainsail-crew/mainsail/issues)
 ## Testing
 
 ### Test your translations live
-You can follow [this guide](https://docs.mainsail.xyz/development/standalone)
-to start Mainsail in a "Debug Mode" and check your translation live. Alternatively
-you can also use a docker container, instructions can be found 
-[here](https://docs.mainsail.xyz/development/docker).
+You can follow [this guide](environment) to start Mainsail in a "Debug Mode" and check your translation live.
 
 ### Check the translation with vue-i18n-extract
 Mainsail comes with [vue-i18n-extract](https://github.com/pixari/vue-i18n-extract) in the dev dependency,
