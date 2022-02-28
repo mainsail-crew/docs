@@ -32,7 +32,7 @@ For more information, please check out the corresponding [Moonraker documentatio
 # Known Problems
 ## A few messages still remain after the steps have been executed
 
-SSH into your system make sure that packagekit is installed.
+SSH into your system and make sure that packagekit is installed.
 
 ```
 sudo apt update
@@ -41,8 +41,8 @@ sudo apt install packagekit
 
 This should usually be installed when Moonraker was updated via the Update Manager.
 
-By running the following command, all missing dependencies will be pulled.
+By running the following command, all missing dependencies will be installed.
 
 ```
-~/moonraker/scripts/install-moonraker.sh
+~/moonraker/scripts/install-moonraker.sh -r
 ```
