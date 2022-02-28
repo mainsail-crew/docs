@@ -25,10 +25,7 @@ on github or create an [issue](https://github.com/mainsail-crew/mainsail/issues)
 ## Testing
 
 ### Test your translations live
-You can follow [this guide](https://docs.mainsail.xyz/development/standalone)
-to start Mainsail in a "Debug Mode" and check your translation live. Alternatively
-you can also use a docker container, instructions can be found 
-[here](https://docs.mainsail.xyz/development/docker).
+You can follow [this guide](environment) to start Mainsail in a "Debug Mode" and check your translation live.
 
 ### Check the translation with vue-i18n-extract
 Mainsail comes with [vue-i18n-extract](https://github.com/pixari/vue-i18n-extract) in the dev dependency,
