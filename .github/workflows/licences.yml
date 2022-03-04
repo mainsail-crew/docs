@@ -39,6 +39,7 @@ jobs:
         run: |
           npm-license-crawler --production --onlyDirectDependencies --omitVersion --dependencies --json ${GITHUB_WORKSPACE}/docs/_data/licenses.json
           sed -e 's/\*//g' -i ${GITHUB_WORKSPACE}/docs/_data/licenses.json
+          sed -e 's/git@github.com/https:\/\/github.com/' -i ${GITHUB_WORKSPACE}/docs/_data/licenses.json
           cd ${GITHUB_WORKSPACE}/docs
           git config user.name github-actions
           git config user.email github-actions@github.com
