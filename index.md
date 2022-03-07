@@ -25,7 +25,7 @@ Mainsail makes Klipper more accessible by adding a lightweight, responsive web u
 - File Editor (G-Code and config files)
 - Print History and Statistics
 - Job Queue
-- Temperature Presets (with custom gcode)
+- Temperature Presets (with custom G-Code)
 - Bed Mesh visualisation
 - G-Code Viewer
 - Multi-Webcam support
@@ -33,7 +33,7 @@ Mainsail makes Klipper more accessible by adding a lightweight, responsive web u
 - Control power devices such as relays, TPLink and Tasmota devices, and more
 - Powerful Macro-Management
 - Configurable dashboard
-- Customizable user interface including logos, backgrounds, and custom CSS
+- Customisable user interface including logos, backgrounds, and custom CSS
 - Exclude objects (not yet officially supported by Klipper)
 
 ## Help and Support
