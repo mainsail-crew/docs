@@ -20,7 +20,7 @@ To make sure that this is complied with every PR, there is a Github Workflow whi
 
 You can always run `npm run format` to make sure that all your changes are formatted correctly.
 
-To make it easier for yourself, you can use the intergrations of the Jetbrains IDE / VSCode applications.
+To make it easier for yourself, you can use the integrations of the Jetbrains IDE / VSCode applications.
 
 ### Jetbrains IDE
 
