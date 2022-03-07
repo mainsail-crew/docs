@@ -86,7 +86,7 @@ trusted. Trusted clients are given full access to the API. Both `IPv4`
 and `IPv6` addresses and ranges are supported. Ranges must be expressed
 in CIDR notation (see [CIDR](http://ip.sb/cidr) for more info).  
 For example, an entry of 192.168.1.0/24 will authorize IPs in the range of 192.168.1.1 -
-192.168.1.254. Note that when specifying IPv4 ranges the last segment
+192.168.1.254. Note that when specifying `IPv4` ranges the last segment
 of the ip address must be 0. The default is no clients or ranges are
 trusted.
 {: .alert }
