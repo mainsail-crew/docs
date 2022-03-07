@@ -5,7 +5,7 @@ parent: Features
 has_children: false
 permalink: /features/webcams
 description: >-
-    How to set up multi Webcams with MainsailOS.
+    How to set up multiple webcams with MainsailOS.
 ---
 
 # {{ page.title }}
