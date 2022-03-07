@@ -72,7 +72,7 @@ To enable and start the Klipper service execute these commands:
 sudo systemctl enable klipper.service
 ```
 
-You have to create the directories for your klipper configuration, logs and the virtual_sdcard directory:
+You have to create the directories for your Klipper configuration, logs and the `virtual_sdcard` directory:
 
 ```bash
 mkdir ~/klipper_config
@@ -80,7 +80,7 @@ mkdir ~/klipper_logs
 mkdir ~/gcode_files
 touch ~/klipper_config/printer.cfg
 ```
-After your config is in place, restart klipper with `sudo systemctl start klipper`.
+After your config is in place, restart Klipper with `sudo systemctl start klipper`.
 
 ---
 [< previous step](operating-system.md){: .btn }  [next step >](moonraker.md){: .btn}

@@ -24,7 +24,6 @@ Add the following section to your printer's `moonraker.conf`:
 
 ```yaml
 [update_manager]
-
 [update_manager client mainsail]
 type: web
 repo: mainsail-crew/mainsail

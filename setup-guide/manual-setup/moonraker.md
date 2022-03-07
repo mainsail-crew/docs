@@ -77,7 +77,7 @@ path: ~/mainsail
 ```
 
 **This is a very basic config**  
-For more options and detailed explanations you should follow [arksines instructions](https://github.com/Arksine/moonraker/blob/master/docs/installation.md).
+For more options and detailed explanations you should follow [Moonraker's instructions](https://github.com/Arksine/moonraker/blob/master/docs/installation.md).
 {: .info }
 
 🔥 **trusted_clients - read carefully** 🔥  

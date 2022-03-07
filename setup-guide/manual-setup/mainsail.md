@@ -9,9 +9,9 @@ permalink: /setup/manual-setup/mainsail
 
 # Mainsail
 
-## Install webserver & reverse proxy (nginx)
+## Install web server & reverse proxy (NGINX)
 
-nginx is important to mount all components on port 80 and host the static files from Mainsail. To install nginx you only need to execute:
+NGINX is important to mount all components on port 80 and host the static files from Mainsail. To install NGINX you only need to execute:
 
 `sudo apt install nginx`
 
@@ -149,7 +149,7 @@ server {
 ```
 Save the file with `CTRL+O` and close the editor with `CTRL+X`.
 
-Create directory for static files and active nginx config:
+Create directory for static files and active NGINX config:
 
 ```
 mkdir ~/mainsail
@@ -158,17 +158,17 @@ sudo ln -s /etc/nginx/sites-available/mainsail /etc/nginx/sites-enabled/
 sudo systemctl restart nginx
 ```
 
-Now you can check again the API if it works with the reverse proxy. Open the url http://\<printer-ip\>/printer/info in your browser. if you see a content like this:
+Now you can check again the API if it works with the reverse proxy. Open the URL `http://\<printer-ip\>/printer/info` in your browser. if you see a content like this:
 
 ```
 {"result": {"state_message": "Printer is ready", "klipper_path": "/home/pi/klipper", "config_file": "/home/pi/klipper_config/printer.cfg", "software_version": "v0.9.1-785-g1be19177", "hostname": "raspberrypi", "cpu_info": "4 core ARMv7 Processor rev 4 (v7l)", "state": "ready", "python_path": "/home/pi/klippy-env/bin/python", "log_file": "/home/pi/klipper_log/klippy.log"}}
 ```
 
-Now we can install Mainsail (static httpdocs).
+Now we can install Mainsail.
 
-## Install httpdocs
+## Install `httpdocs`
 
-Now you can download the current mainsail static data
+Now you can download the current Mainsail static data
 
 ```
 cd ~/mainsail
@@ -179,14 +179,14 @@ Now it should be possible to open the interface: `http://<printer-ip>/`.
 
 ## Important macros
 
-if you want to get the full experience with mainsail and klipper virtual_sdcard print, you should use these macros, or use them as templates for your own.
+if you want to get the full experience with Mainsail and Klipper `virtual_sdcard` print, you should use these macros, or use them as templates for your own.
 
 [Macro Link](../../configurations/necessary-cfg.md){: .btn target="_blank"}
 
 
-## Change the Hostname (optional)
+## Change the hostname (optional)
 
-to use the hostname instate of the ip, you can install the avahi-daemon:
+to use the hostname instate of the IP, you can install the avahi-daemon:
 
 `sudo apt install avahi-daemon`
 
@@ -194,7 +194,7 @@ and you can config your hostname:
 
 `sudo raspi-config`
 
-in 2 Network Options > N1 Hostname you can edit your hostname of your raspberry pi. After a reboot you can use http://\<hostname\>.local/ to open the webinterface.
+in `2 Network Options` > `N1 Hostname` you can edit your hostname of your Raspberry Pi. After a reboot you can use `http://\<hostname\>.local/` to open the web interface.
 
 
 ---
