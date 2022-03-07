@@ -28,8 +28,8 @@ VUE_APP_HOSTNAME=192.168.1.10
 You need to set `VUE_APP_HOSTNAME=localhost` in case you want to use a [Virtual-Klipper-Printer](environment#virtual-klipper-printer-with-docker).
 {: .info}
 
-### Configure Moonraker
 For Moonraker, you need to add your local IP to the `cors_domains` section inside the `moonraker.conf`:
+
 ```yaml
 cors_domains:
     <your local ip>:<local port>
@@ -39,6 +39,7 @@ _Example:_ If the IP of your PC you develop Mainsail on is `192.168.1.20`:
 cors_domains:
     192.168.1.20:8080
 ```
+
 Port 8080 is the default port `npm` will serve the development server on.
 {: .info}
 
