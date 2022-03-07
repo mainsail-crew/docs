@@ -6,7 +6,7 @@ has_children: true
 permalink: /faq/
 has_toc: false
 ---
-# Frequently Askes Questions
+# Frequently Asked Questions
 
 We are still gathering some "frequently asked questions" and will publish them here soon.
 

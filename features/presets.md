@@ -8,7 +8,7 @@ permalink: /features/presets
 redirect_from:
   - /quicktips/presets
 description: >-
-  Mainsail supports so-called presets. They are often used for preheat & cooldown, but also execute normal gcode.
+  Mainsail supports so-called presets. They are often used for preheat & cooldown, but also execute normal G-Code.
 ---
 
 # {{ page.title }}
@@ -19,7 +19,7 @@ In Mainsails interface settings you will find a section called "Preheat Presets"
 
 ### Preheat
 
-Enter a name for your preset, such as filament, color or other text and the temperature you wish to set the preset at. You can disable individual heaters and even specify a custom gcode for the preheat phase. The G-Code will be executed after the selected temperatures are set.
+Enter a name for your preset, such as filament, color or other text and the temperature you wish to set the preset at. You can disable individual heaters and even specify a custom G-Code for the preheat phase. The G-Code will be executed after the selected temperatures are set.
 
 ![Preheat](img/preheat.png)
 

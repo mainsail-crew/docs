@@ -5,8 +5,7 @@ parent: Features
 nav_order: 50
 has_children: false
 permalink: /features/hide-gcode_macros
-redirect_from:
-  - /quicktips/hide-gcode_macros
+redirect_from: /quicktips/hide-gcode_macros
 description: >-
   You can show and hide G-Code macros in the interface settings
 ---
@@ -14,15 +13,15 @@ description: >-
 # {{ page.title }}
 {{ page.description }}
 
-Did you know, that you can also hide gcode macros by prefixing the name with an underscore?
+Did you know, that you can also hide G-Code macros by prefixing the name with an underscore?
 
-```yaml
+```
 [gcode_macro MY_AWESOME_GCODE]
 gcode:
 	_MY_HELPER_CODE
 ```
 
-```yaml
+```
 [gcode_macro _MY_HELPER_CODE]
 gcode:
 	M300

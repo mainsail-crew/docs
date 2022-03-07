@@ -15,16 +15,16 @@ redirect_from:
 
 The following configuration elements are mandatory and  must be configured for Mainsail to operate correctly:
 
-*  [Virtual SD Card](configuration#virtual_sdcard) 
-*  [Display Status](configuration#display_status)
-*  [Pause / Resume](configuration#pause_resume)
-*  [GCode Macros](configuration#pause--resume--cancel)
+*  [Virtual SD Card](#virtual-sd-card) 
+*  [Display Status](#display-status)
+*  [Pause / Resume](#pause-resume-cancel)
+*  [G-Code Macros](#add-pause--resume--cancel-functionality)
 
 The following configuration elements are optional, including making tweaks and alterations to Klipper's default commands:
-*  [Custom Commands](configuration#customisation)
+*  [Custom Commands](#customisation)
 
 ## Virtual SD Card
-The `Virtual SD Card` allows gcode file uploads.
+The `Virtual SD Card` allows G-Code file uploads.
 ```yaml
 [virtual_sdcard]
 path: ~/gcode_files

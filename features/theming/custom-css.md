@@ -12,7 +12,7 @@ redirect_from:
 # Custom CSS 
 
 The `custom.css` file allows you to customize the appearance of Mainsail
-without the need of rebuilding it.  Place a file named `custom.css` in the `.theme` folder of your Mainsail installation and define your custom **C**ascading **S**tyle **S**heets (CSS) rules inside the file.
+without the need of rebuilding it.  Place a file named `custom.css` in the `.theme` folder of your Mainsail installation and define your custom Cascading Style Sheets (CSS) rules inside the file.
 
 ![file-screenshot](img/screenshot-custom-css.png "custom.css file")
 

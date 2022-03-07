@@ -15,5 +15,5 @@ description: >-
 # {{ page.title }}
 {{ page.description }}
 
-work in progess
+work in progress
 {: .alert}
