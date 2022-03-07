@@ -89,7 +89,7 @@ Don't forget to set the country!
 {: .warning}
 
 
-To setup Wi-Fi for a headless Pi install the network SSID and password must be entered into `mainsailos-wpa-supplicant.txt` 
+To setup Wi-Fi for a headless Pi install the network SSID and password must be entered into `mainsailos-wpa-supplicant.txt`.
 
 With the SD card inserted into the computer, navigate to the SD card's `/boot` partition and open `mainsail-wpa-supplicant.txt`.
 
