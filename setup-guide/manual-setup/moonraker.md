@@ -30,7 +30,7 @@ virtualenv -p python3 ./moonraker-env
 
 ## Configuration
 **Please pay attention to the following steps!**  
-A very common source of errors are misconfigured `trusted_clients`.
+A very common source of errors are improperly configured `trusted_clients`.
 {: .warning }
 
 For Moonraker you'll need to create a separate config file.
@@ -82,9 +82,9 @@ For more options and detailed explanations you should follow [Moonraker's instru
 
 🔥 **trusted_clients - read carefully** 🔥  
 A list of newline separated ip addresses and/or ip ranges that are
-trusted. Trusted clients are given full access to the API.  Both IPv4
-and IPv6 addresses and ranges are supported. Ranges must be expressed
-in CIDR notation (see http://ip.sb/cidr for more info).  
+trusted. Trusted clients are given full access to the API. Both `IPv4`
+and `IPv6` addresses and ranges are supported. Ranges must be expressed
+in CIDR notation (see [CIDR](http://ip.sb/cidr) for more info).  
 For example, an entry of 192.168.1.0/24 will authorize IPs in the range of 192.168.1.1 -
 192.168.1.254. Note that when specifying IPv4 ranges the last segment
 of the ip address must be 0. The default is no clients or ranges are
@@ -134,7 +134,7 @@ sudo systemctl enable moonraker.service
 
 After your config is in place, start Moonraker with `sudo systemctl start moonraker`.
 
-Open the following url with your printers IP in your browser
+Open the following URL with your printers IP in your browser
 ```
 http://<printer-ip>:7125/printer/info
 ```
