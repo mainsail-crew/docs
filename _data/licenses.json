@@ -89,12 +89,6 @@
         "licenseUrl": "https://github.com/zloirock/core-js/raw/master/LICENSE",
         "parents": "mainsail"
     },
-    "echarts-for-vue": {
-        "licenses": "Apache-2.0",
-        "repository": "https://github.com/ambit-tsai/echarts-for-vue",
-        "licenseUrl": "https://github.com/ambit-tsai/echarts-for-vue/raw/master/LICENSE",
-        "parents": "mainsail"
-    },
     "echarts-gl": {
         "licenses": "BSD",
         "repository": "https://github.com/ecomfe/echarts-gl",
@@ -149,6 +143,12 @@
         "licenseUrl": "https://github.com/vuejs/vue-class-component/raw/master/LICENSE",
         "parents": "mainsail"
     },
+    "vue-echarts": {
+        "licenses": "MIT",
+        "repository": "https://github.com/ecomfe/vue-echarts",
+        "licenseUrl": "https://github.com/ecomfe/vue-echarts/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
     "vue-i18n": {
         "licenses": "MIT",
         "repository": "https://github.com/kazupon/vue-i18n",
@@ -163,8 +163,8 @@
     },
     "vue-meta": {
         "licenses": "MIT",
-        "repository": "git@github.com/nuxt/vue-meta",
-        "licenseUrl": "git@github.com/nuxt/vue-meta/raw/master/LICENSE.md",
+        "repository": "https://github.com/nuxt/vue-meta",
+        "licenseUrl": "https://github.com/nuxt/vue-meta/raw/master/LICENSE.md",
         "parents": "mainsail"
     },
     "vue-observe-visibility": {
