@@ -28,6 +28,8 @@ VUE_APP_HOSTNAME=192.168.1.10
 You need to set `VUE_APP_HOSTNAME=localhost` in case you want to use a [Virtual-Klipper-Printer](environment#virtual-klipper-printer-with-docker).
 {: .info}
 
+### Moonraker
+
 For Moonraker, you need to add your local IP to the `cors_domains` section inside the `moonraker.conf`:
 
 ```yaml
