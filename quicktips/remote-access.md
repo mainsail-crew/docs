@@ -32,7 +32,7 @@ For details, please refer to each project's instructions and documentation.
 <div class="alert">
 What <b>not to do</b>: 
 	<ul>
-		<li>Please do not open ports of Mainsail/Moonraker in your router to the rest of the world. There are plenty of reports of Octoprint installations being freely accessible on the Internet, with just as many reasons why this is not a good idea.</li>
+		<li>Please do not open ports of Mainsail/Moonraker in your router to the rest of the world. There are plenty of reports of OctoPrint installations being freely accessible on the Internet, with just as many reasons why this is not a good idea.</li>
 	</ul>
 	<a href="https://isc.sans.edu/forums/diary/3D+Printers+in+The+Wild+What+Can+Go+Wrong/24044/" target="_blank">3D Printers in The Wild, What Can Go Wrong</a>
 </div>
