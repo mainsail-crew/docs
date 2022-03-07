@@ -50,7 +50,7 @@ Raspberry Pi Imager appearance may vary depending on the host OS.
 ```bash
 CTRL+SHIFT+X
 ```
-As a bare minimumm setup SSH and a network connection (unless wired) at this point, especially if performing a 'headless' installation.
+As a bare minimum setup SSH and a network connection (unless wired) at this point, especially if performing a 'headless' installation.
 {: .info}
 
 ![screenshot-imager-rpi-preconfig1](img/rpi-setup-1.png)
