@@ -33,7 +33,7 @@ Mainsail makes Klipper more accessible by adding a lightweight, responsive web u
 - Control power devices such as relays, TPLink and Tasmota devices, and more
 - Powerful Macro-Management
 - Configurable dashboard
-- Customisable user interface including logos, backgrounds, and custom CSS
+- Customizable user interface including logos, backgrounds, and custom CSS
 - Exclude objects (not yet officially supported by Klipper)
 
 ## Help and Support
