@@ -71,7 +71,7 @@ This is done by creating an empty file with no extension named 'SSH', or 'SSH.tx
 
 ![screenshot-balena-boot-partition](img/balena-etcher-boot-partition.png)
 
-If for some reason the file is not present, then on linux it can be created by navigating to the /boot partition and opening a terminal:
+If for some reason the file is not present, then on Linux it can be created by navigating to the /boot partition and opening a terminal:
 
 ```bash
 sudo touch SSH
