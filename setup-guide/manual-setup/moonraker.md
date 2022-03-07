@@ -30,7 +30,7 @@ virtualenv -p python3 ./moonraker-env
 
 ## Configuration
 **Please pay attention to the following steps!**  
-Misconfigured trusted_clients are a very common source of failure.
+Incorrectly configured `trusted_clients` are a very common source of failure.
 {: .warning }
 
 For Moonraker you'll need to create a separate config file.
