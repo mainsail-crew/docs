@@ -20,7 +20,7 @@ You can contribute in a couple of different ways:
 2. Create/Update translations using [VSCode](https://code.visualstudio.com/) and [i18n Ally](https://github.com/lokalise/i18n-ally).
 
 If you have a finished translation file, you can make a [PR (pull request)](https://github.com/mainsail-crew/mainsail/pulls)
-on github or create an [issue](https://github.com/mainsail-crew/mainsail/issues) on Github and attach the translation.
+on Github or create an [issue](https://github.com/mainsail-crew/mainsail/issues) on Github and attach the translation.
 
 ## Testing
 
