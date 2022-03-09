@@ -23,14 +23,14 @@ Low end cards will often fail quickly when used in this application.
 
 # Preparation
 
-- [Download](https://www.raspberrypi.org/software/) and install the latest Raspberry Pi Imager (v1.7.1) (aka. rpi-imager).
+- [Download](https://www.raspberrypi.org/software/) and install the latest Raspberry Pi Imager (v1.7.1).
 
 # Flashing MainsailOS
 
 Raspberry Pi Imager appearance may vary depending on the host OS.
 {: .info}
 
-- When opening rpi-imager you will be presented with the following:
+- When opening Raspberry Pi Imager you will be presented with the following:
 
 ![screenshot-imager-launched](img/rpi-imager-launched.png)
 
@@ -56,13 +56,13 @@ Raspberry Pi Imager appearance may vary depending on the host OS.
 
 ![screenshot-imager-choose-storage2](img/rpi-choose-storage-2.png)
 
-- After that is done, it is time to hit the little cogwheel in the right corner.
+- Now it is time to hit the little cogwheel in the right corner.
 
 ![screenshot-imager-cogwheel](img/rpi-cogwheel.png)
 
 - Setup your hostname and enable SSH.
 
-As a bare minimumm setup SSH and a network connection  
+As a bare minimum setup SSH and a network connection  
 at this point, especially if performing a 'headless' installation.
 {: .info}
 
