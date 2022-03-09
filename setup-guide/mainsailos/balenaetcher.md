@@ -71,27 +71,27 @@ This is done by creating an empty file with no extension named 'SSH', or 'SSH.tx
 
 ![screenshot-balena-boot-partition](img/balena-etcher-boot-partition.png)
 
-If for some reason the file is not present, then on linux it can be created by navigating to the /boot partition and opening a terminal:
+If for some reason the file is not present, then on Linux it can be created by navigating to the /boot partition and opening a terminal:
 
 ```bash
 sudo touch SSH
 sudo touch SSH.txt
 ```
 
- RaspberryOS will check if /boot/SSH(.txt) is present at first boot. If the file is present then SSH will be enabled.
+Raspberry Pi OS will check if /boot/SSH(.txt) is present at first boot. If the file is present then SSH will be enabled.
 
 
 # Setting up Wi-Fi / Network
 
-SSID's are case-sensitive!
+SSID is case-sensitive!
 {: .info}
 Don't forget to set the country!
 {: .warning}
 
 
-To setup Wi-Fi for a headless Pi install the network SSID and password must be entered into mainsailos-wpa-supplicant.txt 
+To setup Wi-Fi for a headless Pi install the network SSID and password must be entered into `mainsailos-wpa-supplicant.txt`.
 
-With the SD card inserted into the computer, navigate to the SD card's /boot partition and open mainsail-wpa-supplicant.txt.
+With the SD card inserted into the computer, navigate to the SD card's `/boot` partition and open `mainsail-wpa-supplicant.txt`.
 
 Locate the relevant section to your network, remove the comment marks (#) and enter the SSID and password. WPA/WPA2 is the most common.
 
@@ -117,7 +117,7 @@ network={
 country=GB # United Kingdom
 
 ```
-Save and exit the mainsailos-wpa-supplicant.txt file. 
+Save and exit the `mainsailos-wpa-supplicant.txt` file. 
 
 You are now ready to move on to the [first boot](first-boot) of MainsailOS.
 

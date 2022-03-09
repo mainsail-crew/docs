@@ -24,7 +24,7 @@ ____
 # Preparation
 
 *  [Download](https://github.com/mainsail-crew/MainsailOS/releases) the latest MainsailOS release (don't unpack the zip; you don't need to).
-*  [Download](https://www.raspberrypi.org/software/) and install the latest Raspberry Pi Imager (aka. rpi-imager).
+*  [Download](https://www.raspberrypi.org/software/) and install the latest Raspberry Pi Imager.
 
 # Flashing MainsailOS
 
@@ -32,7 +32,7 @@ Raspberry Pi Imager appearance may vary depending on the host OS.
 {: .info}
 
 
-*  When opening rpi-imager you will be presented with the following:
+*  When opening Raspberry Pi Imager you will be presented with the following:
 
 ![screenshot-imager-launched](img/rpi-imager-launched.png)
 
@@ -45,12 +45,12 @@ Raspberry Pi Imager appearance may vary depending on the host OS.
 
 ![screenshot-imager-sd-card-selection](img/rpi-sdcard.png)
 
-* Hostname, wi-fi, language and numerous other settings can now be scrolled through and pre-configured in a hidden setup menu, opened by pressing:
+* Hostname, Wi-Fi, language and numerous other settings can now be scrolled through and preconfigured in a hidden setup menu, opened by pressing:
 
 ```bash
 CTRL+SHIFT+X
 ```
-As a bare minimumm setup SSH and a network connection (unless wired) at this point, especially if performing a 'headless' installation.
+As a bare minimum setup SSH and a network connection (unless wired) at this point, especially if performing a 'headless' installation.
 {: .info}
 
 ![screenshot-imager-rpi-preconfig1](img/rpi-setup-1.png)
@@ -61,7 +61,7 @@ As a bare minimumm setup SSH and a network connection (unless wired) at this poi
 
 ![screenshot-imager-warning](img/rpi-warning.png)
 
-* Imager will take some time to write the disc image to the SD card. When it's finished, click continue.
+* The Imager will take some time to write the disc image to the SD card. When it's finished, click continue.
 
 ![screenshot-imager-write-finished](img/rpi-finished.png)
 
