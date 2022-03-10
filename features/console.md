@@ -8,6 +8,7 @@ permalink: /features/console
 description: >-
     Send commands to your printer.
 ---
+# TEST
 # {{ page.title }}
 {{ page.description }} Mainsails console is available on the dashboard and as an extra page in the sidebar. 
 {: .fs-5 }
