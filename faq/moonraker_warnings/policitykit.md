@@ -32,7 +32,7 @@ For more information, please check out the corresponding [Moonraker documentatio
 # Known Problems
 ## A few messages still remain after the steps have been executed
 
-SSH into your system and make sure that packagekit is installed.
+SSH into your system and make sure that `packagekit` is installed.
 
 ```
 sudo apt update

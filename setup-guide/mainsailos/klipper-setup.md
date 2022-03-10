@@ -12,7 +12,7 @@ permalink: /setup/mainsailos/klipper-setup
 
 Please read and follow the [Klipper documentation](https://klipper3d.org) in order to setup your machine. 
 {: .info}
-You do not need to follow instructions pertaining to Octopi or Octoprint found in the Klipper documentation.
+You do not need to follow instructions pertaining to OctoPi or OctoPrint found in the Klipper documentation.
 {: .info}
 
 Klipper is a highly versatile piece of software and can run with almost any machine. Due to the plethora of stock and custom hardware options available, it is impossible to ship MainsailOS / Klipper with a default configuration that would work for everyone.

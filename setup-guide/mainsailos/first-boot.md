@@ -15,7 +15,7 @@ Insert the flashed SD card into your Pi and connect any other hardware such a ne
 
 Power on the Pi and let it boot up.
 
-**The initial boot of  MainsailOS may take some time to expand your "root" filesystem. The larger the SD card, the longer the first boot will take.**
+**The initial boot of  MainsailOS may take some time to expand your "root" file system. The larger the SD card, the longer the first boot will take.**
 {: .warning}
 
 Initially the green LED on the Pi will be extremely active. After some time it will only intermittently flicker, indicating it has likely completed the boot sequence.

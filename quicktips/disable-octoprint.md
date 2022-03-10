@@ -5,14 +5,14 @@ parent: Quicktips
 has_children: false
 permalink: /quicktips/disable-octoprint-lcd-menu
 description: >-
-  Klipper ships with an Octoprint entry in the LCD menu which does not work with Mainsail.
+  Klipper ships with an OctoPrint entry in the LCD menu which does not work with Mainsail.
 ---
  
 # {{ page.title }}
 {{ page.description }}
 
 ## Modify printer.cfg
-Add the following entry to your printer.cfg to disable Octoprint:
+Add the following entry to your printer.cfg to disable OctoPrint:
 
 ```yaml
 [menu __main __octoprint]

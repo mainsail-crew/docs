@@ -25,7 +25,7 @@ Mainsail makes Klipper more accessible by adding a lightweight, responsive web u
 - File Editor (G-Code and config files)
 - Print History and Statistics
 - Job Queue
-- Temperature Presets (with custom gcode)
+- Temperature Presets (with custom G-Code)
 - Bed Mesh visualisation
 - G-Code Viewer
 - Multi-Webcam support
