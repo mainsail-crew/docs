@@ -60,20 +60,25 @@ Raspberry Pi Imager appearance may vary depending on the host OS.
 
 ![screenshot-imager-cogwheel](img/rpi-cogwheel.png)
 
-- Setup your hostname and enable SSH.
+- Enable SSH.
 
-As a bare minimum setup SSH and a network connection  
+As a bare minimum, setup SSH and a network connection  
 at this point, especially if performing a 'headless' installation.
 {: .info}
+
+- Optional: Setup your prefered hostname
+
+If you change the hostname, the URL will be changed accordingly.\
+As shown in the screenshot below your URL will be **_http://mainsail.local_**
+{: .alert}
 
 ![screenshot-imager-setup-ssh](img/rpi-setup-ssh.png)
 
 - Change your password, this step is highly recommended!
 
 **Please don't change the username!**  
-**This will have unwanted side effects!**  
-At this Stage MainsailOS Setup relays on the User "pi".  
-We will change that in the Future.
+At this stage MainsailOS Setup relays on the user "pi".  
+We will change that in the future.
 {: .alert}
 
 ![screenshot-imager-setup-username](img/rpi-setup-username.png)
