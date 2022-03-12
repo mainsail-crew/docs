@@ -8,7 +8,8 @@ has_children: false
 permalink: /setup/mainsailos/pi-imager
 ---
 
-This method is cross-platform and works with Windows, Linux and MacOS
+This method is cross-platform and works with Windows, Linux and MacOS \
+Raspberry Pi Imager appearance may vary depending on the host OS.
 {: .info}
 
 We **strongly** recommend you use a premium SD card from a reputable manufacturer such as Sandisk, Kingston or Samsung, using an "A1" (or better) grade SD card. \
@@ -26,9 +27,6 @@ Low end cards will often fail quickly when used in this application.
 - [Download](https://www.raspberrypi.org/software/) and install the latest Raspberry Pi Imager (v1.7.1).
 
 # Flashing MainsailOS
-
-Raspberry Pi Imager appearance may vary depending on the host OS.
-{: .info}
 
 - When opening Raspberry Pi Imager you will be presented with the following:
 
