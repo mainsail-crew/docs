@@ -10,7 +10,7 @@ description: >-
 
 # {{ page.title }}
 {{ page.description }}  
-Moonraker is compatible with Octoprint's API. To enable Octoprint API compatibility, add the following to your `moonraker.conf` and restart Moonraker.
+Moonraker is compatible with OctoPrint's API. To enable OctoPrint API compatibility, add the following to your `moonraker.conf` and restart Moonraker.
 
 ```
 [octoprint_compat]

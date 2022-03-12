@@ -13,7 +13,7 @@ cd ~/moonraker
 git pull
 ```
 
-Restart Moonraker (`sudo service moonraker restart`) and open the url `http://<printer-ip>:7125/printer/info` in your browser.
+Restart Moonraker (`sudo service moonraker restart`) and open the URL `http://<printer-ip>:7125/printer/info` in your browser.
 
 If you see a content like this
 ```
@@ -21,7 +21,7 @@ If you see a content like this
 ```
 
 ### Update Moonraker dependence
-This is only nessasary, if you see missing modules in the moonraker log.
+This is only necessary, if you see missing modules in the Moonraker log.
 ```bash
 ~/moonraker/scripts/install-moonraker.sh -r
 ```

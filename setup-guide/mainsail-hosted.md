@@ -23,7 +23,7 @@ The hosted version of Mainsail can be used on the same local network with your p
   * Moonraker
   * `my.mainsail.xyz` must be configured as a CORS domain in `moonraker.conf`.
 
-### Editing moonraker.conf for remote access
+### Editing `moonraker.conf` for remote access
 
 You can  learn more about editing Moonraker's authorization [configuration documentation here.](https://moonraker.readthedocs.io/en/latest/configuration/#authorization)
 {: .info}
@@ -44,5 +44,4 @@ trusted_clients:
  192.168.0.0/16
  FE80::/10
  ::1/128
-
 ```

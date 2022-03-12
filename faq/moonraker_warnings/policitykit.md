@@ -10,7 +10,7 @@ has_toc: false
 ---
 
 # PolicyKit Permissions
-Since Jan 28th '22, Moonraker has changed the way to communicate with system services to D-Bus instead of previously `sudo` commands.
+Since Jan 28 '22, Moonraker has changed the way to communicate with system services to D-Bus instead of previously `sudo` commands.
 
 After updating Moonraker you might be presented this warning message:
 
@@ -32,7 +32,7 @@ For more information, please check out the corresponding [Moonraker documentatio
 # Known Problems
 ## A few messages still remain after the steps have been executed
 
-SSH into your system and make sure that packagekit is installed.
+SSH into your system and make sure that `packagekit` is installed.
 
 ```
 sudo apt update

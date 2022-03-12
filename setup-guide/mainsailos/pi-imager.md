@@ -54,15 +54,12 @@ Low end cards will often fail quickly when used in this application.
 
 ![screenshot-imager-choose-storage2](img/rpi-choose-storage-2.png)
 
-- Now it is time to hit the little cogwheel in the right corner.
+- Hostname, Wi-Fi, language and numerous other settings can now be scrolled through and preconfigured in a setup menu, opened by click on the little cogwheel in the right corner.
+
+Enable SSH at least! Otherwise, you were'nt able to connect via SSH.
+{: .info}
 
 ![screenshot-imager-cogwheel](img/rpi-cogwheel.png)
-
-- Enable SSH.
-
-As a bare minimum, setup SSH and a network connection  
-at this point, especially if performing a 'headless' installation.
-{: .info}
 
 - Optional: Setup your prefered hostname
 
@@ -102,7 +99,7 @@ We will change that in the future.
 
 ![screenshot-imager-writing](img/rpi-writing.png)
 
-Select the "CONTINUE" button and unmount (safely remove) your newly flashed MainsailOS SD card.
+- The Imager will take some time to write the disc image to the SD card. When it's finished, click continue.
 
 ![screenshot-imager-write-finished](img/rpi-finished.png)
 

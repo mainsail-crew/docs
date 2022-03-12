@@ -19,4 +19,4 @@ If you are familiar with process to flash the firmware, then please use your pre
 If however you are unfamiliar with the flashing process we have documented two methods to flash MainsailOS to your SD card:
 
 * [Raspberry Pi Imager](mainsailos/pi-imager) (cross-platform, easiest) <span class="label label-red">recommended</span>  
-* [Balena Etcher](mainsailos/balena-etcher) (requires manual setup)
+* [balenaEtcher](mainsailos/balena-etcher) (requires manual setup)
