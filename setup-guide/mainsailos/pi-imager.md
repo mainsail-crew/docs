@@ -46,7 +46,7 @@ Low end cards will often fail quickly when used in this application.
 ![screenshot-imager-os-mainsail](img/rpi-mainsailos.png)
 ![screenshot-imager-os-mainsail-choosen](img/rpi-mainsailos-choosen.png)
 
-* After that is done hit "STORAGE" and select your desired SD card.
+* After that is done click "STORAGE" and select your desired SD card.
 
 ![screenshot-imager-choose-storage](img/rpi-choose-storage.png)
 
@@ -54,7 +54,7 @@ Low end cards will often fail quickly when used in this application.
 
 ![screenshot-imager-choose-storage2](img/rpi-choose-storage-2.png)
 
-* Hostname, Wi-Fi, language and numerous other settings can now be scrolled through and preconfigured in a setup menu, opened by click on the little cogwheel in the right corner.
+* Hostname, Wi-Fi, language and numerous other settings can now be scrolled through and preconfigured in a setup menu, opened by clicking on the little cogwheel in the right corner.
 
 Please enable SSH! Otherwise, you were'nt able to connect via SSH.
 {: .info}
