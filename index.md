@@ -13,28 +13,33 @@ Mainsail makes Klipper more accessible by adding a lightweight, responsive web u
 [GitHub](https://github.com/mainsail-crew/mainsail){: .btn}{:target="_blank"}
 [Release Notes](https://github.com/mainsail-crew/mainsail/releases){: .btn}{:target="_blank"}
 
+Mainsail is also available in remote mode on [http://my.mainsail.xyz](http://my.mainsail.xyz). Find
+out [more](/setup#mymainsailxyz).
+
 ## Screenshots
 ![Dashboard](assets/img/screenshot.png)
 ![Features](assets/img/features.png)
 
-## Features 
-- Responsive web interface, optimized for desktops, tablets and mobile devices
-- Supports multiple 3D printers (Printer Farm)
-- Localization (i18n)
-- File Manager (G-Code and config files)
-- File Editor (G-Code and config files)
-- Print History and Statistics
-- Job Queue
-- Temperature Presets (with custom G-Code)
-- Bed Mesh visualisation
-- G-Code Viewer
-- Multi-Webcam support
-- Timelapse integration
-- Control power devices such as relays, TPLink and Tasmota devices, and more
-- Powerful Macro-Management
-- Configurable dashboard
-- Customizable user interface including logos, backgrounds, and custom CSS
-- Exclude objects (not yet officially supported by Klipper)
+## Features
+- **Responsive Web Interface:** _Optimized for desktops, tablets and mobile devices_
+- **Printer Farm:** _Supports multiple 3D printers_
+- **[Localization](/features/localization):** _Choose between 12 different languages_
+- **File Manager:** _Delete, rename and upload your G-Code and config files_
+- **File Editor:** _Edit G-Code and config files with syntax highlighting in your browser_
+- **[Print History](/features/history):** _See your previous prints and their status_
+- **[Statistics](/features/history):** _View how much time your printer has been in use and the number of jobs that have succeeded or failed_
+- **Job Queue:** _Queue multiple jobs and add them directly from your slicer_
+- **[Temperature Presets](/features/presets):** _Manage different temperature presets for easy preheating_
+- **[Bed Mesh Visualisation](/features/bedmesh):** _View your bed using a 3D mesh graph_
+- **G-Code Viewer:** _View a 3D render of your print and follow the progress_
+- **Multi-Webcam Support:** _View your print from different angles with multiple webcams_
+- **Timelapse Integration:** _Automatically record a timelapse of your print using [moonraker-timelapse](https://github.com/mainsail-crew/moonraker-timelapse)_
+- **Power Control:** _Control power devices such as relays, TP-Link and Tasmota devices, and more_
+- **Powerful Macro-Management:** _Manage your macros on a micro level_
+- **[Configurable Dashboard](/features/dashboard-organisation):** _Create your own personal dashboard_
+- **[Theming Support](/features/theming):** _Customizable user interface including logos, backgrounds, and custom CSS_
+- **[Additional Sensors](/quicktips/additional-sensors):** _Add extra sensors to the temperature graph_
+- **Exclude Objects:** _Exclude parts of your print <sup>(not officially supported by Klipper yet)</sup>_
 
 ## Help and Support
 Do you need help or just want to talk? Join our active community on Discord. 
