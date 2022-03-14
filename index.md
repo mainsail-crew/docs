@@ -37,7 +37,7 @@ out [more](/setup#mymainsailxyz).
 - **Power Control:** _Control power devices such as relays, TP-Link and Tasmota devices, and more_
 - **Powerful Macro-Management:** _Manage your macros on a micro level_
 - **[Configurable Dashboard](/features/dashboard-organisation):** _Create your own personal dashboard_
-- **[Theming Support](/features/theming/):** _Customizable user interface including logos, backgrounds, and custom CSS_
+- **[Theming Support](/features/theming):** _Customizable user interface including logos, backgrounds, and custom CSS_
 - **[Additional Sensors](/quicktips/additional-sensors):** _Add extra sensors to the temperature graph_
 - **Exclude Objects:** _Exclude parts of your print <sup>(not officially supported by Klipper yet)</sup>_
 

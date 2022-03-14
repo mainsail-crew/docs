@@ -8,7 +8,7 @@ permalink: /setup/docker
 ---
 # Installing Mainsail using Docker
 
-It's possible to run Mainsail in Docker with our pre-built images. These images are running Nginx with Mainsail.
+It's possible to run Mainsail in Docker with our pre-built images. These images are running NGINX with Mainsail.
 Our images are hosted on the Github Package Registry. You can find more details [here](https://github.com/mainsail-crew/mainsail/pkgs/container/mainsail).
 
 The image can be pulled using:
@@ -18,7 +18,7 @@ $ docker pull ghcr.io/mainsail-crew/mainsail
 ```
 
 ## Configuration for the Docker image
-By default the image will connect to `localhost:7125`. If Moonraker is not running on that address, you can configure Mainsail to behave differently using a config file. You can easily mount this file in your container.
+By default the image will connect to `localhost:7125`. If Moonraker is not running on that address, you can configure Mainsail to behave differently using a config file. You can mount this file in your container.
 
 First make sure that you have a `config.json` file configured. This is a `json` file that can look like this:
 
