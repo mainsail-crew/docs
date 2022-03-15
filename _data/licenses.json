@@ -107,6 +107,12 @@
         "licenseUrl": "https://github.com/emn178/js-sha256/raw/master/LICENSE.txt",
         "parents": "mainsail"
     },
+    "lodash.throttle": {
+        "licenses": "MIT",
+        "repository": "https://github.com/lodash/lodash",
+        "licenseUrl": "https://github.com/lodash/lodash/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
     "overlayscrollbars-vue": {
         "licenses": "MIT",
         "repository": "https://github.com/KingSora/OverlayScrollbars",
@@ -123,6 +129,12 @@
         "licenses": "MIT",
         "repository": "https://github.com/facebook/regenerator/tree/master/packages/runtime",
         "licenseUrl": "https://github.com/facebook/regenerator/tree/master/packages/runtime/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
+    "resize-observer-polyfill": {
+        "licenses": "MIT",
+        "repository": "https://github.com/que-etc/resize-observer-polyfill",
+        "licenseUrl": "https://github.com/que-etc/resize-observer-polyfill/raw/master/LICENSE",
         "parents": "mainsail"
     },
     "semver": {
