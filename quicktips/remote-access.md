@@ -19,9 +19,14 @@ You will need to decide if you want to receive status messages on your smartphon
 
 ## Status messages
 
-For simple status messages there are a two additional tools that can be used:
-- __Discord:__ Mooncord is a bot that sends you status messages over Discord: [https://github.com/eliteSchwein/mooncord](https://github.com/eliteSchwein/mooncord)
-- __Telegram:__ Moonraker-telegram is a bot that sends you status messages over the messaging application Telegram: [https://github.com/Raabi91/moonraker-telegram](https://github.com/Raabi91/moonraker-telegram)
+There are several options for sending status messages, some include additional functionality.  
+- __Moonraker:__
+	- Moonraker has built-in [notification support](https://moonraker.readthedocs.io/en/latest/configuration/#notifier) for a variety of services via [Apprise](https://github.com/caronc/apprise).
+- __Telegram:__ 
+	- [Moonraker-telegram-bot](https://github.com/nlef/moonraker-telegram-bot) by nlef is a bot that provides you status updates using the Telegram messaging service.
+	- [Moonraker-telegram](https://github.com/Raabi91/moonraker-telegram) by Raabi91 is a bot that also brings you status updates using the chat app Telegram. 
+- __Discord:__ 
+	- [Mooncord](https://github.com/eliteSchwein/mooncord) by eliteSchwein is a bot that sends you status messages over Discord.
 
 These tools are installed on the local machine and send status messages to their respective platforms. No changes are needed to externally access your local network.
 
