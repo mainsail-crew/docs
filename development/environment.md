@@ -33,12 +33,12 @@ For Moonraker, you need to add your local IP to the `cors_domains` section insid
 
 ```yaml
 cors_domains:
-    <your local ip>:<local port>
+    *//<your local ip>:<local port>
 ```
 _Example:_ If the IP of your PC you develop Mainsail on is `192.168.1.20`:
 ```yaml
 cors_domains:
-    192.168.1.20:8080
+    *//192.168.1.20:8080
 ```
 
 Port 8080 is the default port `npm` will serve the development server on.
