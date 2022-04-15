@@ -107,6 +107,12 @@
         "licenseUrl": "https://github.com/emn178/js-sha256/raw/master/LICENSE.txt",
         "parents": "mainsail"
     },
+    "lodash.kebabcase": {
+        "licenses": "MIT",
+        "repository": "https://github.com/lodash/lodash",
+        "licenseUrl": "https://github.com/lodash/lodash/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
     "lodash.throttle": {
         "licenses": "MIT",
         "repository": "https://github.com/lodash/lodash",
