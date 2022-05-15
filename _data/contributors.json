@@ -18,7 +18,7 @@
     "received_events_url": "https://api.github.com/users/meteyou/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 1228
+    "contributions": 1247
   },
   {
     "login": "freasy",
@@ -42,6 +42,27 @@
     "contributions": 62
   },
   {
+    "login": "th33xitus",
+    "id": 31533186,
+    "node_id": "MDQ6VXNlcjMxNTMzMTg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/31533186?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/th33xitus",
+    "html_url": "https://github.com/th33xitus",
+    "followers_url": "https://api.github.com/users/th33xitus/followers",
+    "following_url": "https://api.github.com/users/th33xitus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/th33xitus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/th33xitus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/th33xitus/subscriptions",
+    "organizations_url": "https://api.github.com/users/th33xitus/orgs",
+    "repos_url": "https://api.github.com/users/th33xitus/repos",
+    "events_url": "https://api.github.com/users/th33xitus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/th33xitus/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 52
+  },
+  {
     "login": "lixxbox",
     "id": 5130466,
     "node_id": "MDQ6VXNlcjUxMzA0NjY=",
@@ -61,27 +82,6 @@
     "type": "User",
     "site_admin": false,
     "contributions": 49
-  },
-  {
-    "login": "th33xitus",
-    "id": 31533186,
-    "node_id": "MDQ6VXNlcjMxNTMzMTg2",
-    "avatar_url": "https://avatars.githubusercontent.com/u/31533186?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/th33xitus",
-    "html_url": "https://github.com/th33xitus",
-    "followers_url": "https://api.github.com/users/th33xitus/followers",
-    "following_url": "https://api.github.com/users/th33xitus/following{/other_user}",
-    "gists_url": "https://api.github.com/users/th33xitus/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/th33xitus/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/th33xitus/subscriptions",
-    "organizations_url": "https://api.github.com/users/th33xitus/orgs",
-    "repos_url": "https://api.github.com/users/th33xitus/repos",
-    "events_url": "https://api.github.com/users/th33xitus/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/th33xitus/received_events",
-    "type": "User",
-    "site_admin": false,
-    "contributions": 43
   },
   {
     "login": "pataar",
@@ -207,7 +207,7 @@
     "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
     "type": "Bot",
     "site_admin": false,
-    "contributions": 9
+    "contributions": 10
   },
   {
     "login": "translucentfocus",
