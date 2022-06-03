@@ -52,6 +52,10 @@ Open your `printer.cfg` in Mainsail and add following setting to your config:
 [exclude_object]
 ```
 
+If you need more information about the exclude_object module in Klipper. See the
+[exclude_object](https://www.klipper3d.org/Exclude_Object.html){:target="_blank"} documentation for details.
+{: .info}
+
 From now on all newly uploaded G-Codes should support this function and they should have a new button in the status
 panel to exclude objects from printing.
 
