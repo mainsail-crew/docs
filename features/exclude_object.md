@@ -24,7 +24,7 @@ To be able to use this feature , the following steps are required.
 
 In PrusaSlicer or SuperSlicer you have to enable the checkbox in:
 ```
-Print Settings > Output options > Label Objects
+Print Settings > Output options > Output file > Label objects
 ```
 ![Exclude Objects - PrusaSclier](img/exclude_objects-prusaslicer.png){:width="50%"}
 
