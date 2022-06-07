@@ -39,7 +39,7 @@ out [more](/setup#mymainsailxyz).
 - **[Configurable Dashboard](/features/dashboard-organisation):** _Create your own personal dashboard_
 - **[Theming Support](/features/theming):** _Customizable user interface including logos, backgrounds, and custom CSS_
 - **[Additional Sensors](/quicktips/additional-sensors):** _Add extra sensors to the temperature graph_
-- **Exclude Objects:** _Exclude parts of your print <sup>(not officially supported by Klipper yet)</sup>_
+- **[Exclude Objects](/features/exclude_object):** _Exclude parts of your print_
 
 ## Help and Support
 Do you need help or just want to talk? Join our active community on Discord. 
