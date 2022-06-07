@@ -29,7 +29,7 @@ Print Settings > Output options > Output file > Label objects
 Cura & Ideamaker label objects by default in the G-Code, and they are automatically compatible without any further settings.
 {: .info}
 
-## Enable the gcode preprocessor in Moonraker
+## Enable the G-Code preprocessor in Moonraker
 
 This step is necessary to convert the previously activated object labels into valid Klipper G-Code. Open your
 `moonraker.conf` in Mainsail and add the following setting to your config:
