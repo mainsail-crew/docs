@@ -9,8 +9,9 @@ redirect_from: /quicktips/update-manager
 description: >-
   Perform updates of Mainsail, Klipper, Moonraker and your system from within Mainsail.
 ---
- # {{ page.title }}
+# {{ page.title }}
 {{ page.description }}
+{: .fs-5 }
 
 ## Moonraker.conf
 
