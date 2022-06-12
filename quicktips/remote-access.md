@@ -22,6 +22,10 @@ You will need to decide if you want to receive status messages on your smartphon
 There are several options for sending status messages, some include additional functionality.  
 - __Moonraker:__
 	- Moonraker has built-in [notification support](https://moonraker.readthedocs.io/en/latest/configuration/#notifier) for a variety of services via [Apprise](https://github.com/caronc/apprise).
+- __[Obico for Klipper](https://obico.io/docs/user-guides/klipper-setup/):__
+	- Obico sends status messages as well as webcam snapshots to mobile push notification, Email, Telegram, Discord, and more.
+    - You can get the real-time webcam feed and printer control using Obico's mobile app or in the browser.
+    - Obico also uses AI to detect print failures.
 - __Telegram:__ 
 	- [Moonraker-telegram-bot](https://github.com/nlef/moonraker-telegram-bot) by nlef is a bot that provides you status updates using the Telegram messaging service.
 	- [Moonraker-telegram](https://github.com/Raabi91/moonraker-telegram) by Raabi91 is a bot that also brings you status updates using the chat app Telegram. 
