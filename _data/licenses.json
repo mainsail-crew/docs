@@ -197,6 +197,12 @@
         "licenseUrl": "https://github.com/kaorun343/vue-property-decorator/raw/master/LICENSE",
         "parents": "mainsail"
     },
+    "vue-resize": {
+        "licenses": "MIT",
+        "repository": "https://github.com/Akryum/vue-resize",
+        "licenseUrl": "https://github.com/Akryum/vue-resize",
+        "parents": "mainsail"
+    },
     "vue-toast-notification": {
         "licenses": "MIT",
         "repository": "https://github.com/ankurk91/vue-toast-notification",
