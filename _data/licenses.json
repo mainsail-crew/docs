@@ -11,10 +11,10 @@
         "licenseUrl": "https://github.com/codemirror/highlight/raw/master/LICENSE",
         "parents": "mainsail"
     },
-    "@codemirror/lang-javascript": {
+    "@codemirror/lang-css": {
         "licenses": "MIT",
-        "repository": "https://github.com/codemirror/lang-javascript",
-        "licenseUrl": "https://github.com/codemirror/lang-javascript/raw/master/LICENSE",
+        "repository": "https://github.com/codemirror/lang-css",
+        "licenseUrl": "https://github.com/codemirror/lang-css/raw/master/LICENSE",
         "parents": "mainsail"
     },
     "@codemirror/lang-json": {
