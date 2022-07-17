@@ -13,7 +13,7 @@ description: >-
 {{ page.description }}
 {: .fs-5 }
 
-This feature was integrated in Klipper v0.10.0-438, Moonraker v0.7.1-445 and Mainsail v2.1.0.
+This feature was integrated in Klipper v0.10.0-438, Moonraker v0.7.1-445 and Mainsail v2.1.0. \
 Please check your installed versions first and update them if necessary.
 {: .info }
 
