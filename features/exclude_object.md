@@ -15,8 +15,11 @@ description: >-
 
 This feature was integrated in Klipper v0.10.0-438, Moonraker v0.7.1-445 and Mainsail v2.1.0. \
 Please check your installed versions first and update them if necessary.
+{: .info }
 
-To be able to use this feature , the following steps are required.
+In order to use the feature, your slicer must be configured to name the individual objects in the G-Code. The G-Code
+must be preprocessed either by a post-processing script in the slicer or by Moonraker plus the functionality must be
+enabled in Klipper.
 
 ## Enable the `Label objects` setting in your slicer
 
@@ -42,6 +45,9 @@ Alternatively it is possible to use an external preprocessor. See [preprocess-ca
 details.
 {: .info}
 
+Only G-Code files prepared this way support excluding objects.
+{: .warning }
+
 ## Enable `exclude_object` module in Klipper
 
 Open your `printer.cfg` in Mainsail and add the following setting to it:
@@ -61,3 +67,7 @@ panel.
 The button will open a dialog in which you can select each individual object and exclude it from the currently ongoing print.
 
 ![Exclude Objects](img/exclude_objects.png){:width="50%"}
+
+Please note that only G-Code files that have been prepared accordingly support the feature,
+it will not work with old, unprocessed files.
+{: .warning }
