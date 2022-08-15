@@ -1,14 +1,8 @@
 {
-    "@codemirror/basic-setup": {
+    "@codemirror/commands": {
         "licenses": "MIT",
-        "repository": "https://github.com/codemirror/basic-setup",
-        "licenseUrl": "https://github.com/codemirror/basic-setup/raw/master/LICENSE",
-        "parents": "mainsail"
-    },
-    "@codemirror/highlight": {
-        "licenses": "MIT",
-        "repository": "https://github.com/codemirror/highlight",
-        "licenseUrl": "https://github.com/codemirror/highlight/raw/master/LICENSE",
+        "repository": "https://github.com/codemirror/commands",
+        "licenseUrl": "https://github.com/codemirror/commands/raw/master/LICENSE",
         "parents": "mainsail"
     },
     "@codemirror/lang-css": {
@@ -47,16 +41,16 @@
         "licenseUrl": "https://github.com/codemirror/state/raw/master/LICENSE",
         "parents": "mainsail"
     },
-    "@codemirror/stream-parser": {
-        "licenses": "MIT",
-        "repository": "https://github.com/codemirror/stream-parser",
-        "licenseUrl": "https://github.com/codemirror/stream-parser/raw/master/LICENSE",
-        "parents": "mainsail"
-    },
     "@codemirror/view": {
         "licenses": "MIT",
         "repository": "https://github.com/codemirror/view",
         "licenseUrl": "https://github.com/codemirror/view/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
+    "@lezer/highlight": {
+        "licenses": "MIT",
+        "repository": "https://github.com/lezer-parser/highlight",
+        "licenseUrl": "https://github.com/lezer-parser/highlight/raw/master/LICENSE",
         "parents": "mainsail"
     },
     "@sindarius/gcodeviewer": {
@@ -81,6 +75,12 @@
         "licenses": "MIT",
         "repository": "https://github.com/axios/axios",
         "licenseUrl": "https://github.com/axios/axios/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
+    "codemirror": {
+        "licenses": "MIT",
+        "repository": "https://github.com/codemirror/basic-setup",
+        "licenseUrl": "https://github.com/codemirror/basic-setup/raw/master/LICENSE",
         "parents": "mainsail"
     },
     "core-js": {
