@@ -18,7 +18,7 @@
     "received_events_url": "https://api.github.com/users/meteyou/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 1300
+    "contributions": 1319
   },
   {
     "login": "th33xitus",
@@ -39,7 +39,7 @@
     "received_events_url": "https://api.github.com/users/th33xitus/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 70
+    "contributions": 82
   },
   {
     "login": "freasy",
@@ -207,7 +207,28 @@
     "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
     "type": "Bot",
     "site_admin": false,
-    "contributions": 10
+    "contributions": 11
+  },
+  {
+    "login": "CodingJustForRun",
+    "id": 71041835,
+    "node_id": "MDQ6VXNlcjcxMDQxODM1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/71041835?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/CodingJustForRun",
+    "html_url": "https://github.com/CodingJustForRun",
+    "followers_url": "https://api.github.com/users/CodingJustForRun/followers",
+    "following_url": "https://api.github.com/users/CodingJustForRun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/CodingJustForRun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/CodingJustForRun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/CodingJustForRun/subscriptions",
+    "organizations_url": "https://api.github.com/users/CodingJustForRun/orgs",
+    "repos_url": "https://api.github.com/users/CodingJustForRun/repos",
+    "events_url": "https://api.github.com/users/CodingJustForRun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/CodingJustForRun/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 8
   },
   {
     "login": "translucentfocus",
@@ -247,27 +268,6 @@
     "repos_url": "https://api.github.com/users/Birkemosen/repos",
     "events_url": "https://api.github.com/users/Birkemosen/events{/privacy}",
     "received_events_url": "https://api.github.com/users/Birkemosen/received_events",
-    "type": "User",
-    "site_admin": false,
-    "contributions": 7
-  },
-  {
-    "login": "CodingJustForRun",
-    "id": 71041835,
-    "node_id": "MDQ6VXNlcjcxMDQxODM1",
-    "avatar_url": "https://avatars.githubusercontent.com/u/71041835?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/CodingJustForRun",
-    "html_url": "https://github.com/CodingJustForRun",
-    "followers_url": "https://api.github.com/users/CodingJustForRun/followers",
-    "following_url": "https://api.github.com/users/CodingJustForRun/following{/other_user}",
-    "gists_url": "https://api.github.com/users/CodingJustForRun/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/CodingJustForRun/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/CodingJustForRun/subscriptions",
-    "organizations_url": "https://api.github.com/users/CodingJustForRun/orgs",
-    "repos_url": "https://api.github.com/users/CodingJustForRun/repos",
-    "events_url": "https://api.github.com/users/CodingJustForRun/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/CodingJustForRun/received_events",
     "type": "User",
     "site_admin": false,
     "contributions": 7
