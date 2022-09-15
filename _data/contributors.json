@@ -18,7 +18,7 @@
     "received_events_url": "https://api.github.com/users/meteyou/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 1319
+    "contributions": 1336
   },
   {
     "login": "th33xitus",
@@ -39,7 +39,7 @@
     "received_events_url": "https://api.github.com/users/th33xitus/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 82
+    "contributions": 85
   },
   {
     "login": "freasy",
@@ -207,7 +207,7 @@
     "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
     "type": "Bot",
     "site_admin": false,
-    "contributions": 11
+    "contributions": 12
   },
   {
     "login": "CodingJustForRun",
@@ -294,27 +294,6 @@
     "contributions": 7
   },
   {
-    "login": "eliteSchwein",
-    "id": 39838619,
-    "node_id": "MDQ6VXNlcjM5ODM4NjE5",
-    "avatar_url": "https://avatars.githubusercontent.com/u/39838619?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/eliteSchwein",
-    "html_url": "https://github.com/eliteSchwein",
-    "followers_url": "https://api.github.com/users/eliteSchwein/followers",
-    "following_url": "https://api.github.com/users/eliteSchwein/following{/other_user}",
-    "gists_url": "https://api.github.com/users/eliteSchwein/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/eliteSchwein/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/eliteSchwein/subscriptions",
-    "organizations_url": "https://api.github.com/users/eliteSchwein/orgs",
-    "repos_url": "https://api.github.com/users/eliteSchwein/repos",
-    "events_url": "https://api.github.com/users/eliteSchwein/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/eliteSchwein/received_events",
-    "type": "User",
-    "site_admin": false,
-    "contributions": 6
-  },
-  {
     "login": "srbjessen",
     "id": 92088582,
     "node_id": "U_kgDOBX0pBg",
@@ -333,7 +312,7 @@
     "received_events_url": "https://api.github.com/users/srbjessen/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 6
+    "contributions": 7
   },
   {
     "login": "bartlammers",
@@ -354,7 +333,49 @@
     "received_events_url": "https://api.github.com/users/bartlammers/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 5
+    "contributions": 6
+  },
+  {
+    "login": "chai-md",
+    "id": 48555545,
+    "node_id": "MDQ6VXNlcjQ4NTU1NTQ1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/48555545?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chai-md",
+    "html_url": "https://github.com/chai-md",
+    "followers_url": "https://api.github.com/users/chai-md/followers",
+    "following_url": "https://api.github.com/users/chai-md/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chai-md/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chai-md/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chai-md/subscriptions",
+    "organizations_url": "https://api.github.com/users/chai-md/orgs",
+    "repos_url": "https://api.github.com/users/chai-md/repos",
+    "events_url": "https://api.github.com/users/chai-md/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chai-md/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 6
+  },
+  {
+    "login": "eliteSchwein",
+    "id": 39838619,
+    "node_id": "MDQ6VXNlcjM5ODM4NjE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/39838619?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eliteSchwein",
+    "html_url": "https://github.com/eliteSchwein",
+    "followers_url": "https://api.github.com/users/eliteSchwein/followers",
+    "following_url": "https://api.github.com/users/eliteSchwein/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eliteSchwein/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eliteSchwein/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eliteSchwein/subscriptions",
+    "organizations_url": "https://api.github.com/users/eliteSchwein/orgs",
+    "repos_url": "https://api.github.com/users/eliteSchwein/repos",
+    "events_url": "https://api.github.com/users/eliteSchwein/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eliteSchwein/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 6
   },
   {
     "login": "Furrciak",
@@ -520,27 +541,6 @@
     "repos_url": "https://api.github.com/users/randellhodges/repos",
     "events_url": "https://api.github.com/users/randellhodges/events{/privacy}",
     "received_events_url": "https://api.github.com/users/randellhodges/received_events",
-    "type": "User",
-    "site_admin": false,
-    "contributions": 4
-  },
-  {
-    "login": "chai-md",
-    "id": 48555545,
-    "node_id": "MDQ6VXNlcjQ4NTU1NTQ1",
-    "avatar_url": "https://avatars.githubusercontent.com/u/48555545?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/chai-md",
-    "html_url": "https://github.com/chai-md",
-    "followers_url": "https://api.github.com/users/chai-md/followers",
-    "following_url": "https://api.github.com/users/chai-md/following{/other_user}",
-    "gists_url": "https://api.github.com/users/chai-md/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/chai-md/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/chai-md/subscriptions",
-    "organizations_url": "https://api.github.com/users/chai-md/orgs",
-    "repos_url": "https://api.github.com/users/chai-md/repos",
-    "events_url": "https://api.github.com/users/chai-md/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/chai-md/received_events",
     "type": "User",
     "site_admin": false,
     "contributions": 4
