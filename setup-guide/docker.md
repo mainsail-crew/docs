@@ -24,11 +24,25 @@ First make sure that you have a `config.json` file configured. This is a `json` 
 
 ```json
 {
-  "remoteMode": true
+  "instancesDB": "browser"
 }
 ```
 
-You can set Mainsail in remote mode using the `remoteMode` option. That way you can manage your printers in the UI.
+The `instanceDB` setting value of `browser` will allow you to manage your printers in the UI.
+
+Alternatively, if you wish to manually specify a list of printers ahead of time, you can use the `instanceDB` setting value of `json`. This setting allows you to specify a list of printers directly in the `config.json` file.
+
+For example, to pre-populate the printer list with two printers:
+
+```json
+{
+  "instancesDB": "json",
+  "instances": [
+    { "hostname": "[first_printer_ip_address]", "port": 7125 },
+    { "hostname": "[second_printer_ip_address]", "port": 7125 }
+  ]
+}
+```
 
 ## Running with the custom configuration
 
