@@ -47,6 +47,12 @@
         "licenseUrl": "https://github.com/codemirror/view/raw/master/LICENSE",
         "parents": "mainsail"
     },
+    "@jaames/iro": {
+        "licenses": "MPL-2.0",
+        "repository": "https://github.com/jaames/iro.js",
+        "licenseUrl": "https://github.com/jaames/iro.js/raw/master/LICENSE.txt",
+        "parents": "mainsail"
+    },
     "@lezer/highlight": {
         "licenses": "MIT",
         "repository": "https://github.com/lezer-parser/highlight",
