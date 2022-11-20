@@ -13,9 +13,6 @@ Mainsail makes Klipper more accessible by adding a lightweight, responsive web u
 [GitHub](https://github.com/mainsail-crew/mainsail){: .btn}{:target="_blank"}
 [Release Notes](https://github.com/mainsail-crew/mainsail/releases){: .btn}{:target="_blank"}
 
-Mainsail is also available in remote mode on [http://my.mainsail.xyz](http://my.mainsail.xyz). Find
-out [more](/setup#mymainsailxyz).
-
 ## Screenshots
 ![Dashboard](assets/img/screenshot.png)
 ![Features](assets/img/features.png)
