@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Data Privacy
-nav_order: 99
+nav_order: 90
 has_children: false
 permalink: /data-privacy
 has_toc: false
