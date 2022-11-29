@@ -5,12 +5,12 @@ nav_order: 95
 has_children: false
 permalink: /sponsors
 description: >-
-  Mainsail is an open source project with its ongoing development made possible entirely by the support of these awesome Sponsors
+  Mainsail is an open source project with its ongoing development made possible entirely by the support of these awesome Sponsors.
 ---
 
 # {{ page.title }}
 {: .no_toc }
-<!-- {{ page.description }} -->
+{{ page.description }}
 
 # Official Partners
 
