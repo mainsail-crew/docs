@@ -107,10 +107,22 @@
         "licenseUrl": "https://github.com/apache/echarts/raw/master/LICENSE",
         "parents": "mainsail"
     },
+    "file-saver": {
+        "licenses": "MIT",
+        "repository": "https://github.com/eligrey/FileSaver.js",
+        "licenseUrl": "https://github.com/eligrey/FileSaver.js/raw/master/LICENSE.md",
+        "parents": "mainsail"
+    },
     "js-sha256": {
         "licenses": "MIT",
         "repository": "https://github.com/emn178/js-sha256",
         "licenseUrl": "https://github.com/emn178/js-sha256/raw/master/LICENSE.txt",
+        "parents": "mainsail"
+    },
+    "jszip": {
+        "licenses": "(MIT OR GPL-3.0-or-later)",
+        "repository": "https://github.com/Stuk/jszip",
+        "licenseUrl": "https://github.com/Stuk/jszip/raw/master/LICENSE.markdown",
         "parents": "mainsail"
     },
     "lodash.kebabcase": {
