@@ -49,10 +49,23 @@ In "Expert" mode SuperSlicer has some very convenient options in the "Printer Se
 
 ## Cura
 
-The Cura plugin "Cura2Moonraker" is required for this. You can find this plugin and a install guide
-here: [Cura2MoonrakerPlugin](https://github.com/emtrax-ltd/Cura2MoonrakerPlugin)
+### Post processing script (since Cura 4.9)
+
+1. With Cura open, navigate to `Extensions / Post Processing / Modify G-Code`
+2. Click `Add a script`, select `Create Thumbnail`
+3. Set width to `400`, height to `300`
+4. Click `Add a script`, select `Create Thumbnail`
+5. Set both width and height to `32`
+6. Click `Close`
 
 ![Cura](img/Cura-thumbnails.png)
+
+### Cura2Moonraker plugin (since Cura 4.7)
+
+Alternatively, use the the Cura plugin "Cura2Moonraker". You can find this plugin and a install guide
+here: [Cura2MoonrakerPlugin](https://github.com/emtrax-ltd/Cura2MoonrakerPlugin)
+
+![Cura2Moonraker](img/Cura2Moonrager-thumbnails.png)
 
 ## ideaMaker (since v4.2.1)
 
