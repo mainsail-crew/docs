@@ -19,9 +19,13 @@ You will need to decide if you want to receive status messages on your smartphon
 
 ## Status messages
 
-There are several options for sending status messages, some include additional functionality.  
+There are several options for sending status messages, some include additional functionality.
 - __Moonraker:__
 	- Moonraker has built-in [notification support](https://moonraker.readthedocs.io/en/latest/configuration/#notifier) for a variety of services via [Apprise](https://github.com/caronc/apprise).
+- __[OctoEverywhere for Klipper](https://octoeverywhere.com/?source=mainsail_docs):__
+	- OctoEverywhere's free notification system sends real-time print status and webcam snapshots via push notifications, Telegram, Discord, Email, SMS, and more.
+	- OctoEverywhere also provides free, private, and unlimited access to your full Mainsail web portal from anywhere, including full framerate webcam streaming.
+	- [Gadget](https://octoeverywhere.com/gadget?source=mainsail_docs), OctoEverywhere's free and unlimited AI print failure detection, continuously watches your prints and alerts you or pauses the print if something is wrong.
 - __[Obico for Klipper](https://obico.io/docs/user-guides/klipper-setup/):__
 	- Obico sends status messages as well as webcam snapshots to mobile push notification, Email, Telegram, Discord, and more.
     - You can get the real-time webcam feed and printer control using Obico's mobile app or in the browser.
@@ -67,8 +71,17 @@ What you <b>could do</b>:
 				<li>Or your Raspberry Pi</li>
 			</ul>
 		</li>
+		<li>Use A Service Like OctoEverywhere.</li>
 	</ul>
 </div>
+
+## [OctoEverywhere For Klipper](https://octoeverywhere.com/?source=mainsail_docs_remote)
+
+OctoEverywhere empowers the worldwide maker community with free, secure, and unlimited remote access to their entire Mainsail web UI from anywhere, including full resolution and frame rate webcam streaming.
+
+OctoEverywhere is a community-based project with the goal of cloud-empowering 3D printers worldwide. Along with remote access, OctoEverywhere provides free and unlimited [AI print failure detection,](https://octoeverywhere.com/gadget?source=mainsail_docs_remote) 3rd party Moonraker app support, real-time print notifications, live streaming, secure shared remote access, and more!
+
+[Learn More About OctoEverywhere](https://octoeverywhere.com/?source=mainsail_docs_remote)
 
 ## Set up VPN
 
