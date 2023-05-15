@@ -113,6 +113,12 @@
         "licenseUrl": "https://github.com/video-dev/hls.js/raw/master/LICENSE",
         "parents": "mainsail"
     },
+    "jmuxer": {
+        "licenses": "UNKNOWN",
+        "repository": "https://github.com/samirkumardas/jmuxer",
+        "licenseUrl": "https://github.com/samirkumardas/jmuxer/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
     "js-sha256": {
         "licenses": "MIT",
         "repository": "https://github.com/emn178/js-sha256",
@@ -159,6 +165,10 @@
         "licenses": "ISC",
         "repository": "https://github.com/npm/node-semver",
         "licenseUrl": "https://github.com/npm/node-semver/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
+    "typed_janus_js": {
+        "licenses": "ISC",
         "parents": "mainsail"
     },
     "uuid": {
