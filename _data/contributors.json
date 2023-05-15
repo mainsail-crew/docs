@@ -18,7 +18,7 @@
     "received_events_url": "https://api.github.com/users/meteyou/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 1419
+    "contributions": 1429
   },
   {
     "login": "th33xitus",
@@ -231,6 +231,27 @@
     "contributions": 9
   },
   {
+    "login": "ZISQO",
+    "id": 50421769,
+    "node_id": "MDQ6VXNlcjUwNDIxNzY5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/50421769?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ZISQO",
+    "html_url": "https://github.com/ZISQO",
+    "followers_url": "https://api.github.com/users/ZISQO/followers",
+    "following_url": "https://api.github.com/users/ZISQO/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ZISQO/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ZISQO/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ZISQO/subscriptions",
+    "organizations_url": "https://api.github.com/users/ZISQO/orgs",
+    "repos_url": "https://api.github.com/users/ZISQO/repos",
+    "events_url": "https://api.github.com/users/ZISQO/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ZISQO/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 9
+  },
+  {
     "login": "bartlammers",
     "id": 12411803,
     "node_id": "MDQ6VXNlcjEyNDExODAz",
@@ -289,27 +310,6 @@
     "repos_url": "https://api.github.com/users/Samuel-0-0/repos",
     "events_url": "https://api.github.com/users/Samuel-0-0/events{/privacy}",
     "received_events_url": "https://api.github.com/users/Samuel-0-0/received_events",
-    "type": "User",
-    "site_admin": false,
-    "contributions": 8
-  },
-  {
-    "login": "ZISQO",
-    "id": 50421769,
-    "node_id": "MDQ6VXNlcjUwNDIxNzY5",
-    "avatar_url": "https://avatars.githubusercontent.com/u/50421769?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/ZISQO",
-    "html_url": "https://github.com/ZISQO",
-    "followers_url": "https://api.github.com/users/ZISQO/followers",
-    "following_url": "https://api.github.com/users/ZISQO/following{/other_user}",
-    "gists_url": "https://api.github.com/users/ZISQO/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/ZISQO/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/ZISQO/subscriptions",
-    "organizations_url": "https://api.github.com/users/ZISQO/orgs",
-    "repos_url": "https://api.github.com/users/ZISQO/repos",
-    "events_url": "https://api.github.com/users/ZISQO/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/ZISQO/received_events",
     "type": "User",
     "site_admin": false,
     "contributions": 8
