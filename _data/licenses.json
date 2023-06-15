@@ -77,6 +77,12 @@
         "licenseUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped/raw/master/LICENSE",
         "parents": "mainsail"
     },
+    "@uiw/codemirror-theme-vscode": {
+        "licenses": "MIT",
+        "repository": "https://github.com/uiwjs/react-codemirror",
+        "licenseUrl": "https://github.com/uiwjs/react-codemirror",
+        "parents": "mainsail"
+    },
     "axios": {
         "licenses": "MIT",
         "repository": "https://github.com/axios/axios",
