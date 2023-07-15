@@ -18,7 +18,7 @@
     "received_events_url": "https://api.github.com/users/meteyou/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 1430
+    "contributions": 1447
   },
   {
     "login": "th33xitus",
@@ -39,7 +39,7 @@
     "received_events_url": "https://api.github.com/users/th33xitus/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 100
+    "contributions": 101
   },
   {
     "login": "freasy",
@@ -186,7 +186,7 @@
     "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
     "type": "Bot",
     "site_admin": false,
-    "contributions": 17
+    "contributions": 18
   },
   {
     "login": "steadyjaw",
@@ -208,6 +208,27 @@
     "type": "User",
     "site_admin": false,
     "contributions": 15
+  },
+  {
+    "login": "Samuel-0-0",
+    "id": 23371663,
+    "node_id": "MDQ6VXNlcjIzMzcxNjYz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/23371663?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Samuel-0-0",
+    "html_url": "https://github.com/Samuel-0-0",
+    "followers_url": "https://api.github.com/users/Samuel-0-0/followers",
+    "following_url": "https://api.github.com/users/Samuel-0-0/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Samuel-0-0/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Samuel-0-0/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Samuel-0-0/subscriptions",
+    "organizations_url": "https://api.github.com/users/Samuel-0-0/orgs",
+    "repos_url": "https://api.github.com/users/Samuel-0-0/repos",
+    "events_url": "https://api.github.com/users/Samuel-0-0/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Samuel-0-0/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 9
   },
   {
     "login": "srbjessen",
@@ -289,27 +310,6 @@
     "repos_url": "https://api.github.com/users/CodingJustForRun/repos",
     "events_url": "https://api.github.com/users/CodingJustForRun/events{/privacy}",
     "received_events_url": "https://api.github.com/users/CodingJustForRun/received_events",
-    "type": "User",
-    "site_admin": false,
-    "contributions": 8
-  },
-  {
-    "login": "Samuel-0-0",
-    "id": 23371663,
-    "node_id": "MDQ6VXNlcjIzMzcxNjYz",
-    "avatar_url": "https://avatars.githubusercontent.com/u/23371663?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/Samuel-0-0",
-    "html_url": "https://github.com/Samuel-0-0",
-    "followers_url": "https://api.github.com/users/Samuel-0-0/followers",
-    "following_url": "https://api.github.com/users/Samuel-0-0/following{/other_user}",
-    "gists_url": "https://api.github.com/users/Samuel-0-0/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/Samuel-0-0/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/Samuel-0-0/subscriptions",
-    "organizations_url": "https://api.github.com/users/Samuel-0-0/orgs",
-    "repos_url": "https://api.github.com/users/Samuel-0-0/repos",
-    "events_url": "https://api.github.com/users/Samuel-0-0/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/Samuel-0-0/received_events",
     "type": "User",
     "site_admin": false,
     "contributions": 8
@@ -588,6 +588,27 @@
     "contributions": 4
   },
   {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "site_admin": false,
+    "contributions": 4
+  },
+  {
     "login": "goesta",
     "id": 1850271,
     "node_id": "MDQ6VXNlcjE4NTAyNzE=",
@@ -604,27 +625,6 @@
     "repos_url": "https://api.github.com/users/goesta/repos",
     "events_url": "https://api.github.com/users/goesta/events{/privacy}",
     "received_events_url": "https://api.github.com/users/goesta/received_events",
-    "type": "User",
-    "site_admin": false,
-    "contributions": 4
-  },
-  {
-    "login": "kageurufu",
-    "id": 259751,
-    "node_id": "MDQ6VXNlcjI1OTc1MQ==",
-    "avatar_url": "https://avatars.githubusercontent.com/u/259751?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/kageurufu",
-    "html_url": "https://github.com/kageurufu",
-    "followers_url": "https://api.github.com/users/kageurufu/followers",
-    "following_url": "https://api.github.com/users/kageurufu/following{/other_user}",
-    "gists_url": "https://api.github.com/users/kageurufu/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/kageurufu/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/kageurufu/subscriptions",
-    "organizations_url": "https://api.github.com/users/kageurufu/orgs",
-    "repos_url": "https://api.github.com/users/kageurufu/repos",
-    "events_url": "https://api.github.com/users/kageurufu/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/kageurufu/received_events",
     "type": "User",
     "site_admin": false,
     "contributions": 4
