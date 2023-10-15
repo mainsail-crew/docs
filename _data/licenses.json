@@ -65,18 +65,6 @@
         "licenseUrl": "https://github.com/Sindarius/npm_gcodeviewer",
         "parents": "mainsail"
     },
-    "@types/node": {
-        "licenses": "MIT",
-        "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
-        "licenseUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped/raw/master/LICENSE",
-        "parents": "mainsail"
-    },
-    "@types/overlayscrollbars": {
-        "licenses": "MIT",
-        "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
-        "licenseUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped/raw/master/LICENSE",
-        "parents": "mainsail"
-    },
     "@uiw/codemirror-theme-vscode": {
         "licenses": "MIT",
         "repository": "https://github.com/uiwjs/react-codemirror",
@@ -99,6 +87,12 @@
         "licenses": "MIT",
         "repository": "https://github.com/zloirock/core-js",
         "licenseUrl": "https://github.com/zloirock/core-js/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
+    "detect-browser": {
+        "licenses": "MIT",
+        "repository": "https://github.com/DamonOehlman/detect-browser",
+        "licenseUrl": "https://github.com/DamonOehlman/detect-browser/raw/master/LICENSE",
         "parents": "mainsail"
     },
     "echarts-gl": {
@@ -157,8 +151,8 @@
     },
     "regenerator-runtime": {
         "licenses": "MIT",
-        "repository": "https://github.com/facebook/regenerator/tree/master/packages/runtime",
-        "licenseUrl": "https://github.com/facebook/regenerator/tree/master/packages/runtime/raw/master/LICENSE",
+        "repository": "https://github.com/facebook/regenerator/tree/main/packages/runtime",
+        "licenseUrl": "https://github.com/facebook/regenerator/tree/main/packages/runtime/raw/master/LICENSE",
         "parents": "mainsail"
     },
     "resize-observer-polyfill": {
