@@ -29,7 +29,7 @@ Print Settings > Output options > Output file > Label objects
 ```
 ![Exclude Objects - PrusaSclier](img/exclude_objects-prusaslicer.png){:width="50%"}
 
-Cura & Ideamaker label objects by default in the G-Code, and they are automatically compatible without any further settings.
+Cura, Ideamaker and Bambu Studio label objects by default in the G-Code, and they are automatically compatible without any further settings.
 {: .info}
 
 ## Enable the G-Code preprocessor in Moonraker
