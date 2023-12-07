@@ -9,7 +9,7 @@ has_toc: false
 # Setup Guides
 
 ## Local installation
-You will need to choose which way you want to install Mainsail on a Raspberry Pi:
+You will need to choose how you want to install Mainsail on a Raspberry Pi:
 
 - [MainsailOS](mainsail-os.md) <span class="label label-red">recommended</span>  
 	A prebuilt image for your Raspberry Pi. Preconfigured and requires the least amount of setup.

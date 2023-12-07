@@ -14,7 +14,7 @@ redirect_from: /remotemode
 Mainsail and MainsailOS respect [Data Privacy](../data-privacy). 
 {: .info}
 
-The hosted version of Mainsail can be used on the same local network with your printer or on a different remote to network and requires you to setup [remote access](../quicktips/remote-access).
+The hosted version of Mainsail can be used on the same local network with your printer or on a different remote network and requires you to setup [remote access](../quicktips/remote-access).
 
 ## Requirements
 
