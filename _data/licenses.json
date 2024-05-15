@@ -195,6 +195,12 @@
         "licenseUrl": "https://github.com/kazupon/vue-i18n/raw/master/LICENSE",
         "parents": "mainsail"
     },
+    "vue-inline-svg": {
+        "licenses": "MIT",
+        "repository": "https://github.com/shrpne/vue-inline-svg",
+        "licenseUrl": "https://github.com/shrpne/vue-inline-svg/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
     "vue-load-image": {
         "licenses": "MIT",
         "repository": "https://github.com/john015/vue-load-image",
