@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: New Mainsail-Documentation Repository
+    url: https://github.com/mainsail-crew/gb-docs
+    about: You can find the new Mainsail-Docs repository under this link.
+  - name: Create Mainsail-Documentation Issue
+    url: https://github.com/mainsail-crew/gb-docs/issues/new
+    about: Please click here to create an issue in the new repository.
+  - name: Mainsail Discord Server
+    url: https://discord.gg/mainsail
+    about: If you have questions or need general support, please visit us here.

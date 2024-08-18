@@ -65,16 +65,10 @@
         "licenseUrl": "https://github.com/Sindarius/npm_gcodeviewer",
         "parents": "mainsail"
     },
-    "@types/node": {
+    "@uiw/codemirror-theme-vscode": {
         "licenses": "MIT",
-        "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
-        "licenseUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped/raw/master/LICENSE",
-        "parents": "mainsail"
-    },
-    "@types/overlayscrollbars": {
-        "licenses": "MIT",
-        "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
-        "licenseUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped/raw/master/LICENSE",
+        "repository": "https://github.com/uiwjs/react-codemirror",
+        "licenseUrl": "https://github.com/uiwjs/react-codemirror",
         "parents": "mainsail"
     },
     "axios": {
@@ -95,6 +89,12 @@
         "licenseUrl": "https://github.com/zloirock/core-js/raw/master/LICENSE",
         "parents": "mainsail"
     },
+    "detect-browser": {
+        "licenses": "MIT",
+        "repository": "https://github.com/DamonOehlman/detect-browser",
+        "licenseUrl": "https://github.com/DamonOehlman/detect-browser/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
     "echarts-gl": {
         "licenses": "BSD",
         "repository": "https://github.com/ecomfe/echarts-gl",
@@ -105,6 +105,18 @@
         "licenses": "Apache-2.0",
         "repository": "https://github.com/apache/echarts",
         "licenseUrl": "https://github.com/apache/echarts/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
+    "hls.js": {
+        "licenses": "Apache-2.0",
+        "repository": "https://github.com/video-dev/hls.js",
+        "licenseUrl": "https://github.com/video-dev/hls.js/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
+    "jmuxer": {
+        "licenses": "UNKNOWN",
+        "repository": "https://github.com/samirkumardas/jmuxer",
+        "licenseUrl": "https://github.com/samirkumardas/jmuxer/raw/master/LICENSE",
         "parents": "mainsail"
     },
     "js-sha256": {
@@ -139,8 +151,8 @@
     },
     "regenerator-runtime": {
         "licenses": "MIT",
-        "repository": "https://github.com/facebook/regenerator/tree/master/packages/runtime",
-        "licenseUrl": "https://github.com/facebook/regenerator/tree/master/packages/runtime/raw/master/LICENSE",
+        "repository": "https://github.com/facebook/regenerator/tree/main/packages/runtime",
+        "licenseUrl": "https://github.com/facebook/regenerator/tree/main/packages/runtime/raw/master/LICENSE",
         "parents": "mainsail"
     },
     "resize-observer-polyfill": {
@@ -153,6 +165,10 @@
         "licenses": "ISC",
         "repository": "https://github.com/npm/node-semver",
         "licenseUrl": "https://github.com/npm/node-semver/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
+    "typed_janus_js": {
+        "licenses": "ISC",
         "parents": "mainsail"
     },
     "uuid": {
@@ -177,6 +193,12 @@
         "licenses": "MIT",
         "repository": "https://github.com/kazupon/vue-i18n",
         "licenseUrl": "https://github.com/kazupon/vue-i18n/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
+    "vue-inline-svg": {
+        "licenses": "MIT",
+        "repository": "https://github.com/shrpne/vue-inline-svg",
+        "licenseUrl": "https://github.com/shrpne/vue-inline-svg/raw/master/LICENSE",
         "parents": "mainsail"
     },
     "vue-load-image": {
