@@ -3,6 +3,8 @@
 site_name: Mainsail - The 3D Printer Interface
 site_url: https://docs.mainsail.xyz
 
+edit_uri: edit/docs/
+
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -177,6 +179,11 @@ plugins:
         - index.md
       repository: mainsail-crew/docs
 
+  - social:
+      cards_layout_options:
+        logo: docs/assets/logo.svg
+        #background_image: docs/assets/social-background.png
+        background_color: '#252525'
 
 repo_name: mainsail-crew/docs
 repo_url: https://github.com/mainsail-crew/docs
