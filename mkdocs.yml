@@ -3,6 +3,15 @@
 site_name: Mainsail - The 3D Printer Interface
 site_url: https://docs.mainsail.xyz
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mainsail-crew
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/mainsail
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@Mainsail-Crew
+
 nav:
   - Mainsail:
     - Welcome: index.md
