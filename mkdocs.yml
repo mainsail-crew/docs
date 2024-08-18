@@ -161,16 +161,39 @@ nav:
     - GitHub Discussions: getting-help/github-discussions.md
     - Reddit: getting-help/reddit.md
 
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
+      exclude:
+        - index.md
+      fallback_to_build_date: false
+      locale: en
+      type: timeago
+
+  - git-committers:
+      branch: mkdocs
+      enabled: !ENV [CI, false]
+      exclude:
+        - index.md
+      repository: mainsail-crew/docs
+
+
+repo_name: mainsail-crew/docs
+repo_url: https://github.com/mainsail-crew/docs
+
 theme:
   favicon: assets/favicon.png
   features:
+    - content.action.edit
     - navigation.path
     - navigation.sections
     - navigation.tabs
+  icon:
+    repo: fontawesome/brands/git-alt
   language: en
   logo: assets/logo.svg
   name: material
   palette:
     scheme: slate
-    primary: blue grey
+    primary: black
     accent: red
