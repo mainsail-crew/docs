@@ -17,6 +17,13 @@ extra:
 markdown_extensions:
   - attr_list
   - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 nav:
   - Mainsail:
@@ -198,6 +205,7 @@ theme:
   favicon: assets/favicon.png
   features:
     - content.action.edit
+    - content.code.copy
     - navigation.path
     - navigation.sections
     - navigation.tabs
