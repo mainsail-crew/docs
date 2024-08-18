@@ -1,10 +1,12 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
-site_name: Docs for Mainsail - the 3D Printer WebUI
+site_name: Mainsail - The 3D Printer Interface
 site_url: https://docs.mainsail.xyz
 
 theme:
+  favicon: assets/favicon.png
   language: en
+  logo: assets/logo.svg
   name: material
   palette:
     scheme: slate
