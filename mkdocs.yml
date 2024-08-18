@@ -14,6 +14,10 @@ extra:
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@Mainsail-Crew
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
 nav:
   - Mainsail:
     - Welcome: index.md
@@ -178,6 +182,8 @@ plugins:
       exclude:
         - index.md
       repository: mainsail-crew/docs
+
+  - glightbox
 
   - social:
       cards_layout_options:
