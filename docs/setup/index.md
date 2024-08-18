@@ -40,7 +40,7 @@ operating system image that includes Mainsail, Moonraker, Klipper, and all neces
 image onto an SD card, insert it into your SBC (like a Raspberry Pi), and you’re ready to go. This method is ideal for
 most users and offers a straightforward setup process.
 
-[Use MainsailOS](mainsailos/index.md){ .md-button .md-button--primary }
+[Use MainsailOS](/mainsailos/){ .md-button .md-button--primary }
 
 ### KIAUH (Klipper Install And Update Helper)
 
@@ -49,7 +49,7 @@ Debian-based device. It’s a versatile tool that allows you to customize your s
 installation process. This method is great for users who want a bit more flexibility without delving into manual
 installations.
 
-[Use KIAUH](setup/kiauh.md){ .md-button .md-button--primary }
+[Use KIAUH](kiauh.md){ .md-button .md-button--primary }
 
 ### Manual Installation
 
@@ -58,7 +58,7 @@ manually installing Mainsail, Moonraker, and Klipper. This method involves insta
 your system, configuring them, and ensuring that they work together. While this approach offers maximum customization,
 it is not recommended for most users due to its complexity.
 
-[Use manual installation](setup/manual.md){ .md-button .md-button--primary }
+[Use manual installation](manual.md){ .md-button .md-button--primary }
 
 ### Hosted Version (For Testing Only)
 
@@ -67,4 +67,4 @@ If you want to explore Mainsail without committing to an installation, you can u
 browser. However, please note that this option requires Moonraker and Klipper to be already installed on your printer,
 and it is not recommended for productive use as it is intended for testing and exploration purposes only.
 
-[Use my.mainsail.xyz](setup/mymainsail.md){ .md-button .md-button--primary }
+[Use my.mainsail.xyz](mymainsail.md){ .md-button .md-button--primary }
