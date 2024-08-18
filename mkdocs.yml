@@ -3,8 +3,161 @@
 site_name: Mainsail - The 3D Printer Interface
 site_url: https://docs.mainsail.xyz
 
+nav:
+  - Mainsail:
+    - Welcome: index.md
+
+    - Getting Started:
+      - Installation:
+        - Overview: setup/index.md
+        - MainsailOS: mainsailos/index.md
+        - KIAUH: setup/kiauh.md
+        - Docker: setup/docker.md
+        - Manual setup: setup/manual.md
+        - my.mainsail.xyz: setup/mymainsail.md
+      - Update:
+        - Update Manager: update/update-manager.md
+        - Manual Update: update/manual.md
+      - Configuration:
+        - Requirement: configuration/requirement.md
+        - config.json: settings/config-json.md
+
+    - Overview:
+      - Features:
+        - Bed Mesh: features/bed-mesh.md
+        - Console: features/console.md
+        - Dashboard Organisation: features/dashboard-organisation.md
+        - Exclude Objects: features/exclude-objects.md
+        - Hide Macros, outputs or fans: features/hide-macros-outputs-or-fans.md
+        - Localition: features/localization.md
+        - Macro Management: features/macro-management.md
+        - Macro Prompts: features/macro-prompts.md
+        - Presets: features/presets.md
+        - Print History and Statistics: features/print-history-and-statistics.md
+        - Query devices: features/query-devices.md
+        - Build-in Themes: features/buildin-themes.md
+        - Custom Themes:
+          - Overview: features/custom-themes/index.md
+          - Prepare: features/custom-themes/prepare.md
+          - Backgrounds: features/custom-themes/backgrounds.md
+          - Logos and Icons: features/custom-themes/logos-and-icons.md
+          - Custom Navigation: features/custom-themes/custom-navigation.md
+          - Custom CSS: features/custom-themes/custom-css.md
+          - Community Themes: features/custom-themes/community-themes.md
+        - Thumbnails: features/thumbnails.md
+        - Webcam: features/webcam.md
+      - Settings:
+        - General: settings/general.md
+        - Console: settings/console.md
+        - Control: settings/control.md
+        - Dashboard: settings/dashboard.md
+        - Editor: settings/editor.md
+        - G-Code Viewer: settings/gcode-viewer.md
+        - Macros: settings/macros.md
+        - Presets: settings/presets.md
+        - Printers: settings/printers.md
+        - UI-Settings: settings/ui-settings.md
+        - Webcams: settings/webcams.md
+
+    - Slicer:
+      - Cura: slicer/cura.md
+      - IdeaMaker: slicer/ideamaker.md
+      - PrusaSlicer: slicer/prusaslicer.md
+      - SuperSlicer: slicer/superslicer.md
+      - OrcaSlicer: slicer/orcaslicer.md
+
+    - Development:
+      - Code Standards: development/code-standards.md
+      - Contributing: development/contributing.md
+      - Development Setup: development/development-setup.md
+      - Localisation: development/localisation.md
+
+    - FAQ:
+      - General: faq/general.md
+      - Additional Sensors: faq/additional-sensors.md
+      - Disable Octoprint LCD menu: faq/disable-octoprint-lcd-menu.md
+      - Printer power switch: faq/printer-power-switch.md
+      - Remote Access: faq/remote-access.md
+      - Slicer upload: faq/slicer-upload.md
+
+      - Klipper warnings:
+        - Deprecated Options: faq/klipper_warnings/deprecated_options.md
+        - Deprecated Values: faq/klipper_warnings/deprecated_values.md
+        - Runtime Warnings: faq/klipper_warnings/runtime-warnings.md
+
+      - Moonraker warnings:
+        - PolicyKit Permissions: faq/moonraker_warnings/policykit-permissions.md
+
+      - Klipper errors:
+          - MCU Protocol error: faq/klipper_errors/command-format-mismatch
+    - About:
+      - Credits: credits.md
+      - Data Privacy: data-privacy.md
+      - License: license.md
+      - Sponsors: sponsors.md
+
+  # subpage for MainsailOS
+  - MainsailOS:
+    - Overview: mainsailos/index.md
+
+    - Getting started:
+      - Raspberry Pi: mainsailos/getting-started/raspberry-pi.md
+      - Armbian: mainsailos/getting-started/armbian.md
+      - First Boot: mainsailos/getting-started/first-boot.md
+
+    - FAQ:
+      - Change WiFi credentials: mainsailos/faq/change-wifi-credentials.md
+      - Enable Bluetooth on RPi: mainsailos/faq/enable-bluetooth-on-rpi.md
+
+  # subpage for Crowsnest
+  - Crowsnest:
+    - Overview: crowsnest/index.md
+
+    - Setup:
+      - Installation: crowsnest/setup/installation.md
+      - Uninstall: crowsnest/setup/uninstall.md
+
+    - Configuration:
+      - Sample config: crowsnest/configuration/sample-config.md
+      - '[crowsnest] section': crowsnest/configuration/crowsnest-section.md
+      - '[cam] section': crowsnest/configuration/cam-section.md
+
+    - Backends:
+      - Overview: crowsnest/backends/index.md
+      - µStreamer: crowsnest/backends/ustreamer.md
+      - camera-streamer: crowsnest/backends/camera-streamer.md
+
+    - FAQ:
+      - Upgrade from v3 to v4: crowsnest/faq/upgrade-from-v3-to-v4.md
+      - Use legacy branch on Buster: crowsnest/faq/use-legacy-branch-on-buster.md
+      - How to use identical USB Cam models twice?: crowsnest/faq/how-to-use-identical-usb-cam-models-twice.md
+      - How to setup Raspicam?: crowsnest/faq/how-to-setup-raspicam.md
+      - How to use WYZE-Cams?: crowsnest/faq/how-to-use-wyze-cams.md
+      - Error 127 in line 31: crowsnest/faq/error-127-in-line-31.md
+
+    - Extras:
+      - CustomPIOS Module: crowsnest/custompios-module.md
+      - Credits: crowsnest/credits.md
+
+  # subpage for Sonar
+  - Sonar:
+    - Overview: sonar/index.md
+    - Installation: sonar/installation.md
+    - Configuration: sonar/configuration.md
+
+  # subpage Getting Help
+  - Getting Help:
+    - Overview: getting-help/index.md
+    - Discord: getting-help/discord.md
+    - GitHub Discussions: getting-help/github-discussions.md
+    - Reddit: getting-help/reddit.md
+
 theme:
   favicon: assets/favicon.png
+  features:
+    - navigation.path
+    - navigation.sections
+    - navigation.tabs
   language: en
   logo: assets/logo.svg
   name: material
