@@ -40,7 +40,7 @@ operating system image that includes Mainsail, Moonraker, Klipper, and all neces
 image onto an SD card, insert it into your SBC (like a Raspberry Pi), and you’re ready to go. This method is ideal for
 most users and offers a straightforward setup process.
 
-[Use MainsailOS](/mainsailos/){ .md-button .md-button--primary }
+[Use MainsailOS](../mainsailos/index.md){ .md-button .md-button--primary }
 
 ### KIAUH (Klipper Install And Update Helper)
 
