@@ -134,8 +134,8 @@ Using Docker Compose simplifies the management of Docker containers by allowing 
 Docker applications. This guide will show you how to set up Mainsail using Docker Compose.
 
 1. **Create a `docker-compose.yml` file:**  
-    Start by creating a `docker-compose.yml` file in the directory where you want to run Mainsail. This file will define the
-    Mainsail service and how it interacts with your system.  
+    Start by creating a `docker-compose.yml` file in the directory where you want to run Mainsail. This file will define
+    the Mainsail service and how it interacts with your system.  
     Here’s an example of what the `docker-compose.yml` file might look like:
     ``` yaml
     services:
