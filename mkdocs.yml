@@ -15,8 +15,10 @@ extra:
       link: https://www.youtube.com/@Mainsail-Crew
 
 markdown_extensions:
+  - admonition
   - attr_list
   - md_in_html
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
