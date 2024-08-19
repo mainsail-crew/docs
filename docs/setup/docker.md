@@ -190,4 +190,5 @@ Docker applications. This guide will show you how to set up Mainsail using Docke
     docker compose up -d
     ```
     
-    Docker Compose will automatically pull the latest image, recreate the container, and start it using the updated version.
+    Docker Compose will automatically pull the latest image, recreate the container, and start it using the updated
+    version.
