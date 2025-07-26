@@ -13,7 +13,7 @@ Since PrusaSlicer v2.7.0, the slicer can generate fully compatible G-code withou
 
 ## PrusaSlicer v2.7.0 and newer
 
-First, you have to verify the G-code flavor setting in:
+First, verify the G-code flavor setting in:
 `Printer Settings > General > Firmware > G-code flavor`
 
 ![G-code Flavor Setting](../images/features/exclude-objects-gcode-flavor.png)
@@ -21,9 +21,15 @@ First, you have to verify the G-code flavor setting in:
 Next, you need to change the `Label Objects` setting to `Firmware-specific` in:
 `Print Settings > Output options > Output file > Label objects`
 
-![Label Objects Setting](../images/features/exclude-obcts-label-objects.png)
+![Label Objects Setting](../images/features/exclude-objects-label-objects.png)
 
-### Enable exclude_object module in Klipper
+## OrcaSlicer
+Verify the G-code flavor setting in:
+`Printer Settings > Basic Information > Advanced - G-code favlor`
+
+![G-code Favlor Setting Orca](../images/features/exclude-objects-gcode-flavor-orca.png)
+
+## Enable exclude_object module in Klipper
 
 Open your `printer.cfg` in Mainsail and add the following setting:
 
