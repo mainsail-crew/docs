@@ -55,7 +55,7 @@ nav:
         - Dashboard Organisation: features/dashboard-organisation.md
         - Exclude Objects: features/exclude-objects.md
         - Hide Macros, outputs or fans: features/hide-macros-outputs-or-fans.md
-        - Localition: features/localization.md
+        - Localization: features/localization.md
         - Macro Management: features/macro-management.md
         - Macro Prompts: features/macro-prompts.md
         - Presets: features/presets.md
