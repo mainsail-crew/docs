@@ -1,17 +1,16 @@
-# Welcome to MkDocs
+---
+title: Crowsnest
+description: Overview of what Crowsnest is.
+social:
+  cards_layout_options:
+    title: Crowsnest
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Crowsnest
 
-## Commands
+> A crow's nest is a structure in the upper part of the main mast of a ship or a structure that is used as a lookout point. [_Wikipedia_](https://en.wikipedia.org/wiki/Crow's\_nest)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Crowsnest is a webcam daemon for Raspberry Pi OS distributions like MainsailOS. The service got its name from the crow's nest of a sailing ship. Its purpose is to easily keep an eye on the 3D printer from the distance.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+!!! info
+    We are **only actively testing on Raspberry Pi OS/MainsailOS**. If you test it on other distributions, feel free to create a pull request for the readme, or contact us on Discord.
