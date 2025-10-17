@@ -46,7 +46,8 @@ nav:
         - Manual Update: update/manual.md
       - Configuration:
         - Requirement: configuration/requirement.md
-        - config.json: settings/config-json.md
+        - "Optional: Customization and Command Overrides": configuration/optional.md
+        - config.json: configuration/config-json.md
 
     - Overview:
       - Features:
