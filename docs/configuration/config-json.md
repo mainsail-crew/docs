@@ -42,29 +42,60 @@ A default file may look like this:
 
 ## Modes
 
-Mainsail supports three practical modes controlled by `instancesDB`.
+The `instancesDB` setting controls where Mainsail stores the list of your printers (Moonraker instances). This affects
+how Mainsail discovers printers on startup and how you can add more printers.
 
-### Default Mode (moonraker-managed)
+| Value | Storage Location | Use Case |
+|-------|------------------|----------|
+| `moonraker` | Moonraker database | Default for single printers or small setups |
+| `browser` | Browser (localStorage) | Remote access, each user has their own printer list |
+| `json` | config.json file | Farms, Docker, central Mainsail instances |
 
-This is the default behavior when Mainsail and Moonraker run on the same device. So the current URL will be used to 
-connect to Moonraker and if you add other printers, they will be stored in Moonraker's database. So Mainsail will
-connect automatically to the default printer on load and then, you can switch to another printer (you added before in
-the UI).
+### moonraker (Default)
 
-### Remote Mode (browser-managed)
+Mainsail connects automatically to the Moonraker instance specified by `hostname`, `port`, and `path`. If these values
+are empty or `null`, Mainsail uses the current browser URL to connect. Additional printers you add through the UI are
+stored in the Moonraker database.
 
-This is ideal when Mainsail runs independently of your printers (e.g., my.mainsail.xyz, Docker on a server/NAS) and you
-want to add printers from the UI dynamically.
+```json
+{
+  "instancesDB": "moonraker",
+  "hostname": "192.168.0.210",
+  "port": 7125,
+  "path": "/"
+}
+```
 
-- Set: `"instancesDB": "browser"`
-- Behavior: Mainsail shows a printer selection dialog on first load. Added printers are stored in the client browser.
+!!! warning "Limitations with multiple printers"
+    - Each printer must be manually added to every other printer's Moonraker database
+    - Works fine for 2-3 printers, but becomes impractical for printer farms
+    - Problematic with Docker setups: the primary printer must always be reachable for Mainsail to load the printer list
+    
+    For farms or Docker deployments, consider using `json` mode instead.
 
-### Remote Mode with fixed printers (JSON-managed)
+### browser
 
-Use this when you want a shared list of printers available to every browser without re-adding them on each device.
+Every time you open Mainsail, a printer selection dialog appears. You can add or remove printers in this dialog, and
+you must click on a printer to connect. The printer list is stored in your browser's localStorage.
 
-- Set: `"instancesDB": "json"`
-- Provide a list in `instances`:
+```json
+{
+  "instancesDB": "browser"
+}
+```
+
+!!! tip "When to use browser mode"
+    This mode is ideal when:
+    
+    - You don't need a fixed printer list
+    - Each user (browser) should have their own individual printer list
+    - You're using a shared Mainsail instance like my.mainsail.xyz
+
+### json (Recommended for Farms)
+
+Every time you open Mainsail, a printer selection dialog appears showing all configured printers and their availability
+status. You must click on a printer to connect. The printer list is defined in `config.json` and cannot be modified
+through the UI—all browsers see the same fixed list.
 
 ```json
 {
@@ -77,27 +108,11 @@ Use this when you want a shared list of printers available to every browser with
 }
 ```
 
-On load, Mainsail shows the selector with these predefined printers and indicates which are reachable. You can also use
-the name for a direct link for example: `http://mainsail.local/?printer=printer2`.
+You can also link directly to a specific printer: `http://mainsail.local/?printer=printer2`
 
-### Fixed socket settings (direct connect)
-
-Less common but supported: connect immediately to a specific Moonraker regardless of the URL you used to access Mainsail.
-
-- Set: `"instancesDB": "moonraker"`
-- Set a `hostname`, `port` and optional `path`:
-
-```json
-{
-  "defaultLocale": "en",
-  "instancesDB": "moonraker",
-  "hostname": "192.168.0.210",
-  "port": 7125,
-  "path": "/"
-}
-```
-
-Mainsail connects directly without showing the printer selection dialog.
+!!! tip "When to use json mode"
+    This mode is ideal for printer farms, Docker deployments, or any setup where you want a centrally managed printer
+    list that all users share.
 
 ## File location and Docker
 
