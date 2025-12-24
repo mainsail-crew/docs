@@ -8,6 +8,8 @@ Start typing your command in the console input field. To submit, press Enter or 
 
 Use the `TAB` key to auto-complete commands. If multiple options are available, a list will appear—click on a command to select it, or continue typing and press `TAB` again to refine the suggestion.
 
+On touchscreen devices, a double-arrow icon appears next to the input field. Tap it to trigger auto-complete—this replaces the `TAB` key functionality, which is not available without a physical keyboard.
+
 ![Console Tab Mobile](../images/features/console-tab.avif)
 
 ## Find commands
