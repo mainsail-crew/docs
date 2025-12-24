@@ -60,6 +60,7 @@ social:
 ```
 
 ### Markdown Conventions
+- **Line length**: Maximum 120 characters per line (except frontmatter)
 - **Headings**: `# H1` for page title, `## H2` for sections
 - **Internal links**: `[Text](../path/to/file.md)` (relative paths)
 - **External links**: `[Text](https://example.com){:target="_blank"}`
