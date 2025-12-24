@@ -1,3 +1,11 @@
+---
+title: Console
+description: Send G-code commands and Klipper macros directly to your printer with auto-complete, command reference, and customizable output filters.
+social:
+  cards_layout_options:
+    title: Console
+---
+
 # Console
 
 The console is your direct interface to communicate with Klipper. Send G-code commands, execute macros, and view responses in real-time. With features like auto-complete, a built-in command reference, and customizable output filters, the console helps you interact with your printer efficiently. Access it from the dashboard panel or the dedicated console page in the sidebar.
