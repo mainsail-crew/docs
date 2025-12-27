@@ -1,10 +1,26 @@
-# Hide macros, outputs or fans
+---
+title: Hide Macros, Outputs, or Fans
+description: Learn how to hide G-Code macros, output pins, and fans from the
+  Mainsail interface using underscore prefixes or interface settings.
+social:
+  cards_layout_options:
+    title: Hide Macros, Outputs, or Fans
+---
 
-You can show and hide G-Code macros in the interface settings. Did you know that you can also hide G-Code macros by prefixing the name with an underscore?
+# Hide Macros, Outputs, or Fans
 
-You can control the visibility of G-Code macros directly from the **Interface Settings**. Alternatively, to hide a macro, simply prefix its name with an underscore (`_`).
+Mainsail displays all configured G-Code macros, fans, and outputs in the interface by default.
+You can hide specific items by prefixing their name with an underscore (`_`), or by adjusting
+visibility in the interface settings.
 
-```yaml
+## Underscore Prefix
+
+Any configuration section with a name starting with an underscore (`_`) is automatically hidden
+from the Mainsail interface. This works for G-Code macros, fans, and output pins.
+
+### Macros
+
+```ini
 [gcode_macro MY_AWESOME_GCODE]
 gcode:
     _MY_HELPER_CODE
@@ -14,20 +30,39 @@ gcode:
     M300
 ```
 
-`MY_AWESOME_GCODE` appears in your interface, `_MY_HELPER_CODE` does not.
+`MY_AWESOME_GCODE` appears in the interface, while `_MY_HELPER_CODE` is hidden.
 
 ![Macro Interface Example](../images/features/hide-macros-macro-ui.png)
 
-!!! information
-    This also works for other configuration sections including fans and outputs.
+### Fans and Outputs
 
-## `rename_existing` Macros
+The same method works for fans and output pins:
 
-All `gcode_macros` that include the `rename_existing` attribute are automatically hidden in Mainsail. This is because they override default Klipper G-codes, which are already integrated into Mainsail through built-in interface buttons.
+```ini
+[fan_generic _chamber_fan]
+pin: PA0
 
-For example, the `PAUSE` macro in the `mainsail.cfg`:
+[output_pin _status_led]
+pin: PA1
+```
 
-```yaml
+Both `_chamber_fan` and `_status_led` are hidden from the interface.
+
+## Interface Settings
+
+You can also control the visibility of macros through the
+[Macros Settings](../settings/macros.md). This allows you to show or hide macros without
+renaming them in your configuration.
+
+## rename_existing Macros
+
+Macros that use the `rename_existing` attribute are automatically hidden in Mainsail. These
+macros override default Klipper G-codes, which are already accessible through built-in
+interface buttons.
+
+For example, the `PAUSE` macro in `mainsail.cfg`:
+
+```ini
 [gcode_macro PAUSE]
 description: Pause the actual running print
 rename_existing: PAUSE_BASE
@@ -35,3 +70,6 @@ gcode:
     PAUSE_BASE
     _TOOLHEAD_PARK_PAUSE_CANCEL
 ```
+
+Since `PAUSE` overrides the built-in Klipper command, Mainsail hides it from the macro list.
+The pause functionality remains available through the interface's pause button.
