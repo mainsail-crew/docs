@@ -26,5 +26,5 @@ In the **General (1)** section, select your preferred language from the dropdown
 ## Contributing Translations
 
 Missing a translation or found an incorrect one? You are welcome to help improve Mainsail's
-translations. See the [Localization Guide](../development/localization.md) for instructions on
+translations. See the [Localization Guide](/development/localization/) for instructions on
 how to contribute.

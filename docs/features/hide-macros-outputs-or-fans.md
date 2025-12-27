@@ -51,7 +51,7 @@ Both `_chamber_fan` and `_status_led` are hidden from the interface.
 ## Interface Settings
 
 You can also control the visibility of macros through the
-[Macros Settings](../settings/macros.md). This allows you to show or hide macros without
+[Macros Settings](/settings/macros/). This allows you to show or hide macros without
 renaming them in your configuration.
 
 ## rename_existing Macros
