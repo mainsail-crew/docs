@@ -130,6 +130,26 @@ path: ~/printer_data/gcodes
 - Numbered lists for step-by-step instructions
 - Include screenshots for UI elements
 
+## Mainsail UI Terminology
+
+Use consistent terminology when referring to Mainsail UI elements:
+
+| Element | Correct Term | Description |
+|---------|--------------|-------------|
+| Settings Dialog | **Interface Settings** | The dialog opened via the cogs icon |
+| Settings Button | **cogs icon** | Two gear wheels in the top-right corner |
+| Settings Sections | e.g., "General", "Macros", "Presets" | Tabs within Interface Settings |
+
+### Examples
+
+```markdown
+<!-- Correct -->
+Open the **Interface Settings** by clicking the **cogs icon** in the top-right corner.
+
+<!-- Incorrect -->
+Open the settings by clicking the gear icon in the sidebar.
+```
+
 ## Common Tasks
 
 ### Adding a New Page
