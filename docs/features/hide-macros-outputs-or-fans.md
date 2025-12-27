@@ -11,7 +11,7 @@ social:
 
 Mainsail displays all configured G-Code macros, fans, and outputs in the interface by default.
 You can hide specific items by prefixing their name with an underscore (`_`), or by adjusting
-visibility in the interface settings.
+visibility in the **Interface Settings**.
 
 ## Underscore Prefix
 

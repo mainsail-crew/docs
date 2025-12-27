@@ -14,8 +14,8 @@ switch between languages in the interface settings.
 
 ## Select Language
 
-To change the language, open the **Interface Settings** by clicking the **gear icon** in the
-sidebar.
+To change the language, open the **Interface Settings** by clicking the **cogs icon** in the
+top-right corner.
 
 ![Open Settings Menu](../images/features/localization-settings-menu.avif)
 
