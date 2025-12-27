@@ -65,7 +65,7 @@ nav:
         - Presets: features/presets.md
         - Print History and Statistics: features/print-history-and-statistics.md
         - Query devices: features/query-devices.md
-        - Build-in Themes: features/buildin-themes.md
+        - Built-in Themes: features/built-in-themes.md
         - Custom Themes:
           - Overview: features/custom-themes/index.md
           - Prepare: features/custom-themes/prepare.md
