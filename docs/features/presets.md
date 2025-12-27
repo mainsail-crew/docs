@@ -1,24 +1,23 @@
+---
+title: Presets
+description: Create presets in Mainsail for preheating, cooling down, and
+  executing custom G-Code commands with a single click.
+social:
+  cards_layout_options:
+    title: Presets
+---
+
 # Presets
 
-Mainsail supports **presets**, which can be used for preheating, cooling down, and executing G-Code commands.
+Presets allow you to save temperature settings and G-Code commands for quick access. Use them
+for preheating your printer with filament-specific temperatures, cooling down after a print,
+or executing custom G-Code sequences with a single click.
 
+## Features
 
-## Setup
+- **Preheat**: Set temperatures for extruder, heated bed, and other heaters
+- **Cooldown**: Quickly turn off all heaters with a single click
+- **Custom G-Code**: Execute additional commands after setting temperatures
+- **Multiple Presets**: Create different presets for various filament types or workflows
 
-Open Mainsail’s **Settings** and navigate to the **Preheat Presets** section. Here, you can create custom presets by clicking **ADD PRESET**.
-
-## Preheat
-
-Enter a name for your preset—usually the filament type, color, or any other descriptive text. Then, set the desired temperatures. You can disable individual heaters if needed and provide custom G-code. After setting the selected temperatures, the G-Code will be executed.
-
-![Preheat Preset Configuration](../images/features/preset-preheat.png)
-
-## Further Examples
-
-### Z-Offset
-
-You can add custom G-Code to easily switch between different Z-offsets, making it more convenient to work with various surfaces.
-
-To configure the G-Code, use the command `SET_GCODE_OFFSET Z=0.2`, replacing `0.2` with the Z-offset value you require.
-
-![Z-Offset Preset Example](../images/features/preset-zoffset.png)
+For detailed configuration, see the [Presets Settings](/settings/presets/) page.
