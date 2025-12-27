@@ -75,7 +75,7 @@ nav:
           - Custom CSS: features/custom-themes/custom-css.md
           - Community Themes: features/custom-themes/community-themes.md
         - Thumbnails: features/thumbnails.md
-        - Webcam: features/webcam.md
+        - Webcams: features/webcams.md
       - Settings:
         - General: settings/general.md
         - Console: settings/console.md
