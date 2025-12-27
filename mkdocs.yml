@@ -100,7 +100,7 @@ nav:
       - Code Standards: development/code-standards.md
       - Contributing: development/contributing.md
       - Development Setup: development/development-setup.md
-      - Localisation: development/localisation.md
+      - Localization: development/localization.md
 
     - FAQ:
       - General: faq/general.md
