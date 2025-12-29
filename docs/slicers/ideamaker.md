@@ -27,7 +27,7 @@ previews in Mainsail, enable the built-in thumbnail option in your printer setti
     The thumbnail width and height must be equal. Non-square resolutions are not
     supported.
 
-![IdeaMaker Thumbnail Settings](../images/slicer/ideamaker-thumbnails.png)
+![IdeaMaker Thumbnail Settings](../images/slicers/ideamaker-thumbnails.png)
 
 <figure markdown="span">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/EbtLn3bDs5I"
