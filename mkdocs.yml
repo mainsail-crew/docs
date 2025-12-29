@@ -87,13 +87,12 @@ nav:
         - Printers: settings/printers.md
         - UI-Settings: settings/ui-settings.md
         - Webcams: settings/webcams.md
-
-    - Slicer:
-      - Cura: slicer/cura.md
-      - IdeaMaker: slicer/ideamaker.md
-      - PrusaSlicer: slicer/prusaslicer.md
-      - SuperSlicer: slicer/superslicer.md
-      - OrcaSlicer: slicer/orcaslicer.md
+      - Slicers:
+        - Cura: slicers/cura.md
+        - IdeaMaker: slicers/ideamaker.md
+        - PrusaSlicer: slicers/prusaslicer.md
+        - SuperSlicer: slicers/superslicer.md
+        - OrcaSlicer: slicers/orcaslicer.md
 
     - Development:
       - Code Standards: development/code-standards.md
