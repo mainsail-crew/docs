@@ -88,11 +88,12 @@ nav:
         - UI-Settings: settings/ui-settings.md
         - Webcams: settings/webcams.md
       - Slicers:
+        - Overview: slicers/index.md
         - Cura: slicers/cura.md
         - IdeaMaker: slicers/ideamaker.md
+        - OrcaSlicer: slicers/orcaslicer.md
         - PrusaSlicer: slicers/prusaslicer.md
         - SuperSlicer: slicers/superslicer.md
-        - OrcaSlicer: slicers/orcaslicer.md
 
     - Development:
       - Code Standards: development/code-standards.md
