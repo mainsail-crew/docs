@@ -30,7 +30,7 @@ To display thumbnail previews in Mainsail, you need to add a post-processing scr
     The thumbnail size must be square (equal width and height). Non-square resolutions
     will cause Cura to squeeze the thumbnail.
 
-![Cura Thumbnail Post-Processing](../images/slicer/cura-thumbnail-postprocessing.png)
+![Cura Thumbnail Post-Processing](../images/slicers/cura-thumbnail-postprocessing.png)
 
 ## Direct Upload
 
@@ -55,7 +55,7 @@ plugin.
 | **Address (URL)** | Your Mainsail address, e.g., `http://mainsail.local/` |
 | **Camera URL** (optional) | Your webcam stream, e.g., `http://mainsail.local/webcam/stream` |
 
-![Moonraker Connection Configuration](../images/slicer/cura-moonraker-connection.jpg)
+![Moonraker Connection Configuration](../images/slicers/cura-moonraker-connection.jpg)
 
 ## G-Code Preprocessing
 
@@ -75,7 +75,7 @@ The **Klipper Preprocessor** script adds support for:
   (Exclude Objects)
 - **Time estimation** - Improves print time accuracy using klipper_estimator
 
-![Klipper Preprocessor Configuration](../images/slicer/cura-klipper-preprocessor.png)
+![Klipper Preprocessor Configuration](../images/slicers/cura-klipper-preprocessor.png)
 
 ### Installation
 
