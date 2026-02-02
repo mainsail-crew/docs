@@ -8,14 +8,6 @@ social:
 
 # [crowsnest] section
 
-## **log_path**
-
-The path where Crowsnest stores its log file.  
-Default: `log_path: ~/printer_data/logs/crowsnest.log`
-
-!!! warning
-    This path is set during installation. If you change it afterwards, the log file at the old location will not be removed!!!
-
 ## **log_level**
 
 Defines how much information should be written to the log file.  
@@ -59,18 +51,18 @@ Available options:
     log_level: debug
     ```
 
-    Shows all information from 'verbose', plus startup parameters (and defaults), and the output of the selected streamer.  
+    Includes all 'verbose' information, plus startup parameters (and defaults) and streamer output.  
     Use only for debugging and turn off when not needed.
 
 !!! info
-    After configuring to your needs, consider setting to `quiet` to minimize logging.
+    Once configured, consider setting `log_level` to `quiet` to minimize disk usage.
 
 ## **delete_log**
 
 Default: `delete_log: false`
 
 If set to `true`, the existing log file will be deleted every time Crowsnest restarts.  
-This can help diagnose issues, as the log will contain only information since the latest restart.
+This can help diagnose issues, as the log will contain only information from the latest restart.
 
 !!! info
     This is useful if you ask for help in Discord Forums.
@@ -78,6 +70,6 @@ This can help diagnose issues, as the log will contain only information since th
 
 ## **no_proxy**
 
-If set to `true`, forces all streamer to listen on all available network interfaces.
+If set to `true`, this forces all streamers to listen on all available network interfaces.
 
-Useful if you want to use Crowsnest in 'standalone' mode. Not recommended if you used MainsailOS or KIAUH to set up.
+This is useful if you want to use Crowsnest in 'standalone' mode. It is not recommended if you used MainsailOS or KIAUH for setup.

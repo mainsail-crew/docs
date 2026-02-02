@@ -8,7 +8,7 @@ social:
 
 # [cam] section
 
-You have to create a `[cam]` section for each camera and name your cameras by placing the name inside the square brackets.
+Create a `[cam <name>]` section for each camera. Replace `<cam>` with a meaningful name.
 
 ```ini
 [cam raspi]
@@ -21,8 +21,7 @@ mode: ustreamer
 ```
 
 !!! danger ""
-    The word `cam` must be set!  
-    This is a keyword to determine that this section belongs to a camera setup.
+    `cam` is a required keyword to identify camera configurations.
 
 ## **mode**
 
@@ -37,12 +36,16 @@ Available options:
 ??? note "camera-streamer"
     This mode uses [camera-streamer](https://github.com/ayufan/camera-streamer) as the backend.
 
-    camera-streamer is only available on Raspberry Pi's, excluding the Pi 5.  
-    The biggest advantage of camera-streamer is that it uses the inbuilt GPU of the Pi SBC to deliver hardware-encoded H.264 as the format. This allows you to stream your video feed in WebRTC, which uses less bandwidth without sacrificing quality, framerate, or resolution.  
+    camera-streamer is available on all devices but with different feature set depending on the device. More information can be found [here](../faq/backends.md#camera-streamer-ayufan).  
+    `camera-streamer` leverages the Pi SBC's GPU for hardware-encoded H.264 streams. This allows you to stream your video feed in WebRTC, which uses less bandwidth without sacrificing quality, framerate, or resolution.  
     <!-- It also simultaneously provides RTSP streaming (if enabled through `enable_rtsp: true`), MJPG, and snapshots. -->
 
-<!-- TODO Spyglass -->
+??? note "spyglass"
+    This mode uses [spyglass](https://github.com/mainsail-crew/spyglass) as the backend, proividing support for Picameras on Raspberry Pi SBCs.
 
+    spyglass is only available on Raspberry Pi's and only for Picameras.  
+    Being maintained by our team allows for faster issue resolution without external dependencies.  
+    It also supports Picameras on a Pi5, but you should adjust your config according to [this](../faq/backends.md#spyglass-mainsail-crew).
 <!--
 ## enable_rtsp
 
@@ -65,7 +68,7 @@ This setting allows you to set a port for the RTSP server. Only available with `
 The network port through which the camera is accessible. This setting only affects MJPG mode (ustreamer).  
 Default: `port: 8080`
 
-**Note:** In MainsailOS, by default, four webcam ports are mapped to URLs. Notice that the first URL doesn't contain a number. You can simply add these to the Mainsail settings.
+**Note:** MainsailOS maps four webcam ports to URLs by default. Note that the first URL has no number. You can simply add these to the Mainsail settings.
 
 | Port | Stream URL              | Snapshot URL              |
 | ---- | ----------------------- | ------------------------- |
@@ -76,12 +79,8 @@ Default: `port: 8080`
 
 ### A small note on WebRTC
 
-To use `WebRTC`, replace `?action=stream` with `webrtc`. This will only work if you use `mode: camera-streamer`.
+If you want to use WebRTC, you can find an example [here](../faq/webrtc.md).
 
-!!! warning
-    Don't change the `URL Snapshot`! This will be the same as before.
-
-![image1](image1) <!-- TODO -->
 
 ## **device**
 
@@ -105,7 +104,7 @@ Default: `resolution: 640x480`
 **Note:** This is case sensitive! Do not use a capital 'X'.
 
 !!! info
-    The resolution has a big impact on bandwidth, especially in MJPG mode.
+    Resolution significantly impacts bandwidth, especially in MJPG mode.
 
 You can determine which resolutions are supported by your device by checking the `crowsnest.log`.
 
@@ -157,9 +156,9 @@ You can determine what your device is capable of by checking the `crowsnest.log`
     ...
     ```
 
-### **Example of an application**
+### **Example Application**
 
-A Logitech C920 camera has autofocus activated by default. To get a nice picture, manual focus should be activated. In Crowsnest you can simply specify these options in the config:
+A Logitech C920 camera has autofocus activated by default. For better image quality, enable manual focus. Specify these options in the config:
 
 <!-- TODO -->
 ```ini

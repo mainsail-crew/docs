@@ -24,7 +24,7 @@ After the uninstallation is complete, follow these additional steps to fully rem
    ```
 
 2. **Remove the Update Manager section from your `moonraker.conf`**  
-   Open your `moonraker.conf` file and delete the `[update_manager crowsnest]` section
+   Remove the `[update_manager crowsnest]` section from `moonraker.conf`.
 
 3. **Reboot your system**  
    This ensures all changes take effect and any remaining services are stopped:
