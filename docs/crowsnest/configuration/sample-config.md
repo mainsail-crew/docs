@@ -8,7 +8,7 @@ social:
 
 # Sample config
 
-During the installation of Crowsnest, a sample configuration file named `crowsnest.conf` is created in the `printer_data/config` folder. In Mainsail, you can edit this file in the config section.
+Crowsnest installation creates a `crowsnest.conf` sample in `printer_data/config`. In Mainsail, you can edit this file in the config section.
 
 Crowsnest will start automatically with the settings specified in the configuration file if a camera is attached.
 
