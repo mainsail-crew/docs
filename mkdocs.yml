@@ -49,7 +49,7 @@ nav:
         - Manual Update: update/manual.md
       - Configuration:
         - Requirement: configuration/requirement.md
-        - "Optional: Customization and Command Overrides": configuration/optional.md
+        - Optional Customization: configuration/optional.md
         - config.json: configuration/config-json.md
 
     - Overview:
