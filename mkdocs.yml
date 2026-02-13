@@ -200,6 +200,7 @@ plugins:
   - glightbox
 
   - social:
+      enabled: !ENV [CI, false]
       cards_layout_options:
         logo: docs/assets/logo.svg
         #background_image: docs/assets/social-background.png
