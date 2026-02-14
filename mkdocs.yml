@@ -48,8 +48,7 @@ nav:
         - Update Manager: update/update-manager.md
         - Manual Update: update/manual.md
       - Configuration:
-        - Requirement: configuration/requirement.md
-        - Optional Customization: configuration/optional.md
+        - mainsail.cfg: configuration/mainsail-cfg.md
         - config.json: configuration/config-json.md
 
     - Overview:
@@ -103,8 +102,7 @@ nav:
 
     - FAQ:
       - General: faq/general.md
-      - Additional Sensors: faq/additional-sensors.md
-      - Disable Octoprint LCD menu: faq/disable-octoprint-lcd-menu.md
+      - printer.cfg Snippets: faq/printer-cfg-snippets.md
       - Printer power switch: faq/printer-power-switch.md
       - Remote Access: faq/remote-access.md
       - Slicer upload: faq/slicer-upload.md
