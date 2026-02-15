@@ -47,12 +47,6 @@
         "licenseUrl": "https://github.com/codemirror/view/raw/master/LICENSE",
         "parents": "mainsail"
     },
-    "@intlify/unplugin-vue-i18n": {
-        "licenses": "MIT",
-        "repository": "https://github.com/intlify/bundle-tools",
-        "licenseUrl": "https://github.com/intlify/bundle-tools/raw/master/LICENSE",
-        "parents": "mainsail"
-    },
     "@jaames/iro": {
         "licenses": "MPL-2.0",
         "repository": "https://github.com/jaames/iro.js",
