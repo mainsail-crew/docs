@@ -3,7 +3,10 @@
 site_name: Mainsail - The 3D Printer Interface
 site_url: https://docs.mainsail.xyz
 
-edit_uri: edit/docs/
+edit_uri: https://github.com/mainsail-crew/docs/edit/docs/
+
+hooks:
+  - hooks/repo_per_section.py
 
 extra:
   social:
@@ -208,8 +211,8 @@ plugins:
         #background_image: docs/assets/social-background.png
         background_color: '#252525'
 
-repo_name: mainsail-crew/docs
-repo_url: https://github.com/mainsail-crew/docs
+repo_name: mainsail-crew/mainsail
+repo_url: https://github.com/mainsail-crew/mainsail
 
 theme:
   favicon: assets/favicon.png
