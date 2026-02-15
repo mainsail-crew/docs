@@ -81,6 +81,7 @@ nav:
         - Dashboard: settings/dashboard.md
         - Editor: settings/editor.md
         - G-Code Viewer: settings/gcode-viewer.md
+        - Heightmap: settings/heightmap.md
         - Macros: settings/macros.md
         - Presets: settings/presets.md
         - Printers: settings/printers.md
