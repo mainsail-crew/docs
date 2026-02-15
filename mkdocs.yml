@@ -224,3 +224,6 @@ theme:
     scheme: slate
     primary: black
     accent: red
+
+extra_css:
+  - stylesheets/extra.css
