@@ -67,3 +67,8 @@ tmp
 # IDEs & Editors
 .idea
 *~
+
+# Agent directories
+.claude
+.opencode
+.pi
