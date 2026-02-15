@@ -46,6 +46,8 @@ graph TD
     sys{What system are you using?}
     sys -- Raspberry Pi --> pi{Which type of camera?};
     sys -- Other system --> other[ustreamer];
-    pi -- USB --> usb[camera-streamer];
     pi -- Picamera --> picam[spyglass];
+    pi -- USB --> pi5{Is it a Pi 5?}
+    pi5 -- No --> no_pi5[camera-streamer];
+    pi5 -- Yes --> yes_pi5[ustreamer]
 ```
