@@ -83,6 +83,7 @@ nav:
         - G-Code Viewer: settings/gcode-viewer.md
         - Heightmap: settings/heightmap.md
         - Macros: settings/macros.md
+        - Miscellaneous: settings/miscellaneous.md
         - Navigation: settings/navigation.md
         - Presets: settings/presets.md
         - Printers: settings/printers.md
