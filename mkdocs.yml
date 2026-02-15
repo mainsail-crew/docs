@@ -87,6 +87,7 @@ nav:
         - Navigation: settings/navigation.md
         - Presets: settings/presets.md
         - Printers: settings/printers.md
+        - Timelapse: settings/timelapse.md
         - UI-Settings: settings/ui-settings.md
         - Webcams: settings/webcams.md
       - Slicers:
