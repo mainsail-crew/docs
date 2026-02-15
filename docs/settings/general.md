@@ -9,8 +9,7 @@ social:
 
 # General Settings
 
-Open the **Interface Settings** by clicking the **cogs icon** in the top-right corner, then
-navigate to **General**.
+Open the **Interface Settings** by clicking the **cogs icon** in the top-right corner, then navigate to **General**.
 
 <figure markdown="span">
   ![General Settings](../images/settings/general.png)
