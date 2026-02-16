@@ -23,6 +23,27 @@ To display thumbnail previews in Mainsail, you need to configure the G-code flav
   ![OrcaSlicer - Printer Settings](../images/slicers/orcaslicer-printer-settings.png)
 </figure>
 
+## Layer Information
+
+To have Slicer based layer information displayed in Mainsail, you have to add some lines of G-Code to the Slicer
+Printer Settings. Open the **Printer Settings** (the button behind the printer dropdown in the top of the sidebar) and
+then **Machine G-code** and set these lines of G-Code:
+
+1. Start G-Code (before your start G-Code):
+  ```
+  SET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]
+  ```
+
+2. End G-Code (at the last line):
+  ```
+  ; total layers count = [total_layer_count]
+  ```
+
+3. After layer change G-Code:
+  ```
+  SET_PRINT_STATS_INFO CURRENT_LAYER={layer_num + 1}
+  ```
+
 ## Exclude Objects
 
 OrcaSlicer has native support for Klipper's Exclude Objects feature and adds the necessary G-Codes to the generated

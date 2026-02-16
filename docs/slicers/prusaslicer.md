@@ -22,6 +22,26 @@ thumbnail settings in PrusaSlicer.
 
 ![PrusaSlicer Thumbnail Settings](../images/slicers/prusaslicer-thumbnail-settings.png)
 
+## Layer Information
+
+To have Slicer based layer information displayed in Mainsail, you have to add some lines of G-Code to the Slicer
+Printer Settings. Open the **Printers** Tab (in the topbar) and then **Custom G-code** set these lines of G-Code:
+
+1. Start G-Code (before your start G-Code):
+  ```
+  SET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]
+  ```
+
+2. End G-Code (at the last line):
+  ```
+  ; total layers count = [total_layer_count]
+  ```
+
+3. After layer change G-Code:
+  ```
+  SET_PRINT_STATS_INFO CURRENT_LAYER={layer_num + 1}
+  ```
+
 ## Exclude Objects
 
 PrusaSlicer 2.7.0 and newer supports native object labeling for Klipper's Exclude Objects

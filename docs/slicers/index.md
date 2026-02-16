@@ -25,4 +25,3 @@ Proper setup enables features that enhance your printing experience.
 - [IdeaMaker](ideamaker.md)
 - [OrcaSlicer](orcaslicer.md)
 - [PrusaSlicer](prusaslicer.md)
-- [SuperSlicer](superslicer.md)
