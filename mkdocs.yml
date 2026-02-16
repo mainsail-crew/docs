@@ -99,7 +99,6 @@ nav:
         - IdeaMaker: slicers/ideamaker.md
         - OrcaSlicer: slicers/orcaslicer.md
         - PrusaSlicer: slicers/prusaslicer.md
-        - SuperSlicer: slicers/superslicer.md
 
     - Development:
       - Code Standards: development/code-standards.md
