@@ -71,7 +71,7 @@ provide feedback to help make Mainsail even better.
 [GitHub Issues](https://github.com/mainsail-crew/mainsail/issues?q=sort:updated-desc+is:issue+is:open) page. Your input
 helps us prioritize and address the most important aspects of the project.
 - **Contribute Code:** If you’re a developer, consider contributing to the project by reviewing our
-[Code Standards](development/code-standards.md) and submitting pull requests. Every contribution, no matter how small,
+[Contributing Guide](development/contributing.md) and submitting pull requests. Every contribution, no matter how small,
 is valuable and appreciated.
 - **Donate:** If you’d like to support the project financially, you can make a donation via
 [GitHub Sponsors](https://github.com/sponsors/mainsail-crew), [Patreon](https://www.patreon.com/meteyou) or
