@@ -120,7 +120,7 @@ nav:
         - PolicyKit Permissions: faq/moonraker_warnings/policykit-permissions.md
 
       - Klipper errors:
-          - MCU Protocol error: faq/klipper_errors/command-format-mismatch
+          - MCU Protocol error: faq/klipper_errors/command-format-mismatch.md
     - About:
       - Credits: credits.md
       - Data Privacy: data-privacy.md
