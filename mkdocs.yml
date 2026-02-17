@@ -2,6 +2,7 @@
 
 site_name: Mainsail - The 3D Printer Interface
 site_url: https://docs.mainsail.xyz
+use_directory_urls: true
 
 edit_uri: https://github.com/mainsail-crew/docs/edit/docs/
 
