@@ -101,7 +101,6 @@ nav:
         - PrusaSlicer: slicers/prusaslicer.md
 
     - Development:
-      - Code Standards: development/code-standards.md
       - Contributing: development/contributing.md
       - Development Setup: development/development-setup.md
       - Localization: development/localization.md
