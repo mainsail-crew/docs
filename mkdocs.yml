@@ -58,7 +58,15 @@ nav:
     - Overview:
       - Features:
         - Bed Mesh: features/bed-mesh.md
+        - Built-in Themes: features/built-in-themes.md
         - Console: features/console.md
+        - Custom Themes:
+          - Overview: features/custom-themes.md
+          - Backgrounds: features/custom-themes/backgrounds.md
+          - Community Themes: features/custom-themes/community-themes.md
+          - Custom CSS: features/custom-themes/custom-css.md
+          - Custom Navigation: features/custom-themes/custom-navigation.md
+          - Logos and Icons: features/custom-themes/logos-and-icons.md
         - Dashboard Organisation: features/dashboard-organisation.md
         - Exclude Objects: features/exclude-objects.md
         - Hide Macros, outputs or fans: features/hide-macros-outputs-or-fans.md
@@ -67,17 +75,9 @@ nav:
         - Macro Prompts: features/macro-prompts.md
         - Presets: features/presets.md
         - Print History and Statistics: features/print-history-and-statistics.md
-        - Query devices: features/query-devices.md
-        - Built-in Themes: features/built-in-themes.md
-        - Custom Themes:
-          - Overview: features/custom-themes.md
-          - Backgrounds: features/custom-themes/backgrounds.md
-          - Logos and Icons: features/custom-themes/logos-and-icons.md
-          - Custom Navigation: features/custom-themes/custom-navigation.md
-          - Custom CSS: features/custom-themes/custom-css.md
-          - Community Themes: features/custom-themes/community-themes.md
-        - Thumbnails: features/thumbnails.md
         - Printer Power Device: features/printer-power-device.md
+        - Query devices: features/query-devices.md
+        - Thumbnails: features/thumbnails.md
         - Webcams: features/webcams.md
       - Settings:
         - General: settings/general.md
