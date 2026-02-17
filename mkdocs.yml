@@ -77,6 +77,7 @@ nav:
           - Custom CSS: features/custom-themes/custom-css.md
           - Community Themes: features/custom-themes/community-themes.md
         - Thumbnails: features/thumbnails.md
+        - Printer Power Device: features/printer-power-device.md
         - Webcams: features/webcams.md
       - Settings:
         - General: settings/general.md
@@ -108,7 +109,6 @@ nav:
 
     - FAQ:
       - printer.cfg Snippets: faq/printer-cfg-snippets.md
-      - Printer power switch: faq/printer-power-switch.md
       - Remote Access: faq/remote-access.md
 
       - Klipper warnings:
