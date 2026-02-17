@@ -121,6 +121,9 @@ nav:
 
       - Klipper errors:
           - MCU Protocol error: faq/klipper_errors/command-format-mismatch.md
+
+      - Mainsail errors:
+          - Unauthorized: faq/mainsail_errors/connection-unauthorized.md
     - About:
       - Credits: credits.md
       - Data Privacy: data-privacy.md
