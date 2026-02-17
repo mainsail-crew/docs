@@ -106,11 +106,9 @@ nav:
       - Localization: development/localization.md
 
     - FAQ:
-      - General: faq/general.md
       - printer.cfg Snippets: faq/printer-cfg-snippets.md
       - Printer power switch: faq/printer-power-switch.md
       - Remote Access: faq/remote-access.md
-      - Slicer upload: faq/slicer-upload.md
 
       - Klipper warnings:
         - Deprecated Options: faq/klipper_warnings/deprecated_options.md
