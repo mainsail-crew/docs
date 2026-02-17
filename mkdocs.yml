@@ -116,11 +116,11 @@ nav:
         - Deprecated Values: faq/klipper_warnings/deprecated_values.md
         - Runtime Warnings: faq/klipper_warnings/runtime-warnings.md
 
-      - Moonraker warnings:
-        - PolicyKit Permissions: faq/moonraker_warnings/policykit-permissions.md
-
       - Klipper errors:
           - MCU Protocol error: faq/klipper_errors/command-format-mismatch.md
+
+      - Moonraker warnings:
+        - PolicyKit Permissions: faq/moonraker_warnings/policykit-permissions.md
 
       - Mainsail errors:
           - Unauthorized: faq/mainsail_errors/connection-unauthorized.md
