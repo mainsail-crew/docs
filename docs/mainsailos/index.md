@@ -1,17 +1,64 @@
-# Welcome to MkDocs
+---
+title: MainsailOS
+description: MainsailOS is a prebuilt image for single board computers that already includes Mainsail, Moonraker,
+  Klipper and more.
+social:
+  cards_layout_options:
+    title: MainsailOS Overview
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# MainsailOS
 
-## Commands
+MainsailOS is a prebuilt image for single board computers that already includes
+[Mainsail](https://github.com/mainsail-crew/mainsail){:target="_blank"},
+[Moonraker](https://github.com/Arksine/moonraker){:target="_blank"} and
+[Klipper](https://github.com/Klipper3d/klipper){:target="_blank"}.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## What is MainsailOS?
 
-## Project layout
+MainsailOS is a prebuilt image for several Single Board Computer (SBC) models. It contains pre-configured software
+needed to run Klipper firmware with Mainsail as your web interface to control your 3D printer.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+### Included Software
+
+MainsailOS images include:
+
+- [Mainsail](../index.md){:target="_blank"} — Web interface for Klipper
+- [Klipper](https://github.com/Klipper3d/klipper){:target="_blank"} — 3D printer firmware
+- [Moonraker](https://github.com/Arksine/moonraker){:target="_blank"} — API web server for Klipper
+- [Crowsnest](../crowsnest/index.md) — Webcam daemon
+- [Sonar](../sonar/index.md) — WiFi keepalive daemon
+- [Timelapse](https://github.com/mainsail-crew/moonraker-timelapse){:target="_blank"} — Timelapse plugin for Moonraker
+- Preinstalled dependencies for [Measuring Resonances](https://www.klipper3d.org/Measuring_Resonances.html){:target="_blank"}
+
+!!! note
+    MainsailOS is **not** an "all in one" solution for every use case. It is a simple and easy starting point to enjoy
+    Mainsail and its features.
+
+!!! note "About Customization"
+    MainsailOS is not a full distribution like Debian or Ubuntu. It only adds the required software on top of the
+    existing base image for your SBC. You will not find any customization beyond the installed software. Any issues
+    regarding logging behavior, hardware support, or driver stability are out of scope and should be addressed to the
+    respective SBC base image developers.
+
+## Supported Hardware
+
+The list of supported SBCs is continually being expanded. Below is an overview of currently supported boards and those
+planned for the future.
+
+| Model                           | Supported | Base Image           | Note                 |
+|---------------------------------|:---------:|----------------------|----------------------|
+| Raspberry Pi 1 / Zero 1 / 2     |     ✅     | Raspberry Pi OS Lite | **not recommended**  |
+| Raspberry Pi Zero 2 / 3 / 4 / 5 |     ✅     | Raspberry Pi OS Lite |                      |
+| Orange Pi Zero 2 / Zero 3       |     ✅     | Armbian CLI          |                      |
+| Orange Pi 3 LTS / 4 LTS         |     ✅     | Armbian CLI          |                      |
+| Radxa Rock 4 SE / CM3           |     ❌     | Armbian CLI          | Work in Progress 🛠️ |
+| BigTreeTech CB1                 |     ❌     | Armbian CLI          | Planned 📅           |
+| Libre Computer Le Potato        |     ❌     | —                    | Planned 📅           |
+
+## Getting Started
+
+To get started with MainsailOS, head over to the getting started guide for your SBC:
+
+- [Raspberry Pi](getting-started/raspberry-pi.md)
+- [Armbian](getting-started/armbian.md)
