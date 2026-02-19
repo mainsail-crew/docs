@@ -39,13 +39,13 @@ natively, while others require Moonraker preprocessing.
 
 | Slicer | Native Support | Preprocessing Required |
 |--------|----------------|------------------------|
-| [PrusaSlicer](/slicers/prusaslicer/) (v2.7.0+) | :material-check: | No |
-| [OrcaSlicer](/slicers/orcaslicer/) | :material-check: | No |
-| [SuperSlicer](/slicers/superslicer/) | :material-close: | Yes |
-| [Cura](/slicers/cura/) | :material-close: | Yes |
-| [IdeaMaker](/slicers/ideamaker/) | :material-close: | Yes |
+| [PrusaSlicer](../slicers/prusaslicer.md) (v2.7.0+) | :material-check: | No |
+| [OrcaSlicer](../slicers/orcaslicer.md) | :material-check: | No |
+| [SuperSlicer](../slicers/superslicer.md) | :material-close: | Yes |
+| [Cura](../slicers/cura.md) | :material-close: | Yes |
+| [IdeaMaker](../slicers/ideamaker.md) | :material-close: | Yes |
 
-See the [Slicer Configuration](/slicers/) section for detailed setup instructions.
+See the [Slicer Configuration](../slicers/index.md) section for detailed setup instructions.
 
 ## Moonraker Preprocessing
 

@@ -28,4 +28,4 @@ in the interface.
 
 ![Macro Groups](../images/features/macro-management-groups.png)
 
-For detailed configuration options, see the [Macros Settings](/settings/macros/) page.
+For detailed configuration options, see the [Macros Settings](../settings/macros.md) page.

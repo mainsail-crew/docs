@@ -15,7 +15,7 @@ background images, logos, icons, navigation entries, and CSS styles.
 ## Getting Started
 
 To create your own theme, you need to set up a `.theme` folder in your Klipper config
-directory. Alternatively, browse the [Community Themes](/features/custom-themes/community-themes/)
+directory. Alternatively, browse the [Community Themes](custom-themes/community-themes.md)
 to find ready-to-use themes from the Mainsail community.
 
 ## Setup
@@ -50,16 +50,16 @@ All files in the `.theme` folder are optional and only loaded if provided:
 
 ## Customization Options
 
-- [Backgrounds](/features/custom-themes/backgrounds/) - Custom background images for sidebar
+- [Backgrounds](custom-themes/backgrounds.md) - Custom background images for sidebar
   and main area
-- [Logos and Icons](/features/custom-themes/logos-and-icons/) - Custom sidebar logo and
+- [Logos and Icons](custom-themes/logos-and-icons.md) - Custom sidebar logo and
   favicons
-- [Custom Navigation](/features/custom-themes/custom-navigation/) - Add custom entries to
+- [Custom Navigation](custom-themes/custom-navigation.md) - Add custom entries to
   the sidebar
-- [Custom CSS](/features/custom-themes/custom-css/) - Advanced styling with CSS
+- [Custom CSS](custom-themes/custom-css.md) - Advanced styling with CSS
 
 ## Community Themes
 
 Looking for ready-to-use themes? Check out the
-[Community Themes](/features/custom-themes/community-themes/) created by the Mainsail
+[Community Themes](custom-themes/community-themes.md) created by the Mainsail
 community.

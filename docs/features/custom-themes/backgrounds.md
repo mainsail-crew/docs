@@ -41,5 +41,5 @@ To add a main area background, place an image named `main-background` in your `.
 
 !!! note "Repeating Patterns"
     The background image is stretched to cover the entire area by default. If you want a
-    repeating pattern, you will need to use [Custom CSS](/features/custom-themes/custom-css/)
+    repeating pattern, you will need to use [Custom CSS](custom-css.md)
     to style it correctly.

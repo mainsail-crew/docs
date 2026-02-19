@@ -14,7 +14,7 @@ space, and create custom macro groups—all with separate layouts for desktop an
 ## Rearrange panels and show/hide them
 
 The panels on the dashboard can be rearranged. How to do this is described in the
-[Dashboard Settings page](/overview/settings/dashboard).
+[Dashboard Settings page](../settings/dashboard.md).
 
 Please note that settings can be customized for each device class, such as desktop or mobile. Each class supports
 different column layouts, allowing you to display, hide, or reorder panels independently—for example, showing certain

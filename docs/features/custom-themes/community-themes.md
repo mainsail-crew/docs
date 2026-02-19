@@ -19,11 +19,11 @@ Mainsail interface a unique look.
 2. Download the repository as a ZIP file
 3. Extract the files and copy them to your `.theme` folder
 
-For details on setting up the `.theme` folder, see [Custom Themes](/features/custom-themes/).
+For details on setting up the `.theme` folder, see [Custom Themes](../custom-themes.md).
 
 ### KIAUH Installation
 
-[KIAUH](/setup/kiauh/) has an integrated theme installer:
+[KIAUH](../../setup/kiauh.md) has an integrated theme installer:
 
 1. Open KIAUH and navigate to **Advanced** > **Theme installer**
 2. Enter the theme **ID** number shown below

@@ -20,4 +20,4 @@ or executing custom G-Code sequences with a single click.
 - **Custom G-Code**: Execute additional commands after setting temperatures
 - **Multiple Presets**: Create different presets for various filament types or workflows
 
-For detailed configuration, see the [Presets Settings](/settings/presets/) page.
+For detailed configuration, see the [Presets Settings](../settings/presets.md) page.
