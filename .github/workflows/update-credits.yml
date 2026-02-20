@@ -1,0 +1,65 @@
+name: Update Credits
+
+on:
+  push:
+    branches:
+      - docs
+    paths:
+      - '.github/workflows/update-credits.yml'
+      - '_scripts/generate-credits.js'
+      - '_scripts/credits-header.md'
+      - '_data/contributors.json'
+      - '_data/licenses.json'
+
+  schedule:
+    - cron: '0 8 15 * *'
+
+  workflow_dispatch:
+
+jobs:
+  update-credits:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout docs repo
+        uses: actions/checkout@v6
+
+      - name: Checkout Mainsail repo
+        uses: actions/checkout@v6
+        with:
+          path: ./mainsail
+          repository: mainsail-crew/mainsail
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+
+      - name: Download contributors list
+        run: |
+          wget -O _data/contributors.json \
+            "https://api.github.com/repositories/240875926/contributors?anon=0"
+
+      - name: Generate license information
+        run: |
+          cd mainsail
+          npm ci
+          npm i npm-license-crawler -g
+          npm-license-crawler --production --onlyDirectDependencies --omitVersion \
+            --dependencies --json $GITHUB_WORKSPACE/_data/licenses.json
+          sed -e 's/\*//g' -i $GITHUB_WORKSPACE/_data/licenses.json
+          sed -e "s|git@github.com|https://github.com|" -i $GITHUB_WORKSPACE/_data/licenses.json
+
+      - name: Generate credits.md
+        run: node _scripts/generate-credits.js
+
+      - name: Commit and push
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: |
+            _data/contributors.json
+            _data/licenses.json
+            docs/credits.md
+          default_author: github_actions
+          message: 'docs: update credits'
+          push: true

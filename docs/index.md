@@ -35,26 +35,22 @@ ensure that you have all the support you need to make the most of your 3D printi
 
 ## Key Features
 
-- **Responsive Web Interface:** Optimized for seamless use across desktops, tablets, and mobile devices.
-- **Printer Farm Management:** Supports managing multiple 3D printers from a single interface.
-- **Multilingual Support:** Choose from 12 different languages for localization.
-- **File Management:** Easily delete, rename, and upload your G-Code and configuration files.
-- **Integrated File Editor:** Edit G-Code and config files directly in your browser with syntax highlighting.
-- **Print History Tracking:** View detailed records of your previous prints, including their status.
-- **Usage Statistics:** Monitor printer usage with insights on operational time and job success rates.
-- **Job Queue Management:** Queue multiple print jobs and add them directly from your slicer.
-- **Temperature Presets:** Easily manage and apply different temperature settings for preheating.
-- **Bed Mesh Visualization:** Display your bed's surface using an interactive 3D mesh graph.
-- **G-Code Viewer:** Track print progress with a 3D render of your print directly within the interface.
-- **Multi-Webcam Support:** Monitor your print from multiple angles using multiple webcams.
-- **Timelapse Integration:** Automatically record timelapses of your prints with
+- **Klipper-native Control:** Manage your printer in real time through a fast, responsive Moonraker-based interface.
+- **Multi-Printer Management:** Control and monitor multiple printers from one interface.
+- **Live Print Monitoring:** Track temperatures, progress, and printer state at a glance.
+- **Macro Workflows:** Run, organize, and customize macros with prompts and parameter support.
+- **Integrated File Management:** Upload, organize, and edit G-Code and configuration files directly in your browser.
+- **Print Insights:** Review print history and usage statistics to optimize reliability and performance.
+- **3D Visualization Tools:** Use Bed Mesh and G-Code Viewer for better first-layer and print diagnostics.
+- **Flexible Dashboard:** Arrange dashboard cards and navigation to match your workflow.
+- **Theme Customization:** Personalize Mainsail with built-in themes, logos, backgrounds, and custom CSS.
+- **Webcam and Timelapse Support:** Monitor prints from multiple camera angles and create automated timelapses with
 [moonraker-timelapse](https://github.com/mainsail-crew/moonraker-timelapse).
-- **Power Control:** Manage power devices like relays, TP-Link, Tasmota devices, and more.
-- **Advanced Macro Management:** Fine-tune your macros with detailed control options.
-- **Customizable Dashboard:** Personalize your dashboard layout to suit your workflow.
-- **Theming Options:** Customize the user interface with logos, backgrounds, and custom CSS.
-- **Additional Sensor Integration:** Add extra sensors to monitor temperature and other metrics.
-- **Object Exclusion:** Selectively exclude parts of your print directly from the interface.
+- **Power Device Integration:** Control relays and supported smart power devices directly in Mainsail.
+- **Slicer Integration:** Send print jobs from supported slicers to streamline your print workflow.
+- **Multilingual Support:** Use Mainsail in your preferred language with built-in localization.
+- **Temperature Presets:** Save and apply preheat profiles for faster print preparation.
+- **Object Exclusion:** Exclude individual objects during a print to salvage the remaining parts.
 
 ## Support Mainsail
 
@@ -71,7 +67,7 @@ provide feedback to help make Mainsail even better.
 [GitHub Issues](https://github.com/mainsail-crew/mainsail/issues?q=sort:updated-desc+is:issue+is:open) page. Your input
 helps us prioritize and address the most important aspects of the project.
 - **Contribute Code:** If you’re a developer, consider contributing to the project by reviewing our
-[Code Standards](development/code-standards.md) and submitting pull requests. Every contribution, no matter how small,
+[Contributing Guide](development/contributing.md) and submitting pull requests. Every contribution, no matter how small,
 is valuable and appreciated.
 - **Donate:** If you’d like to support the project financially, you can make a donation via
 [GitHub Sponsors](https://github.com/sponsors/mainsail-crew), [Patreon](https://www.patreon.com/meteyou) or

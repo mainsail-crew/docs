@@ -1,0 +1,38 @@
+name: Update Community Themes
+
+on:
+  push:
+    branches:
+      - mkdocs
+    paths:
+      - '_data/themes.csv'
+      - '_scripts/themes-header.md'
+      - '_scripts/theme-entry.md'
+      - '_scripts/generate-themes.js'
+  workflow_dispatch:
+
+jobs:
+  update-themes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install csv-parse
+        run: npm install csv-parse
+
+      - name: Generate community-themes.md
+        run: node _scripts/generate-themes.js
+
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'docs/features/custom-themes/community-themes.md'
+          default_author: github_actions
+          message: 'docs: update community-themes.md'
+          push: true

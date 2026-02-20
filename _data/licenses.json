@@ -207,12 +207,6 @@
         "licenseUrl": "https://github.com/john015/vue-load-image/raw/master/LICENSE",
         "parents": "mainsail"
     },
-    "vue-meta": {
-        "licenses": "MIT",
-        "repository": "https://github.com/nuxt/vue-meta",
-        "licenseUrl": "https://github.com/nuxt/vue-meta/raw/master/LICENSE.md",
-        "parents": "mainsail"
-    },
     "vue-observe-visibility": {
         "licenses": "MIT",
         "repository": "https://github.com/Akryum/vue-observe-visibility",
@@ -223,12 +217,6 @@
         "licenses": "MIT",
         "repository": "https://github.com/kaorun343/vue-property-decorator",
         "licenseUrl": "https://github.com/kaorun343/vue-property-decorator/raw/master/LICENSE",
-        "parents": "mainsail"
-    },
-    "vue-resize": {
-        "licenses": "MIT",
-        "repository": "https://github.com/Akryum/vue-resize",
-        "licenseUrl": "https://github.com/Akryum/vue-resize",
         "parents": "mainsail"
     },
     "vue-toast-notification": {

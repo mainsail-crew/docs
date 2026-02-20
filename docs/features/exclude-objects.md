@@ -1,54 +1,85 @@
+---
+title: Exclude Objects
+description: Skip printing individual objects during an active print job
+  without stopping the entire job using Klipper's exclude_object feature.
+social:
+  cards_layout_options:
+    title: Exclude Objects
+---
+
 # Exclude Objects
 
-You can exclude individual objects from an active print, allowing you to skip printing specific parts without stopping the entire job.
+Exclude Objects allows you to skip printing individual objects during an active print job without
+stopping the entire print. This is useful when a part detaches from the bed or fails mid-print—you
+can exclude it and continue printing the remaining objects.
 
-!!! information 
-    This feature was integrated in Klipper v0.10.0-438, Moonraker v0.7.1-445 and Mainsail v2.1.0. Please check your installed versions first and update them if necessary.
+!!! information "Version Requirements"
+    This feature requires Klipper v0.10.0-438, Moonraker v0.7.1-445, and Mainsail v2.1.0 or newer.
+    Please check your installed versions and update if necessary.
 
-To use this feature, your slicer must be set up to assign names to each object in the G-code. The G-code then needs to be preprocessed—either with a post-processing script in your slicer or by Moonraker. Additionally, this feature must be enabled in Klipper.
+!!! warning
+    This feature only works with properly prepared G-code files. It will not function with older
+    or unprocessed files.
 
-Since PrusaSlicer v2.7.0, the slicer can generate fully compatible G-code without needing Moonraker preprocessing.
+## Enable exclude_object in Klipper
 
-!!! warning This feature only works with properly prepared G-code files. It will not function with older or unprocessed files.
+Add the following section to your `printer.cfg`:
 
-## PrusaSlicer v2.7.0 and newer
-
-First, verify the G-code flavor setting in:
-`Printer Settings > General > Firmware > G-code flavor`
-
-![G-code Flavor Setting](../images/features/exclude-objects-gcode-flavor.png)
-
-Next, you need to change the `Label Objects` setting to `Firmware-specific` in:
-`Print Settings > Output options > Output file > Label objects`
-
-![Label Objects Setting](../images/features/exclude-objects-label-objects.png)
-
-## OrcaSlicer
-Verify the G-code flavor setting in:
-`Printer Settings > Basic Information > Advanced - G-code favlor`
-
-![G-code Favlor Setting Orca](../images/features/exclude-objects-gcode-flavor-orca.png)
-
-## Enable exclude_object module in Klipper
-
-Open your `printer.cfg` in Mainsail and add the following setting:
-
-```
+```ini
 [exclude_object]
 ```
 
-!!! information 
-    For more information about the exclude_object module in Klipper see: [exclude_object](https://www.klipper3d.org/Exclude_Object.html){:target="_blank"}
+For more information, see the
+[Klipper exclude_object documentation](https://www.klipper3d.org/Exclude_Object.html){:target="_blank"}.
+
+## Slicer Configuration
+
+Your slicer must label objects in the G-code for this feature to work. Some slicers support this
+natively, while others require Moonraker preprocessing.
+
+| Slicer | Native Support | Preprocessing Required |
+|--------|----------------|------------------------|
+| [PrusaSlicer](../slicers/prusaslicer.md) (v2.7.0+) | :material-check: | No |
+| [OrcaSlicer](../slicers/orcaslicer.md) | :material-check: | No |
+| [SuperSlicer](../slicers/superslicer.md) | :material-close: | Yes |
+| [Cura](../slicers/cura.md) | :material-close: | Yes |
+| [IdeaMaker](../slicers/ideamaker.md) | :material-close: | Yes |
+
+See the [Slicer Configuration](../slicers/index.md) section for detailed setup instructions.
+
+## Moonraker Preprocessing
+
+For slicers without native Klipper support (SuperSlicer, Cura, IdeaMaker, and others), Moonraker
+can automatically preprocess G-code files during upload.
+
+Add the following to your `moonraker.conf`:
+
+```ini
+[file_manager]
+enable_object_processing: True
+```
+
+After adding this configuration, restart Moonraker. Newly uploaded G-code files will be
+automatically processed to add the required exclude object commands.
+
+!!! warning "Performance on Low-Resource Devices"
+    This process is file I/O intensive. It is not recommended for low-resource SBCs such as
+    Raspberry Pi Zero. Consider using the
+    [preprocess_cancellation](https://github.com/kageurufu/preprocess_cancellation){:target="_blank"}
+    script on your computer instead.
+
+!!! note "Support Material Limitation"
+    Cura and IdeaMaker treat support material as a single non-mesh entity. When excluding an
+    object, its support structures will still print.
 
 ## Using the Feature
 
-From now on, all newly uploaded G-Code files will support this function. A new button, depicted as a dashed square with an “X”, will appear in the status panel to enable object exclusion.
+Once configured, all newly uploaded G-code files will support object exclusion. A new button
+(dashed square with an "X") appears in the status panel during printing.
 
 ![Status Panel Button](../images/features/exclude-objects-print-status.png)
 
-Clicking the button opens a dialog where you can select individual objects to exclude from the current print job.
+Clicking the button opens a dialog where you can select individual objects to exclude from the
+current print job.
 
 ![Exclude Objects Dialog](../images/features/exclude-object-dialog.avif)
-
-!!! warning
-    Only G-Code files prepared in this way support excluding objects.

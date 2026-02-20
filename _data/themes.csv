@@ -1,10 +1,18 @@
-name,short_note,author,repo
-Dracula,,steadyjaw,dracula-mainsail-theme
-Cyberpunk,,Dario-Ciceri,cp2077-mainsail-theme
-Mainsail x Voron Toolhead,Various toolhead images inside the theme folder can be renamed to 'sidebar-background.png',eriroh,Mainsail-x-Voron-Toolhead-Theme
-Rat Rig (unofficial), includes various sidebar images which can be renamed to ‘sidebar-background.png’,Raabi91,ratrig-mainsail-theme
-Cryd,,cryd-s,Mainsail-Theme-by-Cryd
-Minesail - a Minecraft theme, Please check the readme regarding the logos,lixxbox,mainsail-theme-minesail
-Rat Rig Minion,,eifeldj,ratrig-minion-mainsail-theme
-Eryone Theme,,dapostol73,MainsailEryoneTheme
-Elegance Theme,,Turbine1991,mainsail-theme-elegance
+name,short_note,author,repo,branch,preview
+Dracula,,steadyjaw,dracula-mainsail-theme,master,screenshot.jpg
+Cyberpunk,,Dario-Ciceri,cp2077-mainsail-theme,main,screenshot.png
+Mainsail x Voron Toolhead,Various toolhead images inside the theme folder can be renamed to 'sidebar-background.png',eriroh,Mainsail-x-Voron-Toolhead-Theme,Main,screenshot.png
+Rat Rig (unofficial), includes various sidebar images which can be renamed to ‘sidebar-background.png’,Raabi91,ratrig-mainsail-theme,main,screenshot.png
+Cryd,,cryd-s,Mainsail-Theme-by-Cryd,main,screenshot.jpg
+Minesail - a Minecraft theme, Please check the readme regarding the logos,lixxbox,mainsail-theme-minesail,main,screenshot.jpg
+Rat Rig Minion,,eifeldj,ratrig-minion-mainsail-theme,main,screenshot.jpg
+Eryone Theme,,dapostol73,MainsailEryoneTheme,main,screenshot.jpg
+Elegance Theme,,Turbine1991,mainsail-theme-elegance,main,screenshot.jpg
+Acryl,,eliteSchwein,acryl-fluidd-mainsail-theme,main,screenshot.jpg
+Dark Acryl, Made in collaboration with eliteSchwein,midikeyboard,dark-acryl-fluidd-mainsail-theme,main,screenshot.jpg
+Vibrant Acryl, Made in collaboration with eliteSchwein,midikeyboard,vibrant-acryl-fluidd-mainsail-theme,main,screenshot.jpg
+Frosted Gray,Made with ❤️ by Xapu - based on Acryl (thanks eliteSchwein!),Xapu1337,frosted-gray-mainsail-theme,main,screenshot.jpg
+Pink Pastel, Made in collaboration with eliteSchwein,midikeyboard,pink-acryl-fluidd-mainsail-theme,main,screenshot.jpg
+Green Acryl,Please follow installation guide on GitHub page to set custom accent color,tui2019,Mainsail-Green-Acryl,main,screenshot.jpg
+Printables,(unofficial),8bitmcu,mainsail-printables,main,screenshot.jpg
+Catppuccin Mocha,,hahagu,catppuccin-mocha-mainsail-theme,main,screenshot.jpg

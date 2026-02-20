@@ -2,8 +2,12 @@
 
 site_name: Mainsail - The 3D Printer Interface
 site_url: https://docs.mainsail.xyz
+use_directory_urls: true
 
-edit_uri: edit/docs/
+edit_uri: https://github.com/mainsail-crew/docs/edit/docs/
+
+hooks:
+  - hooks/repo_per_section.py
 
 extra:
   social:
@@ -19,6 +23,9 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -41,7 +48,7 @@ nav:
     - Getting Started:
       - Installation:
         - Overview: setup/index.md
-        - MainsailOS: mainsailos/index.md
+        - MainsailOS: setup/mainsailos.md
         - KIAUH: setup/kiauh.md
         - Docker: setup/docker.md
         - Manual setup: setup/manual.md
@@ -50,13 +57,21 @@ nav:
         - Update Manager: update/update-manager.md
         - Manual Update: update/manual.md
       - Configuration:
-        - Requirement: configuration/requirement.md
-        - config.json: settings/config-json.md
+        - mainsail.cfg: configuration/mainsail-cfg.md
+        - config.json: configuration/config-json.md
 
     - Overview:
       - Features:
         - Bed Mesh: features/bed-mesh.md
+        - Built-in Themes: features/built-in-themes.md
         - Console: features/console.md
+        - Custom Themes:
+          - Overview: features/custom-themes.md
+          - Backgrounds: features/custom-themes/backgrounds.md
+          - Community Themes: features/custom-themes/community-themes.md
+          - Custom CSS: features/custom-themes/custom-css.md
+          - Custom Navigation: features/custom-themes/custom-navigation.md
+          - Logos and Icons: features/custom-themes/logos-and-icons.md
         - Dashboard Organisation: features/dashboard-organisation.md
         - Exclude Objects: features/exclude-objects.md
         - Hide Macros, outputs or fans: features/hide-macros-outputs-or-fans.md
@@ -65,18 +80,10 @@ nav:
         - Macro Prompts: features/macro-prompts.md
         - Presets: features/presets.md
         - Print History and Statistics: features/print-history-and-statistics.md
+        - Printer Power Device: features/printer-power-device.md
         - Query devices: features/query-devices.md
-        - Build-in Themes: features/buildin-themes.md
-        - Custom Themes:
-          - Overview: features/custom-themes/index.md
-          - Prepare: features/custom-themes/prepare.md
-          - Backgrounds: features/custom-themes/backgrounds.md
-          - Logos and Icons: features/custom-themes/logos-and-icons.md
-          - Custom Navigation: features/custom-themes/custom-navigation.md
-          - Custom CSS: features/custom-themes/custom-css.md
-          - Community Themes: features/custom-themes/community-themes.md
         - Thumbnails: features/thumbnails.md
-        - Webcam: features/webcam.md
+        - Webcams: features/webcams.md
       - Settings:
         - General: settings/general.md
         - Console: settings/console.md
@@ -84,48 +91,48 @@ nav:
         - Dashboard: settings/dashboard.md
         - Editor: settings/editor.md
         - G-Code Viewer: settings/gcode-viewer.md
+        - Heightmap: settings/heightmap.md
         - Macros: settings/macros.md
+        - Miscellaneous: settings/miscellaneous.md
+        - Navigation: settings/navigation.md
         - Presets: settings/presets.md
         - Printers: settings/printers.md
+        - Timelapse: settings/timelapse.md
         - UI-Settings: settings/ui-settings.md
         - Webcams: settings/webcams.md
-
-    - Slicer:
-      - Cura: slicer/cura.md
-      - IdeaMaker: slicer/ideamaker.md
-      - PrusaSlicer: slicer/prusaslicer.md
-      - SuperSlicer: slicer/superslicer.md
-      - OrcaSlicer: slicer/orcaslicer.md
+      - Slicers:
+        - Overview: slicers/index.md
+        - Cura: slicers/cura.md
+        - IdeaMaker: slicers/ideamaker.md
+        - OrcaSlicer: slicers/orcaslicer.md
+        - PrusaSlicer: slicers/prusaslicer.md
 
     - Development:
-      - Code Standards: development/code-standards.md
       - Contributing: development/contributing.md
       - Development Setup: development/development-setup.md
-      - Localisation: development/localisation.md
+      - Localization: development/localization.md
 
     - FAQ:
-      - General: faq/general.md
-      - Additional Sensors: faq/additional-sensors.md
-      - Disable Octoprint LCD menu: faq/disable-octoprint-lcd-menu.md
-      - Printer power switch: faq/printer-power-switch.md
+      - printer.cfg Snippets: faq/printer-cfg-snippets.md
       - Remote Access: faq/remote-access.md
-      - Slicer upload: faq/slicer-upload.md
 
       - Klipper warnings:
         - Deprecated Options: faq/klipper_warnings/deprecated_options.md
         - Deprecated Values: faq/klipper_warnings/deprecated_values.md
         - Runtime Warnings: faq/klipper_warnings/runtime-warnings.md
 
+      - Klipper errors:
+          - MCU Protocol error: faq/klipper_errors/command-format-mismatch.md
+
       - Moonraker warnings:
         - PolicyKit Permissions: faq/moonraker_warnings/policykit-permissions.md
 
-      - Klipper errors:
-          - MCU Protocol error: faq/klipper_errors/command-format-mismatch
+      - Mainsail errors:
+          - Unauthorized: faq/mainsail_errors/connection-unauthorized.md
     - About:
       - Credits: credits.md
       - Data Privacy: data-privacy.md
-      - License: license.md
-      - Sponsors: sponsors.md
+      - ❤️ Sponsors: sponsors.md
 
   # subpage for MainsailOS
   - MainsailOS:
@@ -198,13 +205,14 @@ plugins:
   - glightbox
 
   - social:
+      enabled: !ENV [CI, false]
       cards_layout_options:
         logo: docs/assets/logo.svg
         #background_image: docs/assets/social-background.png
         background_color: '#252525'
 
-repo_name: mainsail-crew/docs
-repo_url: https://github.com/mainsail-crew/docs
+repo_name: mainsail-crew/mainsail
+repo_url: https://github.com/mainsail-crew/mainsail
 
 theme:
   favicon: assets/favicon.png
@@ -223,3 +231,6 @@ theme:
     scheme: slate
     primary: black
     accent: red
+
+extra_css:
+  - stylesheets/extra.css
