@@ -37,13 +37,12 @@ For more information, see the
 Your slicer must label objects in the G-code for this feature to work. Some slicers support this
 natively, while others require Moonraker preprocessing.
 
-| Slicer | Native Support | Preprocessing Required |
-|--------|----------------|------------------------|
-| [PrusaSlicer](../slicers/prusaslicer.md) (v2.7.0+) | :material-check: | No |
-| [OrcaSlicer](../slicers/orcaslicer.md) | :material-check: | No |
-| [SuperSlicer](../slicers/superslicer.md) | :material-close: | Yes |
-| [Cura](../slicers/cura.md) | :material-close: | Yes |
-| [IdeaMaker](../slicers/ideamaker.md) | :material-close: | Yes |
+| Slicer                                             | Native Support   | Preprocessing Required |
+|----------------------------------------------------|------------------|------------------------|
+| [PrusaSlicer](../slicers/prusaslicer.md) (v2.7.0+) | :material-check: | No                     |
+| [OrcaSlicer](../slicers/orcaslicer.md)             | :material-check: | No                     |
+| [Cura](../slicers/cura.md)                         | :material-close: | Yes                    |
+| [IdeaMaker](../slicers/ideamaker.md)               | :material-close: | Yes                    |
 
 See the [Slicer Configuration](../slicers/index.md) section for detailed setup instructions.
 
