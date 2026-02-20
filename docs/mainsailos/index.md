@@ -17,11 +17,10 @@ MainsailOS is a prebuilt image for single board computers that already includes
 ## What is MainsailOS?
 
 MainsailOS is a prebuilt image for several Single Board Computer (SBC) models. It contains pre-configured software
-needed to run Klipper firmware with Mainsail as your web interface to control your 3D printer.
+needed to run Klipper firmware with Mainsail as your web interface to control your 3D printer. MainsailOS is not a full
+distribution like Debian or Ubuntu. It only adds the required software on top of the existing base image for your SBC.
 
-### Included Software
-
-MainsailOS images include:
+The following software is included in MainsailOS images:
 
 - [Mainsail](../index.md){:target="_blank"} — Web interface for Klipper
 - [Klipper](https://github.com/Klipper3d/klipper){:target="_blank"} — 3D printer firmware
@@ -34,12 +33,6 @@ MainsailOS images include:
 !!! note
     MainsailOS is **not** an "all in one" solution for every use case. It is a simple and easy starting point to enjoy
     Mainsail and its features.
-
-!!! note "About Customization"
-    MainsailOS is not a full distribution like Debian or Ubuntu. It only adds the required software on top of the
-    existing base image for your SBC. You will not find any customization beyond the installed software. Any issues
-    regarding logging behavior, hardware support, or driver stability are out of scope and should be addressed to the
-    respective SBC base image developers.
 
 ## Supported Hardware
 
