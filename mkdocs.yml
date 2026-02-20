@@ -160,18 +160,13 @@ nav:
       - '[cam] section': crowsnest/configuration/cam-section.md
 
     - FAQ:
-      - Common Issues: crowsnest/faq/common-issues.md
       - Backends: crowsnest/faq/backends.md
-      - Upgrade from v4 to v5: crowsnest/faq/upgrade-from-v4-to-v5.md
+      - Clean Log: crowsnest/faq/clean-log.md
+      - Common Issues: crowsnest/faq/common-issues.md
       - How to set up Raspicam?: crowsnest/faq/how-to-set-up-raspicam.md
       - How to use WYZE-Cams?: crowsnest/faq/how-to-use-wyze-cams.md
+      - Upgrade from v4 to v5: crowsnest/faq/upgrade-from-v4-to-v5.md
       - WebRTC: crowsnest/faq/webrtc.md
-      - Troubleshooting: crowsnest/faq/troubleshooting.md
-      - Help!: crowsnest/faq/help.md
-
-    - Extras:
-      - CustomPIOS Module: crowsnest/custompios-module.md
-      - Credits: crowsnest/credits.md
 
   # subpage for Sonar
   - Sonar:
