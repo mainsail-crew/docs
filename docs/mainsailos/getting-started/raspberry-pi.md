@@ -12,7 +12,7 @@ This guide walks you through installing MainsailOS on a Raspberry Pi using the o
 
 ## Prerequisites
 
-- A Raspberry Pi (Zero 2, 3, 4, or 5 recommended)
+- A Raspberry Pi (Zero 2, 3, 4 recommended, Pi 5 supported but not recommended with Webcams)
 - A high-quality microSD card (minimum 16 GB, recommended 32 GB or more)
 - An SD card reader
 - [Raspberry Pi Imager](https://www.raspberrypi.com/software/){:target="_blank"} installed on your computer
@@ -24,14 +24,15 @@ This guide walks you through installing MainsailOS on a Raspberry Pi using the o
 !!! danger "Data Loss"
     Flashing will **destroy all data** on your SD card. This cannot be reversed. Make sure you select the correct drive.
 
-## Step 1: Insert the SD Card
+## Step 1: Prepare
 
-Insert the microSD card into your card reader and connect it to your computer.
+Insert the microSD card into your card reader, connect it to your computer, and launch the
+[Raspberry Pi Imager](https://www.raspberrypi.com/software/){:target="_blank"}.
 
 ## Step 2: Choose the Device
 
-Launch the Raspberry Pi Imager. It will immediately present you with a list of Raspberry Pi models. Select your model
-from the list.
+In the first step of the Raspberry Pi Imager, you will be asked to select the device you want to flash. This is where
+you select the model of your Raspberry Pi. The Imager will show you a list of devices.
 
 <figure markdown="span">
 ![Raspberry Pi Imager - Choose the Device](../../images/mainsailos/raspberry-pi-imager-device.png)
