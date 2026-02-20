@@ -43,7 +43,7 @@ nav:
     - Getting Started:
       - Installation:
         - Overview: setup/index.md
-        - MainsailOS: mainsailos/index.md
+        - MainsailOS: setup/mainsailos.md
         - KIAUH: setup/kiauh.md
         - Docker: setup/docker.md
         - Manual setup: setup/manual.md
