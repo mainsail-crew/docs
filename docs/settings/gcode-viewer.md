@@ -13,7 +13,7 @@ Open the **Interface Settings** by clicking the **cogs icon** in the top-right c
 **G-Code Viewer**.
 
 <figure markdown="span">
-  ![G-Code Viewer Settings](../images/settings/gcode-viewer.png)
+![G-Code Viewer Settings](../images/settings/gcode-viewer.png)
 </figure>
 
 ## Show Axes

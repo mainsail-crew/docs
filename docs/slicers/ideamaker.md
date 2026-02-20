@@ -30,11 +30,11 @@ previews in Mainsail, enable the built-in thumbnail option in your printer setti
 ![IdeaMaker Thumbnail Settings](../images/slicers/ideamaker-thumbnails.png)
 
 <figure markdown="span">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/EbtLn3bDs5I"
-    title="Mainsail Quicktips | Thumbnails with ideaMaker" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EbtLn3bDs5I"
+  title="Mainsail Quicktips | Thumbnails with ideaMaker" frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
 </figure>
 
 ## G-Code Metadata

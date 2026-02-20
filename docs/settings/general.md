@@ -12,7 +12,7 @@ social:
 Open the **Interface Settings** by clicking the **cogs icon** in the top-right corner, then navigate to **General**.
 
 <figure markdown="span">
-  ![General Settings](../images/settings/general.png)
+![General Settings](../images/settings/general.png)
 </figure>
 
 ## Printer Name
@@ -107,7 +107,7 @@ system.
 Click on **Backup** to save your current settings. A dialog lets you select which groups to include:
 
 <figure markdown="span">
-  ![Backup dialog](../images/settings/mainsail-backup-dialog.png)
+![Backup dialog](../images/settings/mainsail-backup-dialog.png)
 </figure>
 
 !!! info
@@ -120,7 +120,7 @@ Click **Restore** to upload a previously saved backup file. A dialog lets you se
 to restore:
 
 <figure markdown="span">
-  ![Restore dialog](../images/settings/mainsail-restore-dialog.png)
+![Restore dialog](../images/settings/mainsail-restore-dialog.png)
 </figure>
 
 !!! warning

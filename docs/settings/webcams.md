@@ -12,7 +12,7 @@ social:
 Open the **Interface Settings** by clicking the **cogs icon** in the top-right corner, then navigate to **Webcams**.
 
 <figure markdown="span">
-  ![Webcam Settings](../images/settings/webcams.png)
+![Webcam Settings](../images/settings/webcams.png)
 </figure>
 
 This page lets you manage your webcam configurations. You can add multiple webcams, each with its own streaming service,
@@ -26,7 +26,7 @@ the Crowsnest configuration in the editor.
 When adding or editing a webcam, a form is displayed with a live preview on the right side.
 
 <figure markdown="span">
-  ![Webcam Settings - Form](../images/settings/webcams-form.png)
+![Webcam Settings - Form](../images/settings/webcams-form.png)
 </figure>
 
 ### Name and Icon

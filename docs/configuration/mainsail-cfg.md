@@ -18,7 +18,7 @@ Mainsail requires the following Klipper configuration sections to be present in 
 Mainsail will warn you on the Dashboard with an orange panel like this:
 
 <figure markdown="span">
-  ![Missing configuration Panel](../images/configuration/missing-configuration-panel.png)
+![Missing configuration Panel](../images/configuration/missing-configuration-panel.png)
 </figure>
 
 The `mainsail.cfg` file bundles all of them so you don't have to set them up manually:

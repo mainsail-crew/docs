@@ -12,7 +12,7 @@ social:
 Open the **Interface Settings** by clicking the **cogs icon** in the top-right corner, then navigate to **Macros**.
 
 <figure markdown="span">
-  ![Macros Settings](../images/settings/macros.png)
+![Macros Settings](../images/settings/macros.png)
 </figure>
 
 ## Management Mode
@@ -32,7 +32,7 @@ In Simple mode, all your Klipper G-Code macros are listed alphabetically. Each m
 toggle switch to show or hide it on the Dashboard.
 
 <figure markdown="span">
-  ![Simple Mode - Macros Settings](../images/settings/macros-simple.png)
+![Simple Mode - Macros Settings](../images/settings/macros-simple.png)
 </figure>
 
 Use the **Search** field to quickly find macros by name or description.
@@ -50,7 +50,7 @@ alphabetical list, you create **groups**. Each group appears as a separate panel
 independently via the [Dashboard settings](dashboard.md).
 
 <figure markdown="span">
-  ![Expert Mode - Group List - Macros Settings](../images/settings/macros-expert-groups.png)
+![Expert Mode - Group List - Macros Settings](../images/settings/macros-expert-groups.png)
 </figure>
 
 ### Creating a Group
@@ -63,7 +63,7 @@ Click the **Edit** button next to a group to open the group editor. Here you can
 which macros belong to the group.
 
 <figure markdown="span">
-  ![Expert Mode - Group Editor - Macros Settings](../images/settings/macros-expert-editor.png)
+![Expert Mode - Group Editor - Macros Settings](../images/settings/macros-expert-editor.png)
 </figure>
 
 #### Name

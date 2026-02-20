@@ -30,8 +30,8 @@ Upload your theme files to this folder.
     file manager's **cog menu** to see it.
 
 <figure markdown="span">
-  ![Show Hidden Files](../images/features/custom-themes-hidden-files.png)
-  <figcaption>Enable "Show Hidden Files" in the file manager's cog menu</figcaption>
+![Show Hidden Files](../images/features/custom-themes-hidden-files.png)
+<figcaption>Enable "Show Hidden Files" in the file manager's cog menu</figcaption>
 </figure>
 
 ### Directory Structure

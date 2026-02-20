@@ -13,7 +13,7 @@ Open the **Interface Settings** by clicking the **cogs icon** in the top-right c
 navigate to **Control**.
 
 <figure markdown="span">
-  ![Control Settings](../images/settings/control.png)
+![Control Settings](../images/settings/control.png)
 </figure>
 
 ## Toolhead
@@ -21,7 +21,7 @@ navigate to **Control**.
 This section allows you to customize the toolhead panel on the Dashboard.
 
 <figure markdown="span">
-  ![Toolhead Panel](../images/settings/control-toolhead-panel.png)
+![Toolhead Panel](../images/settings/control-toolhead-panel.png)
 </figure>
 
 ### Style
@@ -33,7 +33,7 @@ Choose the appearance of the toolhead motion controls on the Dashboard.
     Simple horizontal bars for each axis.
 
     <figure markdown="span">
-        ![Toolhead Panel - Bars Style](../images/settings/control-style-bars.png)
+    ![Toolhead Panel - Bars Style](../images/settings/control-style-bars.png)
     </figure>
 
 === "Circle"
@@ -41,7 +41,7 @@ Choose the appearance of the toolhead motion controls on the Dashboard.
     Circular control pad for X/Y movement with a separate Z column.
 
     <figure markdown="span">
-        ![Toolhead Panel - Circle Style](../images/settings/control-style-circle.png)
+    ![Toolhead Panel - Circle Style](../images/settings/control-style-circle.png)
     </figure>
 
 === "Cross"
@@ -49,7 +49,7 @@ Choose the appearance of the toolhead motion controls on the Dashboard.
     Cross-shaped directional pad for X/Y movement with a separate Z column.
 
     <figure markdown="span">
-        ![Toolhead Panel - Cross Style](../images/settings/control-style-cross.png)
+    ![Toolhead Panel - Cross Style](../images/settings/control-style-cross.png)
     </figure>
 
 !!! note
@@ -142,7 +142,7 @@ Customize the selectable increment values (in mm) for adjusting the Z-offset. A 
 This section allows you to customize the extruder panel on the Dashboard.
 
 <figure markdown="span">
-  ![Extruder Panel](../images/settings/control-extruder-panel.png)
+![Extruder Panel](../images/settings/control-extruder-panel.png)
 </figure>
 
 ### Extrusion Amount Presets

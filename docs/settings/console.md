@@ -12,7 +12,7 @@ social:
 Open the **Interface Settings** by clicking the **cogs icon** in the top-right corner, then navigate to **Console**.
 
 <figure markdown="span">
-    ![Console Settings](../images/settings/console.png)
+![Console Settings](../images/settings/console.png)
 </figure>
 
 ## Direction

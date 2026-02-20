@@ -21,8 +21,8 @@ This tab displays unassigned CAN nodes on your network. Each entry shows the app
 (Klipper or Katapult) and the UUID.
 
 <figure markdown="span">
-  ![CAN Devices](../images/features/query-devices-can.png)
-  <figcaption>Find devices dialog with CAN devices</figcaption>
+![CAN Devices](../images/features/query-devices-can.png)
+<figcaption>Find devices dialog with CAN devices</figcaption>
 </figure>
 
 !!! note "Unassigned Nodes"
@@ -44,8 +44,8 @@ This tab shows serial connections to your printer mainboard. Use these paths in 
 `printer.cfg` for the `[mcu]` section:
 
 <figure markdown="span">
-  ![Serial Devices](../images/features/query-devices-serial.png)
-  <figcaption>Find devices dialog with Serial devices</figcaption>
+![Serial Devices](../images/features/query-devices-serial.png)
+<figcaption>Find devices dialog with Serial devices</figcaption>
 </figure>
 
 ```ini
@@ -59,8 +59,8 @@ This tab is intended for debugging. It shows whether the system recognizes conne
 devices, which can help troubleshoot connection issues.
 
 <figure markdown="span">
-  ![USB Devices](../images/features/query-devices-usb.png)
-  <figcaption>Find devices dialog with USB devices</figcaption>
+![USB Devices](../images/features/query-devices-usb.png)
+<figcaption>Find devices dialog with USB devices</figcaption>
 </figure>
 
 ## Video Devices
@@ -70,6 +70,6 @@ available resolutions and video formats for each device, which is useful when co
 webcams in Crowsnest or Mainsail.
 
 <figure markdown="span">
-  ![Video Devices](../images/features/query-devices-video.png)
-  <figcaption>Find devices dialog with Video devices</figcaption>
+![Video Devices](../images/features/query-devices-video.png)
+<figcaption>Find devices dialog with Video devices</figcaption>
 </figure>

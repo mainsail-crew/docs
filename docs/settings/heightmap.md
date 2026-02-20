@@ -12,7 +12,7 @@ social:
 Open the **Interface Settings** by clicking the **cogs icon** in the top-right corner, then navigate to **Heightmap**.
 
 <figure markdown="span">
-  ![Heightmap Settings](../images/settings/heightmap.png)
+![Heightmap Settings](../images/settings/heightmap.png)
 </figure>
 
 ## Default Orientation

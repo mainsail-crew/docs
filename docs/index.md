@@ -24,13 +24,13 @@ ensure that you have all the support you need to make the most of your 3D printi
 ## Screenshots
 
 <figure markdown="span">
-  ![Mainsail Screenshots](images/home-screenshots1.png)
-  <figcaption>Screenshot Dashboard (Mobile & Desktop)</figcaption>
+![Mainsail Screenshots](images/home-screenshots1.png)
+<figcaption>Screenshot Dashboard (Mobile & Desktop)</figcaption>
 </figure>
 
 <figure markdown="span">
-  ![Mainsail Screenshots](images/home-screenshots2.png)
-  <figcaption>Heightmap, G-code viewer, Farm mode</figcaption>
+![Mainsail Screenshots](images/home-screenshots2.png)
+<figcaption>Heightmap, G-code viewer, Farm mode</figcaption>
 </figure>
 
 ## Key Features

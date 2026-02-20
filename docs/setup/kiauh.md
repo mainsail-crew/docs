@@ -13,7 +13,7 @@ Moonraker, and Mainsail (or other Klipper orientated tools) on a Debian-based sy
 the process of using KIAUH to set up Mainsail on your device.
 
 <figure markdown="span">
-  ![KIAUH Logo](../images/setup-kiauh.png)
+![KIAUH Logo](../images/setup-kiauh.png)
 </figure>
 
 ## Prerequisites

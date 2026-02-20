@@ -13,7 +13,7 @@ Open the **Interface Settings** by clicking the **cogs icon** in the top-right c
 navigate to **Navigation**.
 
 <figure markdown="span">
-  ![Navigation Settings](../images/settings/navigation.png)
+![Navigation Settings](../images/settings/navigation.png)
 </figure>
 
 This page lets you customize the sidebar navigation of Mainsail. You can reorder entries and control which ones are

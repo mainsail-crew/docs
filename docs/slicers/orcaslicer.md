@@ -20,7 +20,7 @@ To display thumbnail previews in Mainsail, you need to configure the G-code flav
 4. Set **G-code thumbnails** to `32x32/PNG, 400x300/PNG`
 
 <figure markdown="span">
-  ![OrcaSlicer - Printer Settings](../images/slicers/orcaslicer-printer-settings.png)
+![OrcaSlicer - Printer Settings](../images/slicers/orcaslicer-printer-settings.png)
 </figure>
 
 ## Layer Information
@@ -53,7 +53,7 @@ G-code file. You just need to set the G-Code flavor to `Klipper`.
 2. Set **G-code flavor** to `Klipper`
 
 <figure markdown="span">
-  ![OrcaSlicer - Printer Settings](../images/slicers/orcaslicer-printer-settings.png)
+![OrcaSlicer - Printer Settings](../images/slicers/orcaslicer-printer-settings.png)
 </figure>
 
 ## Upload to Printer
@@ -67,7 +67,7 @@ Upload G-code files directly from OrcaSlicer to your printer using the built-in 
 5. Click on `Test` to verify the connection
 
 <figure markdown="span">
-  ![OrcaSlicer - Physical Printer](../images/slicers/orcaslicer-physical-printer.png)
+![OrcaSlicer - Physical Printer](../images/slicers/orcaslicer-physical-printer.png)
 </figure>
 
 After configuration, you can upload G-code directly to your printer using the **Print** button in the top-right corner

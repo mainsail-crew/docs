@@ -12,7 +12,7 @@ social:
 Open the **Interface Settings** by clicking the **cogs icon** in the top-right corner, then navigate to **UI-Settings**.
 
 <figure markdown="span">
-  ![UI Settings](../images/settings/ui-settings.png)
+![UI Settings](../images/settings/ui-settings.png)
 </figure>
 
 ## Mode

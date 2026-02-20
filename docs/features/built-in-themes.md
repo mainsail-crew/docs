@@ -30,8 +30,8 @@ To change the theme in Mainsail:
 3. Select a theme from the dropdown
 
 <figure markdown="span">
-  ![Theme Selection](../images/features/built-in-themes.png)
-  <figcaption>Interface Settings - UI-Settings</figcaption>
+![Theme Selection](../images/features/built-in-themes.png)
+<figcaption>Interface Settings - UI-Settings</figcaption>
 </figure>
 
 ## Available Themes

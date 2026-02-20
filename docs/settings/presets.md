@@ -12,7 +12,7 @@ social:
 Open the **Interface Settings** by clicking the **cogs icon** in the top-right corner, then navigate to **Presets**.
 
 <figure markdown="span">
-  ![Presets Settings](../images/settings/presets.png)
+![Presets Settings](../images/settings/presets.png)
 </figure>
 
 ## Preheat Presets
@@ -21,7 +21,7 @@ Preheat presets let you quickly set target temperatures for your heaters and opt
 **Add Preset** to create a new preset, or click **Edit** on an existing one to modify it.
 
 <figure markdown="span">
-  ![Presets Settings - Edit preset](../images/settings/presets-edit.png)
+![Presets Settings - Edit preset](../images/settings/presets-edit.png)
 </figure>
 
 !!! note
@@ -63,7 +63,7 @@ The **Cooldown** entry is always present at the bottom of the preset list. When 
 part cooling fan.
 
 <figure markdown="span">
-  ![Presets Settings - Cooldown](../images/settings/presets-cooldown.png)
+![Presets Settings - Cooldown](../images/settings/presets-cooldown.png)
 </figure>
 
 ## Examples

@@ -13,8 +13,8 @@ Add background images to give Mainsail a custom look. There are two background a
 be customized: the sidebar and the main content area.
 
 <figure markdown="span">
-  ![Background Areas](../../images/features/custom-theme-backgrounds.avif)
-  <figcaption>Sidebar background (left) and main background (right)</figcaption>
+![Background Areas](../../images/features/custom-theme-backgrounds.avif)
+<figcaption>Sidebar background (left) and main background (right)</figcaption>
 </figure>
 
 Upload your background images to the `.theme` folder using the file manager on the

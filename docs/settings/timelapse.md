@@ -12,7 +12,7 @@ social:
 Open the **Interface Settings** by clicking the **cogs icon** in the top-right corner, then navigate to **Timelapse**.
 
 <figure markdown="span">
-  ![Timelapse Settings](../images/settings/timelapse.png)
+![Timelapse Settings](../images/settings/timelapse.png)
 </figure>
 
 !!! note

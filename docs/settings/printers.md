@@ -12,7 +12,7 @@ social:
 Open the **Interface Settings** by clicking the **cogs icon** in the top-right corner, then navigate to **Printers**.
 
 <figure markdown="span">
-  ![Printers Settings](../images/settings/printers.png)
+![Printers Settings](../images/settings/printers.png)
 </figure>
 
 This page lets you manage remote printers. Adding multiple printers enables you to switch between Klipper instances
@@ -23,7 +23,7 @@ directly from the Mainsail interface and use the print farm overview.
 Click **Add Printer** to open the printer form and enter the connection details.
 
 <figure markdown="span">
-  ![Printers Settings - Add Printer](../images/settings/printers-add.png)
+![Printers Settings - Add Printer](../images/settings/printers-add.png)
 </figure>
 
 ### Hostname
@@ -48,7 +48,7 @@ This is useful when Moonraker is served behind a reverse proxy under a subpath, 
 Click the **Edit** button next to a printer to modify its connection details.
 
 <figure markdown="span">
-  ![Printers Settings - Edit Printer](../images/settings/printers-edit.png)
+![Printers Settings - Edit Printer](../images/settings/printers-edit.png)
 </figure>
 
 ## Deleting a Printer

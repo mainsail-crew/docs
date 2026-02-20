@@ -13,7 +13,7 @@ Open the **Interface Settings** by clicking the **cogs icon** in the top-right c
 **Miscellaneous**.
 
 <figure markdown="span">
-  ![Miscellaneous Settings](../images/settings/miscellaneous.png)
+![Miscellaneous Settings](../images/settings/miscellaneous.png)
 </figure>
 
 This page lists all LED and light devices from your Klipper configuration that have a color order defined (e.g.
@@ -29,13 +29,13 @@ Groups allow you to control a subset of LEDs in an addressable LED chain indepen
 available for devices with a `chain_count` greater than 1.
 
 <figure markdown="span">
-  ![Miscellaneous Settings - LED Groups](../images/settings/miscellaneous-led-groups.png)
+![Miscellaneous Settings - LED Groups](../images/settings/miscellaneous-led-groups.png)
 </figure>
 
 Click **Groups** on a device to see its group list, then click **Add Group** to create a new one.
 
 <figure markdown="span">
-  ![Miscellaneous Settings - LED Groups - Create Group](../images/settings/miscellaneous-led-groups-new.png)
+![Miscellaneous Settings - LED Groups - Create Group](../images/settings/miscellaneous-led-groups-new.png)
 </figure>
 
 ### Name
@@ -58,13 +58,13 @@ total number of LEDs in the chain.
 Presets let you save color configurations for a light device and quickly apply them later from the Dashboard.
 
 <figure markdown="span">
-  ![Miscellaneous Settings - LED Presets](../images/settings/miscellaneous-led-presets.png)
+![Miscellaneous Settings - LED Presets](../images/settings/miscellaneous-led-presets.png)
 </figure>
 
 Click **Presets** on a device to see its preset list, then click **Add Preset** to create a new one.
 
 <figure markdown="span">
-  ![Miscellaneous Settings - LED Presets - Create Preset](../images/settings/miscellaneous-led-presets-new.png)
+![Miscellaneous Settings - LED Presets - Create Preset](../images/settings/miscellaneous-led-presets-new.png)
 </figure>
 
 ### Name

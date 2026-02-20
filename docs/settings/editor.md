@@ -12,7 +12,7 @@ social:
 Open the **Interface Settings** by clicking the **cogs icon** in the top-right corner, then navigate to **Editor**.
 
 <figure markdown="span">
-  ![Editor Settings](../images/settings/editor.png)
+![Editor Settings](../images/settings/editor.png)
 </figure>
 
 ## Use ESC to Close Editor

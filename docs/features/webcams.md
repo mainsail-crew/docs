@@ -27,8 +27,8 @@ When more than one webcam is configured, all cameras are displayed in an overvie
 switch to a single camera using the dropdown menu in the panel header.
 
 <figure markdown="span">
-  ![Webcam Dropdown](../images/features/webcams-dropdown.png)
-  <figcaption>Dropdown menu for switching between webcams</figcaption>
+![Webcam Dropdown](../images/features/webcams-dropdown.png)
+<figcaption>Dropdown menu for switching between webcams</figcaption>
 </figure>
 
 ## Configuration

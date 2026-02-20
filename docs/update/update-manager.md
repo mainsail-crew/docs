@@ -44,7 +44,7 @@ path: ~/mainsail
 
 With the Update Manager enabled, open the Machine tab. You should see the Update Manager panel and a list of components.
 <figure markdown="span">
-  ![Update Manager Panel](../images/update/update-manager-panel.png)
+![Update Manager Panel](../images/update/update-manager-panel.png)
 </figure>
 
 ### Check for updates
@@ -71,7 +71,7 @@ The recommended order is top-to-bottom. To perform the update:
 A popup shows progress and details. Once done, close the window.
 
 <figure markdown="span">
-  ![Updating Dialog](../images/update/updating-dialog.png)
+![Updating Dialog](../images/update/updating-dialog.png)
 </figure>
 
 ## States of components

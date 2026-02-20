@@ -28,7 +28,7 @@ No local setup is required — simply sign in and start translating.
 ### Translation Status
 
 <figure markdown="span">
-  [![Weblate translation status](https://hosted.weblate.org/widget/mainsail/horizontal-auto.svg)](https://hosted.weblate.org/engage/mainsail/){:target="_blank"}
+[![Weblate translation status](https://hosted.weblate.org/widget/mainsail/horizontal-auto.svg)](https://hosted.weblate.org/engage/mainsail/){:target="_blank"}
 </figure>
 
 ## Alternative Methods
