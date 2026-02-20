@@ -1,3 +1,126 @@
+/* ==========================================================================
+   Mainsail brand colors
+   ========================================================================== */
+
+[data-md-color-scheme="slate"] {
+  /* Background: neutral dark instead of MkDocs default blue-ish dark */
+  --md-default-bg-color: #1d1d1d;
+  --md-default-bg-color--light: #242424;
+  --md-default-bg-color--lighter: #2d2b2b;
+  --md-default-bg-color--lightest: #353232;
+
+  /* Foreground: warm gray text */
+  --md-default-fg-color: #c6bebd;
+  --md-default-fg-color--light: #c6bebdba;
+  --md-default-fg-color--lighter: #c6bebd52;
+  --md-default-fg-color--lightest: #c6bebd12;
+
+  /* Primary: near-black header */
+  --md-primary-fg-color: #0e0e0e;
+  --md-primary-fg-color--light: #1a1a1a;
+  --md-primary-fg-color--dark: #000000;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+
+  /* Accent: Mainsail red */
+  --md-accent-fg-color: #d41216;
+  --md-accent-fg-color--transparent: #d4121610;
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: #ffffffb3;
+
+  /* Links: Mainsail red (base — overridden below with higher specificity) */
+  --md-typeset-a-color: #d41216;
+
+  /* Code blocks: warm dark gray */
+  --md-code-bg-color: #2d2b2b;
+  --md-code-fg-color: #c6bebd;
+  --md-code-hl-color: #d412161a;
+
+  /* Footer */
+  --md-footer-bg-color: #141414;
+  --md-footer-bg-color--dark: #0e0e0e;
+  --md-footer-fg-color: #c6bebd;
+  --md-footer-fg-color--light: #c6bebdba;
+  --md-footer-fg-color--lighter: #c6bebd52;
+}
+
+/* Overrides that need compound selector to beat palette specificity */
+[data-md-color-scheme="slate"][data-md-color-primary="black"] {
+  --md-typeset-a-color: #d41216;
+
+  /* Header/tabs: neutral black instead of blue-ish */
+  --md-primary-fg-color: #0e0e0e;
+  --md-primary-fg-color--light: #1a1a1a;
+  --md-primary-fg-color--dark: #000000;
+}
+
+/* Header/tabs/footer: override hardcoded palette background colors */
+[data-md-color-primary="black"] .md-header {
+  background-color: #0e0e0e;
+}
+
+[data-md-color-primary="black"] .md-tabs {
+  background-color: #0e0e0e;
+}
+
+/* Sidebar navigation — matched to docs.mainsail.xyz */
+
+/* Section group headings: uppercase, small, bright */
+[data-md-color-scheme="slate"] .md-nav__item--section > .md-nav__link,
+[data-md-color-scheme="slate"] .md-nav__item--section > label.md-nav__link {
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #fffffe !important;
+}
+
+/* Normal nav links: white at 64% opacity */
+[data-md-color-scheme="slate"] .md-nav__link {
+  color: rgba(255, 255, 254, 0.64);
+}
+
+/* Active nav link: Mainsail red, semibold */
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__link--active {
+  color: #d41216;
+  font-weight: 600;
+}
+
+/* Nav link hover */
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+  color: rgba(255, 255, 254, 0.9);
+}
+
+/* Headings: brighter than body text for visual hierarchy */
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4,
+[data-md-color-scheme="slate"] .md-typeset h5,
+[data-md-color-scheme="slate"] .md-typeset h6 {
+  color: #fffffe;
+}
+
+/* Borders / dividers: warm gray */
+[data-md-color-scheme="slate"] .md-typeset hr {
+  border-color: #474242;
+}
+
+[data-md-color-scheme="slate"] .md-nav__item {
+  border-color: #474242;
+}
+
+/* Figcaptions: closer to image, smaller text */
+[data-md-color-scheme="slate"] .md-typeset figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* ==========================================================================
+   Table styles
+   ========================================================================== */
+
 .md-typeset__table {
   width: 100%;
 }
@@ -96,4 +219,8 @@
   background-color: #e91e63;
   -webkit-mask-image: var(--md-admonition-icon--heart);
   mask-image: var(--md-admonition-icon--heart);
+}
+
+.md-typeset h1 {
+  margin-bottom: .5em;
 }
