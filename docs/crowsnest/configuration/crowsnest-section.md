@@ -8,14 +8,14 @@ social:
 
 # [crowsnest] section
 
-## **log_level**
+## log_level
 
 Defines how much information should be written to the log file.  
-Default: `log_level: verbose`
+Default: `verbose`
 
 Available options:
 
-??? note "quiet"
+??? info "quiet"
     Basic information only.
 
     ```ini
@@ -32,7 +32,7 @@ Available options:
     ...
     ```
 
-??? note "verbose"
+??? info "verbose"
     Recommended for setup and troubleshooting.
 
     ```ini
@@ -42,9 +42,7 @@ Available options:
     Displays detailed information about the configured and connected cameras, plus their capabilities.  
     Turn off when not needed.
 
-    See this [example](https://github.com/mainsail-crew/crowsnest/blob/master/log-example.md).
-
-??? note "debug"
+??? info "debug"
     For debugging only.
 
     ```ini
@@ -54,22 +52,33 @@ Available options:
     Includes all 'verbose' information, plus startup parameters (and defaults) and streamer output.  
     Use only for debugging and turn off when not needed.
 
-!!! info
+!!! note
     Once configured, consider setting `log_level` to `quiet` to minimize disk usage.
 
-## **delete_log**
+## delete_log
 
-Default: `delete_log: false`
+Default: `false`
 
 If set to `true`, the existing log file will be deleted every time Crowsnest restarts.  
 This can help diagnose issues, as the log will contain only information from the latest restart.
 
-!!! info
+```ini
+delete_log: true
+```
+
+!!! tip
     This is useful if you ask for help in Discord Forums.
     Please be prepared to upload your logfile.
 
-## **no_proxy**
+## no_proxy
+
+Default: `false`
 
 If set to `true`, this forces all streamers to listen on all available network interfaces.
 
-This is useful if you want to use Crowsnest in 'standalone' mode. It is not recommended if you used MainsailOS or KIAUH for setup.
+```ini
+no_proxy: true
+```
+
+This is useful if you want to use Crowsnest in 'standalone' mode. It is not recommended if you used MainsailOS
+or KIAUH for setup.
