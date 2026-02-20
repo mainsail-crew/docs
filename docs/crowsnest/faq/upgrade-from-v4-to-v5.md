@@ -1,20 +1,29 @@
+---
+title: Upgrade from v4 to v5
+description: How to upgrade Crowsnest from version 4 to version 5 using the built-in migration tool.
+social:
+  cards_layout_options:
+    title: Crowsnest Upgrade v4 to v5
+---
+
 # Upgrade from v4 to v5
 
-We have added an easy migration tool to simplify the upgrade process from v4 to v5.
+Crowsnest includes a built-in migration tool to simplify the upgrade process from v4 to v5.
 
 ## Migration Steps
 
-To execute the migration tool, you need to access your crowsnest host (e.g. Raspberry Pi) via SSH and run the upgrade command within the `crowsnest` directory.
+1. Connect to your Crowsnest host (e.g., Raspberry Pi) via SSH.
+2. Run the following commands to start the upgrade:
 
-Execute the following commands:
-
-```bash
-cd ~/crowsnest
-make upgrade
-```
+    ```bash
+    cd ~/crowsnest
+    make upgrade
+    ```
 
 ## Post-Upgrade Verification
 
-After the upgrade, please check your `crowsnest.conf` and `moonraker.conf` files to ensure they look correct.
+After the upgrade, verify that your `crowsnest.conf` and `moonraker.conf` files are correct.
 
-If you encounter any issues, backups of both configuration files are available.
+!!! tip "Backups"
+    The migration tool creates backups of both configuration files automatically. If you encounter any issues after the
+    upgrade, you can restore them from these backups.
