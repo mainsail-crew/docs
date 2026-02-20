@@ -1,6 +1,7 @@
 ---
 title: "[cam] section"
-description: Learn how to configure individual camera sections in crowsnest.conf, including streaming modes, device paths, resolution, and advanced options for each camera.
+description: Learn how to configure individual camera sections in crowsnest.conf, including streaming modes, device
+  paths, resolution, and advanced options for each camera.
 social:
   cards_layout_options:
     title: "[cam] Section"
@@ -8,7 +9,8 @@ social:
 
 # [cam] section
 
-Create a `[cam <name>]` section for each camera. Replace `<cam>` with a meaningful name.
+Create a `[cam <name>]` section for each camera. Replace `<name>` with a meaningful name. `cam` is a required keyword to
+identify camera configurations.
 
 ```ini
 [cam raspi]
@@ -20,32 +22,17 @@ mode: ustreamer
 ...
 ```
 
-!!! danger ""
-    `cam` is a required keyword to identify camera configurations.
-
-## **mode**
+## mode
 
 The streaming backend used by Crowsnest.  
-Default: `mode: ustreamer`  
+Default: `ustreamer`  
 Available options:
 
-??? note "ustreamer"
-    This mode uses the MJPG protocol and streams with [ustreamer](https://github.com/pikvm/ustreamer). It's essentially a series of JPEG images.  
-    This mode uses a lot of bandwidth depending on the resolution and frame rate set.
+- `ustreamer`
+- `camera-streamer`
+- `spyglass`
 
-??? note "camera-streamer"
-    This mode uses [camera-streamer](https://github.com/ayufan/camera-streamer) as the backend.
-
-    camera-streamer is available on all devices but with different feature set depending on the device. More information can be found [here](../faq/backends.md#camera-streamer-ayufan).  
-    `camera-streamer` leverages the Pi SBC's GPU for hardware-encoded H.264 streams. This allows you to stream your video feed in WebRTC, which uses less bandwidth without sacrificing quality, framerate, or resolution.  
-    <!-- It also simultaneously provides RTSP streaming (if enabled through `enable_rtsp: true`), MJPG, and snapshots. -->
-
-??? note "spyglass"
-    This mode uses [spyglass](https://github.com/mainsail-crew/spyglass) as the backend, proividing support for Picameras on Raspberry Pi SBCs.
-
-    spyglass is only available on Raspberry Pi's and only for Picameras.  
-    Being maintained by our team allows for faster issue resolution without external dependencies.  
-    It also supports Picameras on a Pi5, but you should adjust your config according to [this](../faq/backends.md#spyglass-mainsail-crew).
+For detailed information about each backend, see the [Backends](../faq/backends.md) page.
 <!--
 ## enable_rtsp
 
@@ -63,29 +50,28 @@ rtsp_port: 8554
 
 This setting allows you to set a port for the RTSP server. Only available with `mode: camera-streamer`.
 -->
-## **port**
+## port
 
-The network port through which the camera is accessible. This setting only affects MJPG mode (ustreamer).  
-Default: `port: 8080`
+The network port through which the camera is accessible.  
+Default: `8080`
 
-**Note:** MainsailOS maps four webcam ports to URLs by default. Note that the first URL has no number. You can simply add these to the Mainsail settings.
+!!! info "MainsailOS users"
+    MainsailOS maps four webcam ports to URLs via its Nginx reverse proxy by default. Note that the first URL has no
+    number. You can simply add these to the Mainsail settings. If you are not using MainsailOS, you may need to
+    configure your reverse proxy accordingly.
+    
+    | Port | Stream URL              | Snapshot URL              |
+    | ---- | ----------------------- | ------------------------- |
+    | 8080 | /webcam/?action=stream  | /webcam/?action=snapshot  |
+    | 8081 | /webcam2/?action=stream | /webcam2/?action=snapshot |
+    | 8082 | /webcam3/?action=stream | /webcam3/?action=snapshot |
+    | 8083 | /webcam4/?action=stream | /webcam4/?action=snapshot |
 
-| Port | Stream URL              | Snapshot URL              |
-| ---- | ----------------------- | ------------------------- |
-| 8080 | /webcam/?action=stream  | /webcam/?action=snapshot  |
-| 8081 | /webcam2/?action=stream | /webcam2/?action=snapshot |
-| 8082 | /webcam3/?action=stream | /webcam3/?action=snapshot |
-| 8083 | /webcam4/?action=stream | /webcam4/?action=snapshot |
+## device
 
-### A small note on WebRTC
-
-If you want to use WebRTC, you can find an example [here](../faq/webrtc.md).
-
-
-## **device**
-
-The path of the video device (camera) to be used by the configured streaming service. All available devices are listed in the log file every time Crowsnest is started. You can copy the path from there.  
-Default: `device: /dev/video0`
+The path of the video device (camera) to be used by the configured streaming service. All available devices are listed
+in the log file every time Crowsnest is started. You can copy the path from there.  
+Default: `/dev/video0`
 
 A path in this format is also valid:
 
@@ -94,22 +80,22 @@ device: /dev/v4l/by-id/usb-PixArt_Imaging_Inc._USB2.0_Camera-video-index0
 ```
 
 !!! info
-    Always prefer full paths as shown above. Especially in multicam setups, using `/dev/video*` will lead to errors or unexpected behavior.
+    Always prefer `/dev/v4l/by-id/` paths as shown above. Especially in multicam setups, using `/dev/video*` will lead
+    to errors or unexpected behavior. If you are using identical cameras, use `/dev/v4l/by-path/` instead, as
+    `/dev/v4l/by-id/` paths will be the same for identical devices.
 
-## **resolution**
+## resolution
 
 The desired streaming resolution, formatted as `<width>x<height>` without spaces.  
-Default: `resolution: 640x480`
+Default: `640x480`
 
-**Note:** This is case sensitive! Do not use a capital 'X'.
-
-!!! info
-    Resolution significantly impacts bandwidth, especially in MJPG mode.
-
-You can determine which resolutions are supported by your device by checking the `crowsnest.log`.
+!!! note
+    - This setting is case-sensitive! Do not use a capital 'X'.  
+    - Resolution significantly impacts bandwidth, especially in MJPG mode.
 
 <!-- TODO -->
-!!! note "Example log file"
+!!! info "Supported Resolutions"
+    You can determine which resolutions are supported by your device by checking the `crowsnest.log`.
     ```
     [11/16/22 20:16:26] crowsnest: Supported Formats:
     [11/16/22 20:16:26] crowsnest: 		[0]: 'MJPG' (Motion-JPEG, compressed)
@@ -117,52 +103,48 @@ You can determine which resolutions are supported by your device by checking the
     ...
     ```
 
-## **max_fps**
+## max_fps
 
 The desired streaming FPS (frames per second).  
-Default: `max_fps: 15`
+Default: `15`
 
 !!! note
-    It is necessary to check which FPS in combination with which resolution your camera supports. For detailed information, run `v4l2-ctl --list-formats-ext` in your SSH session. The FPS has a big impact on bandwidth, especially in MJPG mode.
+    It is necessary to check which FPS in combination with which resolution your camera supports. For detailed
+    information, run `v4l2-ctl --list-formats-ext` in your SSH session. Higher FPS has a big impact on bandwidth,
+    especially in MJPG mode.
 
-## **custom_flags**
+## custom_flags
 
-This setting allows you to pass advanced parameters to ustreamer. It is possible to adjust image parameters such as brightness, contrast, and saturation, or to flip the image. The passed parameters are appended to the already configured parameters. However, your camera needs to support these advanced parameters as well.  
-Default: `custom_flags:`
+This setting allows you to pass advanced parameters to the configured streaming backend. It is possible to adjust image
+parameters such as brightness, contrast, and saturation, or to flip the image. The passed parameters are appended to the
+already configured parameters. However, your camera needs to support these advanced parameters as well.  
+Default: not set
 
-**Note:** The flags are separated by a single space, not by a comma.
+!!! note
+    - The flags are separated by a single space, not by a comma.
+    - Refer to the documentation of the respective streaming backend for available flags. See the
+      [Backends](../faq/backends.md) page for links to the repositories.
 
-Refer to the documentation for the respective streamer. Links to the repositories can be found in the [mode](#mode) section.
+## v4l2ctl
 
-## **v4l2ctl**
+This option allows you to pass parameters for the configured device to V4L2 (the driver). Depending on the camera model,
+it is possible to pass different parameters, but not all parameters are supported by every camera.  
+Default: not set
 
-This option allows you to pass parameters for the configured device to V4L2 (the driver). Depending on the camera model, it is possible to pass different parameters, but not all parameters are supported by every camera.  
-Commented out by default.
-
-**Note:** This is a very advanced topic and is only recommended for experienced users.
-
-!!! warning
-    All parameters must be separated by commas!
-
-**Example:** `v4l2ctl: parameter1=value1,parameter2=value2,parameter3=...`
-
-You can determine what your device is capable of by checking the `crowsnest.log`:
+!!! note
+    - This is a very advanced topic and is only recommended for experienced users.
+    - All parameters must be separated by commas!
+      
+    **Example:** A Logitech C920 has autofocus enabled by default. To set manual focus:
+    ```ini
+    v4l2ctl: focus_auto=0,focus_absolute=30
+    ```
 
 <!-- TODO -->
-!!! note "Example log output:"
+!!! info "Supported Controls"
+    You can determine what your device is capable of by checking the `crowsnest.log`.
     ```shell
     [11/16/22 20:16:28] crowsnest: Supported Controls:
     [11/16/22 20:16:28] crowsnest: 		brightness 0x00980900 (int) : min=-64 max=64 step=1 default=-15 value=-15
     ...
     ```
-
-### **Example Application**
-
-A Logitech C920 camera has autofocus activated by default. For better image quality, enable manual focus. Specify these options in the config:
-
-<!-- TODO -->
-```ini
-v4l2ctl: focus_auto=0,focus_absolute=30
-```
-
-Restart the Crowsnest service via Mainsail, and you're good to go.
