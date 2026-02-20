@@ -156,7 +156,6 @@ nav:
       - Uninstall: crowsnest/setup/uninstall.md
 
     - Configuration:
-      - Sample config: crowsnest/configuration/sample-config.md
       - '[crowsnest] section': crowsnest/configuration/crowsnest-section.md
       - '[cam] section': crowsnest/configuration/cam-section.md
 
