@@ -1,6 +1,6 @@
 # AGENTS.md - Mainsail Documentation
 
-Guidance for AI agents working on this MkDocs Material documentation site for [Mainsail](https://docs.mainsail.xyz), a
+Guidance for AI agents working on this Zensical documentation site for [Mainsail](https://docs.mainsail.xyz), a
 3D printer web interface for Klipper firmware.
 
 **Live site:** https://docs.mainsail.xyz | **Repo:** https://github.com/mainsail-crew/docs
@@ -8,27 +8,24 @@ Guidance for AI agents working on this MkDocs Material documentation site for [M
 ## Build Commands
 
 ```bash
-# Setup (use virtual environment)
-python3 -m venv venv && source venv/bin/activate
+# Setup
 pip install -r requirements.txt
 
 # Development server (http://127.0.0.1:8000)
-mkdocs serve
+zensical serve
 
 # Build static site (output: site/)
-mkdocs build
-
-# Validate (strict mode - fails on warnings)
-mkdocs build --strict
+zensical build
 ```
 
 ## Project Structure
 
 ```
-mainsail-docs/
+docs/
 ├── docs/                     # Documentation source (Markdown)
 │   ├── assets/               # Logo, favicon, social images
 │   ├── images/               # Screenshots organized by section
+│   ├── stylesheets/          # Custom CSS (custom.css)
 │   ├── configuration/        # Config guides
 │   ├── features/             # Feature docs
 │   ├── setup/                # Installation guides
@@ -36,8 +33,10 @@ mainsail-docs/
 │   ├── mainsailos/           # OS image docs
 │   ├── sonar/                # Network detection docs
 │   └── index.md              # Homepage
-├── mkdocs.yml                # Site config and navigation
-├── requirements.txt          # Python deps
+├── _data/                    # Data files (contributors, licenses, themes)
+├── _scripts/                 # Build scripts (credits, themes generation)
+├── zensical.toml             # Site config and navigation
+├── requirements.txt          # Python deps (zensical)
 └── site/                     # Build output (gitignored)
 ```
 
@@ -46,7 +45,7 @@ mainsail-docs/
 ### File Organization
 - Markdown files in `docs/` with lowercase hyphenated names: `my-feature.md`
 - Images in `docs/images/<section>/` using `.png`, `.webp`, or `.avif`
-- Navigation defined in `mkdocs.yml` under `nav:`
+- Navigation defined in `zensical.toml` under `nav`
 
 ### Frontmatter
 ```yaml
@@ -92,7 +91,7 @@ social:
 ```
 
 ### Code Blocks
-Use language identifiers: `ini` for Klipper config, `bash` for commands, `yaml` for YAML.
+Use language identifiers: `ini` for Klipper config, `bash` for commands, `yaml` for YAML, `toml` for TOML.
 
 ```ini
 [virtual_sdcard]
@@ -108,14 +107,21 @@ path: ~/printer_data/gcodes
     Content for tab 2
 ```
 
-## MkDocs Features Available
+## Zensical Theme & Features
 
-**Site features** (from `mkdocs.yml`):
+**Theme configuration** (from `zensical.toml`):
+- Variant: `modern` (Material-based)
+- Palette: `slate` scheme, `black` primary, `red` accent
+- Custom accent color override: Mainsail red `#d41216` (in `docs/stylesheets/custom.css`)
+
+**Site features**:
 - `content.action.edit` - Edit on GitHub
 - `content.code.copy` - Code copy buttons
-- `navigation.tabs` - Top-level tabs
+- `navigation.path` - Breadcrumb navigation
+- `navigation.sections` - Section-based sidebar navigation
+- `navigation.tabs` - Tabbed navigation in the topbar
 
-**Markdown extensions**:
+**Markdown extensions** (bundled with Zensical):
 - `admonition` - Callout boxes
 - `attr_list` - Element attributes
 - `pymdownx.superfences` - Enhanced code blocks
@@ -155,19 +161,24 @@ Open the settings by clicking the gear icon in the sidebar.
 ### Adding a New Page
 1. Create `.md` file in appropriate `docs/` subdirectory
 2. Add frontmatter with title and description
-3. Add to `mkdocs.yml` navigation under `nav:`
+3. Add to `zensical.toml` navigation under `nav`
 4. Add images to `docs/images/<section>/`
 
 ### Updating Navigation
-```yaml
-nav:
-  - Section:
-    - Page Title: path/to/page.md
-    - Subsection:
-      - Nested: path/to/nested.md
+
+Navigation is defined in `zensical.toml` using TOML array-of-tables syntax:
+
+```toml
+nav = [
+  { "Section" = [
+    { "Page Title" = "path/to/page.md" },
+    { "Subsection" = [
+      { "Nested" = "path/to/nested.md" },
+    ]},
+  ]},
+]
 ```
 
 ## CI/CD Notes
-- `git-committers` plugin only runs in CI (`enabled: !ENV [CI, false]`)
 - Build output (`site/`) is gitignored
-- Deploys via GitHub Pages on `mkdocs` branch
+- Deploys via GitHub Pages
