@@ -1,0 +1,26 @@
+/* Override accent color with Mainsail red */
+[data-md-color-accent=red] {
+  --md-accent-fg-color: #d41216;
+  --md-accent-fg-color--transparent: #d412161a;
+}
+
+/* Override primary/link color with Mainsail red (slate+black defaults to blue) */
+[data-md-color-scheme=slate][data-md-color-primary=black] {
+  --md-typeset-a-color: #d41216;
+  --md-primary-fg-color: #d41216;
+}
+
+/* Navi section header */
+.md-nav__item--section > label.md-nav__link {
+  text-transform: uppercase;
+}
+
+/* right sidebar > "ON THIS PAGE" */
+.md-sidebar--secondary .md-nav__title {
+    text-transform: uppercase;
+}
+
+/* fix margin bottom for h1 headlines */
+.md-typeset > h1 {
+    margin-bottom: .5em;
+}

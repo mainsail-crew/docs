@@ -1,13 +1,19 @@
 # =============================================================================
 # Zensical configuration for Mainsail Documentation
-# Migrated from mkdocs.yml
 # =============================================================================
 
 [project]
 site_name = "Mainsail - The 3D Printer Interface"
 site_url = "https://docs.mainsail.xyz"
+copyright = "&copy; Mainsail-Crew 2026"
 edit_uri = "https://github.com/mainsail-crew/docs/edit/docs/"
-extra_css = ["stylesheets/extra.css"]
+extra_css = [
+  "stylesheets/custom.css",
+]
+
+# repository settings
+repo_url = "https://github.com/mainsail-crew/mainsail"
+repo_name = "mainsail-crew/mainsail"
 
 # -----------------------------------------------------------------------------
 # Navigation
@@ -173,17 +179,10 @@ nav = [
 ]
 
 # -----------------------------------------------------------------------------
-# Repository
-# -----------------------------------------------------------------------------
-[project.repository]
-url = "https://github.com/mainsail-crew/mainsail"
-name = "mainsail-crew/mainsail"
-
-# -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
 [project.theme]
-variant = "classic"
+variant = "modern"
 logo = "assets/logo.svg"
 favicon = "assets/favicon.png"
 language = "en"
@@ -192,8 +191,8 @@ features = [
   "content.action.edit",
   "content.code.copy",
   "navigation.path",
-  "navigation.sections",
-  "navigation.tabs",
+  "navigation.sections", # section-based navigation in the sidebar
+  "navigation.tabs", # tabbed navigation in the topbar
 ]
 
 [project.theme.palette]
@@ -208,42 +207,17 @@ repo = "fontawesome/brands/git-alt"
 # Social links
 # -----------------------------------------------------------------------------
 [[project.extra.social]]
+name = "Mainsail-Crew on GitHub"
 icon = "fontawesome/brands/github"
 link = "https://github.com/mainsail-crew"
 
 [[project.extra.social]]
+name = "Mainsail Community server on Discord"
 icon = "fontawesome/brands/discord"
 link = "https://discord.gg/mainsail"
 
 [[project.extra.social]]
+name = "Mainsail-Crew on YouTube"
 icon = "fontawesome/brands/youtube"
 link = "https://www.youtube.com/@Mainsail-Crew"
 
-# -----------------------------------------------------------------------------
-# Markdown extensions
-# -----------------------------------------------------------------------------
-[project.markdown_extensions.admonition]
-
-[project.markdown_extensions.attr_list]
-
-[project.markdown_extensions.md_in_html]
-
-[project.markdown_extensions."pymdownx.details"]
-
-[project.markdown_extensions."pymdownx.emoji"]
-emoji_index = "material.extensions.emoji.twemoji"
-emoji_generator = "material.extensions.emoji.to_svg"
-
-[project.markdown_extensions."pymdownx.highlight"]
-anchor_linenums = true
-line_spans = "__span"
-pygments_lang_class = true
-
-[project.markdown_extensions."pymdownx.inlinehilite"]
-
-[project.markdown_extensions."pymdownx.snippets"]
-
-[project.markdown_extensions."pymdownx.superfences"]
-
-[project.markdown_extensions."pymdownx.tabbed"]
-alternate_style = true
