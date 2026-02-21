@@ -13,5 +13,5 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # Start the development server (http://127.0.0.1:8000)
-mkdocs serve
+zensical serve
 ```
