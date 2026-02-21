@@ -1,0 +1,4 @@
+size: { width: 1280, height: 640 }
+layers:
+  - size: { width: 1280, height: 640 }
+    offset: { x: 0, y: 0 }

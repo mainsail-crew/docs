@@ -6,9 +6,6 @@ use_directory_urls: true
 
 edit_uri: https://github.com/mainsail-crew/docs/edit/docs/
 
-hooks:
-  - hooks/repo_per_section.py
-
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -181,30 +178,32 @@ nav:
     - GitHub Discussions: getting-help/github-discussions.md
     - Reddit: getting-help/reddit.md
 
-plugins:
-  - git-revision-date-localized:
-      enable_creation_date: true
-      exclude:
-        - index.md
-      fallback_to_build_date: false
-      locale: en
-      type: timeago
-
-  - git-committers:
-      branch: mkdocs
-      enabled: !ENV [CI, false]
-      exclude:
-        - index.md
-      repository: mainsail-crew/docs
-
-  - glightbox
-
-  - social:
-      enabled: !ENV [CI, false]
-      cards_layout_options:
-        logo: docs/assets/logo.svg
-        #background_image: docs/assets/social-background.png
-        background_color: '#252525'
+#plugins:
+  # TODO: Zensical will natively support git-related plugins
+  #- git-revision-date-localized:
+  #    enable_creation_date: true
+  #    exclude:
+  #      - index.md
+  #    fallback_to_build_date: false
+  #    locale: en
+  #    type: timeago
+  #
+  # TODO: Zensical will natively support git-related plugins
+  #- git-committers:
+  #    branch: mkdocs
+  #    enabled: !ENV [CI, false]
+  #    exclude:
+  #      - index.md
+  #    repository: mainsail-crew/docs
+  #
+  # TODO: Check glightbox compatibility with Zensical
+  #- glightbox
+  #
+  # TODO: Social cards not yet configured
+  #- social:
+  #    cards_layout_dir: layouts
+  #    cards_layout: social-card
+  #    debug: true
 
 repo_name: mainsail-crew/mainsail
 repo_url: https://github.com/mainsail-crew/mainsail
