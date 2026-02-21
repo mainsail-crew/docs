@@ -23,40 +23,34 @@ awesome sponsors.
 
 ---
 
-## Official Mainboard Partner
-
-<div class="sponsor-highlight">
-  <a href="https://www.bigtreetech.com/" target="_blank">
-    <img src="images/sponsors/bigtreetech.png" alt="BIGTREETECH" class="sponsor-logo-large" loading="lazy">
-  </a>
-</div>
-
-[BIGTREETECH](https://www.bigtreetech.com/){:target="_blank"} is the official mainboard partner of Mainsail.
-BIGTREETECH is committed to developing innovative and competitive products to serve the 3D printing community better.
-Follow them on [Facebook](https://www.facebook.com/BIGTREETECH){:target="_blank"} or
-[Twitter](https://twitter.com/BigTreeTech){:target="_blank"}.
-
----
-
 ## Vendor Partners
 
 These vendors support us financially in developing Mainsail. If you are also a vendor and use Mainsail on the
 3D printers you sell, we would be happy if you also support us via
 [Patreon](https://www.patreon.com/meteyou){:target="_blank"} or [GitHub](https://github.com/sponsors/mainsail-crew).
 
-<div class="sponsor-grid">
-  <a href="https://ldomotors.com/" target="_blank" class="sponsor-card">
-    <img src="images/sponsors/ldo.png" alt="LDO Motors" class="sponsor-logo" loading="lazy">
-    <span>LDO Motors</span>
-  </a>
-  <a href="https://www.prusa3d.com/" target="_blank" class="sponsor-card">
-    <img src="images/sponsors/prusa-research.png" alt="Prusa Research" class="sponsor-logo" loading="lazy">
-    <span>Prusa Research</span>
-  </a>
-  <a href="https://www.wanhao.store/" target="_blank" class="sponsor-card">
-    <img src="images/sponsors/wanhao-yumi.png" alt="Wanhao / Yumi" class="sponsor-logo" loading="lazy">
-    <span>Wanhao / Yumi</span>
-  </a>
+<div class="sponsor-highlight" markdown>
+[![BIGTREETECH](images/sponsors/bigtreetech.png){.sponsor-logo-large}](https://www.bigtreetech.com/){:target="_blank"}
+
+[BIGTREETECH](https://www.bigtreetech.com/){:target="_blank"} is the **official mainboard partner** of Mainsail.
+BIGTREETECH is committed to developing innovative and competitive products to serve the 3D printing community better.
+Follow them on [Facebook](https://www.facebook.com/BIGTREETECH){:target="_blank"} or
+[Twitter](https://twitter.com/BigTreeTech){:target="_blank"}.
+</div>
+
+<div class="sponsor-grid" markdown>
+  <div class="sponsor-card" markdown>
+  [![LDO Motors](images/sponsors/ldo.png){.sponsor-logo}](https://ldomotors.com/){:target="_blank"}
+  **LDO Motors**
+  </div>
+  <div class="sponsor-card" markdown>
+  [![Prusa Research](images/sponsors/prusa-research.png){.sponsor-logo}](https://www.prusa3d.com/){:target="_blank"}
+  **Prusa Research**
+  </div>
+  <div class="sponsor-card" markdown>
+  [![Wanhao / Yumi](images/sponsors/wanhao-yumi.png){.sponsor-logo}](https://www.wanhao.store/){:target="_blank"}
+  **Wanhao / Yumi**
+  </div>
 </div>
 
 ---
@@ -65,17 +59,17 @@ These vendors support us financially in developing Mainsail. If you are also a v
 
 These companies support us with free licenses to develop open-source software.
 
-<div class="sponsor-grid">
-  <a href="https://www.browserstack.com/" target="_blank" class="sponsor-card">
-    <img src="images/sponsors/browserstack.png" alt="BrowserStack" class="sponsor-logo" loading="lazy">
-    <span>BrowserStack</span>
-  </a>
-  <a href="https://www.jetbrains.com/" target="_blank" class="sponsor-card">
-    <img src="images/sponsors/jetbrains.png" alt="JetBrains" class="sponsor-logo" loading="lazy">
-    <span>JetBrains</span>
-  </a>
-  <a href="https://weblate.org/" target="_blank" class="sponsor-card">
-    <img src="images/sponsors/weblate.png" alt="Weblate" class="sponsor-logo" loading="lazy">
-    <span>Weblate</span>
-  </a>
+<div class="sponsor-grid" markdown>
+  <div class="sponsor-card" markdown>
+  [![BrowserStack](images/sponsors/browserstack.png){.sponsor-logo}](https://www.browserstack.com/){:target="_blank"}
+  **BrowserStack**
+  </div>
+  <div class="sponsor-card" markdown>
+  [![JetBrains](images/sponsors/jetbrains.png){.sponsor-logo}](https://www.jetbrains.com/){:target="_blank"}
+  **JetBrains**
+  </div>
+  <div class="sponsor-card" markdown>
+  [![Weblate](images/sponsors/weblate.png){.sponsor-logo}](https://weblate.org/){:target="_blank"}
+  **Weblate**
+  </div>
 </div>

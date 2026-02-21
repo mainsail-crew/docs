@@ -24,3 +24,202 @@
 .md-typeset > h1 {
     margin-bottom: .5em;
 }
+
+/* =========================================================================
+   Sponsors page
+   ========================================================================= */
+
+/* Sponsor links (Patreon, GitHub, Ko-Fi buttons) */
+.sponsor-links {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    margin-top: .5rem;
+}
+
+/* --- Official Mainboard Partner (hero card) --- */
+.sponsor-highlight {
+    text-align: center;
+    padding: .75rem;
+    border-radius: .75rem;
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(212, 18, 22, .08) 0%, transparent 70%),
+        linear-gradient(168deg, rgba(255, 255, 255, .04) 0%, rgba(255, 255, 255, .01) 100%);
+    border: 1px solid rgba(255, 255, 255, .07);
+    transition:
+        border-color .35s cubic-bezier(.22, 1, .36, 1),
+        box-shadow .35s cubic-bezier(.22, 1, .36, 1);
+}
+
+.sponsor-highlight:hover {
+    border-color: rgba(212, 18, 22, .3);
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, .2),
+        0 0 0 1px rgba(212, 18, 22, .1);
+}
+
+.sponsor-highlight p {
+    margin: 0;
+    font-size: .75rem;
+}
+
+.sponsor-highlight p + p {
+    margin-top: .25rem;
+    color: var(--md-default-fg-color--light);
+    line-height: 1.6;
+}
+
+.sponsor-highlight a {
+    transition: filter .3s ease;
+}
+
+.sponsor-highlight a:hover {
+    filter: brightness(1.1);
+}
+
+.sponsor-logo-large {
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 2px 12px rgba(0, 0, 0, .25));
+}
+
+/* --- Sponsor grid (Vendor Partners & Open Source Licenses) --- */
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin: 1.5rem 0;
+}
+
+.sponsor-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: .75rem .75rem .6rem;
+    border-radius: .75rem;
+    background: linear-gradient(
+        168deg,
+        rgba(255, 255, 255, .04) 0%,
+        rgba(255, 255, 255, .01) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, .07);
+    transition:
+        border-color .35s cubic-bezier(.22, 1, .36, 1),
+        box-shadow .35s cubic-bezier(.22, 1, .36, 1),
+        transform .35s cubic-bezier(.22, 1, .36, 1),
+        background .35s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* subtle top-edge accent line */
+.sponsor-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--md-accent-fg-color), transparent);
+    border-radius: 0 0 2px 2px;
+    transition: width .4s cubic-bezier(.22, 1, .36, 1);
+}
+
+.sponsor-card:hover {
+    border-color: rgba(212, 18, 22, .3);
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, .2),
+        0 0 0 1px rgba(212, 18, 22, .1);
+    transform: translateY(-3px);
+    background: linear-gradient(
+        168deg,
+        rgba(255, 255, 255, .06) 0%,
+        rgba(255, 255, 255, .02) 100%
+    );
+}
+
+.sponsor-card:hover::before {
+    width: 60%;
+}
+
+/* reset paragraph wrapper inserted by markdown renderer */
+.sponsor-card p {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsor-card a {
+    display: block;
+    width: 100%;
+    text-decoration: none !important;
+}
+
+/* stretch link over entire card */
+.sponsor-card a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.sponsor-card a:hover {
+    transform: none;
+}
+
+.sponsor-card strong {
+    display: block;
+    margin-top: .35rem;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    color: var(--md-default-fg-color--light);
+    transition: color .3s ease;
+}
+
+.sponsor-card:hover strong {
+    color: var(--md-default-fg-color);
+}
+
+/* sponsor logos inside grid cards — fill the card width */
+.sponsor-logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, .15));
+    transition: filter .3s ease;
+}
+
+.sponsor-card:hover .sponsor-logo {
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .25));
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 768px) {
+    .sponsor-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .sponsor-card {
+        padding: 1.5rem 1rem 1.25rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sponsor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sponsor-highlight {
+        padding: 1.5rem 1rem;
+    }
+}
