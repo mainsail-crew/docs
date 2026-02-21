@@ -20,6 +20,15 @@
     text-transform: uppercase;
 }
 
+/* Breadcrumb: hide first item (site_name) and separator on new first visible item */
+.md-path__item:first-child {
+    display: none;
+}
+
+.md-path__item:nth-child(2)::before {
+    content: none;
+}
+
 /* fix margin bottom for h1 headlines */
 .md-typeset > h1 {
     margin-bottom: .5em;
