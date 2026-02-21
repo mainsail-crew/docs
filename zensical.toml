@@ -182,6 +182,7 @@ nav = [
 # Theme
 # -----------------------------------------------------------------------------
 [project.theme]
+custom_dir = "overrides"
 variant = "modern"
 logo = "assets/logo.svg"
 favicon = "assets/favicon.png"
