@@ -1,5 +1,5 @@
 ---
-title: Sonar Configuration
+html_title: Configure Ping Target, Interval & Logging - Sonar
 description: Configure Sonar's WiFi keepalive behavior, including ping target, interval, logging, and restart
   threshold.
 social:

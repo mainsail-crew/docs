@@ -1,5 +1,5 @@
 ---
-title: Sonar - WiFi Keepalive Daemon
+html_title: Sonar - Automatic WiFi Reconnect for Raspberry Pi & SBCs
 description: Sonar is a lightweight keepalive daemon that monitors your WiFi connection and automatically restores it if
   it drops.
 social:

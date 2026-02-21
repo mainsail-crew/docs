@@ -1,5 +1,5 @@
 ---
-title: Sonar Installation
+html_title: Install Sonar on Raspberry Pi OS & Debian Systems
 description: Step-by-step guide to install Sonar, the WiFi keepalive daemon, on Raspberry Pi OS and other Debian-based
   systems.
 social:
