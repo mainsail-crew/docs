@@ -55,10 +55,9 @@ This setting allows you to set a port for the RTSP server. Only available with `
 The network port through which the camera is accessible.  
 Default: `8080`
 
-!!! info "MainsailOS users"
-    MainsailOS maps four webcam ports to URLs via its Nginx reverse proxy by default. Note that the first URL has no
-    number. You can simply add these to the Mainsail settings. If you are not using MainsailOS, you may need to
-    configure your reverse proxy accordingly.
+!!! info
+    If you have Mainsail installed on the same device as Crowsnest, a Nginx reverse proxy is also installed. So you can
+    use these URLs to access the camera stream and snapshots:
     
     | Port | Stream URL              | Snapshot URL              |
     | ---- | ----------------------- | ------------------------- |
