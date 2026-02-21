@@ -9,7 +9,7 @@ social:
 # Welcome to Mainsail
 
 Mainsail is a powerful and user-friendly web interface for managing and controlling 3D printers powered by Klipper
-firmware. Its sleek, intuitive dashboard makes it easy to start prints, monitor progress, and fine-tune settings — all
+firmware. Its sleek, intuitive dashboard makes it easy to start prints, monitor progress, and fine-tune settings - all
 in real time. With features like live print monitoring, detailed statistics, macro management, and a highly customizable
 layout, Mainsail helps you get the most out of your printers. Backed by an active community and comprehensive
 documentation, you have all the support you need to optimize your 3D printing workflow.
@@ -45,28 +45,39 @@ documentation, you have all the support you need to optimize your 3D printing wo
 - **Temperature Presets:** Save and apply preheat profiles for faster print preparation.
 - **Object Exclusion:** Exclude individual objects during a print to salvage the remaining parts.
 
-## Support Mainsail
+## Vendor Partners
 
-Mainsail is an open-source project primarily maintained by the developer [meteyou](https://github.com/meteyou), with
-contributions from a passionate community of users and developers. Your support is crucial in helping us continue to
-enhance and expand the platform. Here’s how you can contribute:
+These vendors support us financially in developing Mainsail. If you are also a vendor and use Mainsail on the
+3D printers you sell, we would be happy if you also support us via
+[Patreon](https://www.patreon.com/meteyou){:target="_blank"} or [GitHub](https://github.com/sponsors/mainsail-crew).
 
-- **Join the Community:** Engage with other users and developers in our [Discord](https://discord.gg/mainsail) or
-[GitHub Discussions](https://github.com/orgs/mainsail-crew/discussions). Share your experiences, ask questions, and
-provide feedback to help make Mainsail even better.
-- **Star the Repository:** Show your appreciation by starring the
-[Mainsail GitHub repository](https://github.com/mainail-crew/mainsail).
-- **Report Issues:** If you encounter any bugs or have suggestions for new features, please report them on our
-[GitHub Issues](https://github.com/mainsail-crew/mainsail/issues?q=sort:updated-desc+is:issue+is:open) page. Your input
-helps us prioritize and address the most important aspects of the project.
-- **Contribute Code:** If you’re a developer, consider contributing to the project by reviewing our
-[Contributing Guide](development/contributing.md) and submitting pull requests. Every contribution, no matter how small,
-is valuable and appreciated.
-- **Donate:** If you’d like to support the project financially, you can make a donation via
-[GitHub Sponsors](https://github.com/sponsors/mainsail-crew), [Patreon](https://www.patreon.com/meteyou) or
-[Ko-fi](https://ko-fi.com/mainsail).
-- **Spread the Word:** Help us grow the Mainsail community by sharing your experience on social media, in forums, or
-with fellow 3D printing enthusiasts.
+<div class="sponsor-highlight" markdown>
+[![BIGTREETECH](images/sponsors/bigtreetech.png){.sponsor-logo-large}](https://www.bigtreetech.com/){:target="_blank"}
 
-Your support ensures that Mainsail continues to be a powerful and accessible tool for everyone. Thank you for being part
-of our journey!
+[BIGTREETECH](https://www.bigtreetech.com/){:target="_blank"} is the **official mainboard partner** of Mainsail.
+BIGTREETECH is committed to developing innovative and competitive products to serve the 3D printing community better.
+Follow them on [Facebook](https://www.facebook.com/BIGTREETECH){:target="_blank"} or
+[Twitter](https://twitter.com/BigTreeTech){:target="_blank"}.
+</div>
+
+<div class="sponsor-grid" markdown>
+  <div class="sponsor-card" markdown>
+  [![LDO Motors](images/sponsors/ldo.png){.sponsor-logo}](https://ldomotors.com/){:target="_blank"}
+  **LDO Motors**
+  </div>
+  <div class="sponsor-card" markdown>
+  [![Prusa Research](images/sponsors/prusa-research.png){.sponsor-logo}](https://www.prusa3d.com/){:target="_blank"}
+  **Prusa Research**
+  </div>
+  <div class="sponsor-card" markdown>
+  [![Wanhao / Yumi](images/sponsors/wanhao-yumi.png){.sponsor-logo}](https://www.wanhao.store/){:target="_blank"}
+  **Wanhao / Yumi**
+  </div>
+</div>
+
+!!! heart "Support Mainsail"
+
+    Mainsail is an open-source project maintained by [meteyou](https://github.com/meteyou) and a passionate community.
+    Your support helps us continue to improve and expand the platform.
+
+    [:fontawesome-solid-heart: Learn how you can support Mainsail](sponsors.md){ .md-button .md-button--primary }
