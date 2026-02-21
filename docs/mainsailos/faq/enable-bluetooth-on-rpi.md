@@ -1,5 +1,5 @@
 ---
-title: Enable Bluetooth on RPi
+html_title: Enable Bluetooth and Disable UART on RPi - MainsailOS
 description: Learn how to enable Bluetooth on Raspberry Pi when using MainsailOS, which disables it by default to avoid UART conflicts.
 social:
   cards_layout_options:

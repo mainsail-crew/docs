@@ -1,5 +1,5 @@
 ---
-title: Install MainsailOS on Raspberry Pi
+html_title: Flash and Install on Raspberry Pi with Pi Imager - MainsailOS
 description: Step-by-step guide to flash MainsailOS onto an SD card for Raspberry Pi using Raspberry Pi Imager.
 social:
   cards_layout_options:

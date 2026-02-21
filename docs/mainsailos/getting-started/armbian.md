@@ -1,5 +1,5 @@
 ---
-title: Install MainsailOS on Armbian SBCs
+html_title: Flash and Install on Orange Pi & Armbian SBCs - MainsailOS
 description: Step-by-step guide to flash MainsailOS onto an SD card for Armbian-based SBCs using Raspberry Pi Imager.
 social:
   cards_layout_options:

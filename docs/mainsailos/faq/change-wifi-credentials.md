@@ -1,5 +1,5 @@
 ---
-title: Change WiFi Credentials
+html_title: Change WiFi Network credentials - MainsailOS
 description: Learn how to change WiFi credentials on MainsailOS when your printer has moved or your WiFi password has changed.
 social:
   cards_layout_options:

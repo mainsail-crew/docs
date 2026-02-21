@@ -1,5 +1,5 @@
 ---
-title: MainsailOS
+html_title: MainsailOS - Prebuilt Klipper Image for Raspberry Pi & More
 description: MainsailOS is a prebuilt image for single board computers that already includes Mainsail, Moonraker,
   Klipper and more.
 social:

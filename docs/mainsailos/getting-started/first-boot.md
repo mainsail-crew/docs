@@ -1,5 +1,5 @@
 ---
-title: First Boot of MainsailOS
+html_title: "First Boot: Updates and Klipper Configuration - MainsailOS"
 description: Learn how to set up MainsailOS after flashing. Covers initial boot, accessing Mainsail, updating components, and configuring Klipper.
 social:
   cards_layout_options:
