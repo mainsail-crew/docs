@@ -1,5 +1,5 @@
 ---
-title: Update Manager for Mainsail
+title: Update Manager
 description: Enable and use Moonraker's Update Manager to update Klipper, Moonraker, Mainsail and system packages directly from Mainsail.
 social:
   cards_layout_options:

@@ -1,5 +1,5 @@
 ---
-title: Sponsors
+title: Sponsors & Supporters
 description: Mainsail is an open source project made possible by the support of awesome sponsors.
 social:
   cards_layout_options:

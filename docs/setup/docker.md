@@ -1,5 +1,5 @@
 ---
-title: Setting Up Mainsail with Docker
+title: Docker Setup
 description: Set up and manage Mainsail using Docker for streamlined control of your 3D printer interface, with easy updates and configuration.
 social:
   cards_layout_options:

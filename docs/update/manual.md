@@ -1,5 +1,5 @@
 ---
-title: Manual Update Guide for Mainsail Systems
+title: Manual Update
 description: Learn how to manually update Mainsail to ensure you have the latest features and improvements. This step-by-step guide covers everything from backing up your configuration to verifying the update.
 social:
   cards_layout_options:

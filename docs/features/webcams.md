@@ -1,5 +1,5 @@
 ---
-title: Webcams
+title: Webcam Integration
 description: Monitor your 3D printer with one or more webcam streams displayed
   on the dashboard, a dedicated page, or in the print farm overview.
 social:

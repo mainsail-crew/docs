@@ -1,5 +1,5 @@
 ---
-title: Discord
+title: Discord Community Server
 description: Get help from the Mainsail community on our official Discord server.
 social:
   cards_layout_options:

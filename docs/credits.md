@@ -1,5 +1,5 @@
 ---
-title: Credits
+title: Credits & Contributors
 description: Acknowledging the valuable contributions that many people and projects have made to Mainsail.
 social:
   cards_layout_options:

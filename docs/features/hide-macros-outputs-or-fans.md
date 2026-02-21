@@ -1,5 +1,5 @@
 ---
-title: Hide Macros, Outputs, or Fans
+title: Hide Macros & Outputs
 description: Learn how to hide G-Code macros, output pins, and fans from the
   Mainsail interface using underscore prefixes or interface settings.
 social:

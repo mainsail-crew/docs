@@ -1,5 +1,5 @@
 ---
-title: OrcaSlicer
+title: OrcaSlicer Integration
 description: Configure OrcaSlicer for use with Mainsail and Klipper.
 social:
   cards_layout_options:

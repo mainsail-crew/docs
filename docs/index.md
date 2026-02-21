@@ -1,5 +1,5 @@
 ---
-title: Mainsail - The 3D Printer Interface
+html_title: Mainsail - The 3D Printer Interface for Klipper
 description: Find guides, setup instructions, and resources to customize and optimize your Mainsail 3D printer interface.
 social:
   cards_layout_options:

@@ -1,5 +1,5 @@
 ---
-title: Presets
+title: Temperature Presets
 description: Create presets in Mainsail for preheating, cooling down, and
   executing custom G-Code commands with a single click.
 social:

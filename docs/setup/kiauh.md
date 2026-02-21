@@ -1,5 +1,5 @@
 ---
-title: Installing Mainsail with KIAUH
+title: KIAUH Installation
 description: Learn how to install Mainsail, Moonraker, and Klipper using KIAUH, a versatile tool that automates the installation and update process on any Debian-based device.
 social:
   cards_layout_options:

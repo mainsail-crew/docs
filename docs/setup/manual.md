@@ -1,5 +1,5 @@
 ---
-title: Manual Setup of Mainsail - Step-by-Step Guide for Advanced Users
+title: Manual Setup
 description: Learn how to manually set up Mainsail, the powerful 3D printer interface, with this detailed guide. Ideal for advanced users looking for full control over their installation.
 social:
   cards_layout_options:

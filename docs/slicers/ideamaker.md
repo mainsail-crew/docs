@@ -1,5 +1,5 @@
 ---
-title: IdeaMaker
+title: IdeaMaker Integration
 description: Configure IdeaMaker for use with Mainsail and Klipper.
 social:
   cards_layout_options:

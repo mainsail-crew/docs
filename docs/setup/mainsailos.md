@@ -1,5 +1,5 @@
 ---
-title: MainsailOS - The Easiest Way to Get Started
+title: MainsailOS Setup
 description: MainsailOS is a pre-built OS image that includes Mainsail, Moonraker, Klipper, and all necessary
   dependencies for your single-board computer.
 social:

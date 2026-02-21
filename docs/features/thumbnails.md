@@ -1,5 +1,5 @@
 ---
-title: Thumbnails
+title: G-Code Thumbnails
 description: Display G-code file thumbnails in Mainsail's file browser and
   print status preview.
 social:

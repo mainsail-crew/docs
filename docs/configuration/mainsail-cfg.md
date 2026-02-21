@@ -1,5 +1,5 @@
 ---
-title: "mainsail.cfg – Setup & Customization"
+title: mainsail.cfg
 description: How to include mainsail.cfg in your Klipper printer.cfg, what it provides, and how to customize its behavior with _CLIENT_VARIABLE overrides.
 social:
   cards_layout_options:

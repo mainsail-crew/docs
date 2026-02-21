@@ -1,5 +1,5 @@
 ---
-title: Reddit
+title: Reddit Community
 description: Find community-driven help for Mainsail on the unofficial Mainsail subreddit.
 social:
   cards_layout_options:

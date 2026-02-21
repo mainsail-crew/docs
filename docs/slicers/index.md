@@ -1,5 +1,5 @@
 ---
-title: Slicers
+title: Slicer Integration Overview
 description: Configure your slicer for optimal use with Mainsail and Klipper.
 social:
   cards_layout_options:

@@ -1,5 +1,5 @@
 ---
-title: my.mainsail.xyz - Live online demo of Mainsail
+title: my.mainsail.xyz
 description: Experience Mainsail's powerful 3D printer interface with the live demo at my.mainsail.xyz. Explore features and functionality without any installation. Ideal for testing before setting up on your own system.
 social:
   cards_layout_options:

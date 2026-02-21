@@ -1,5 +1,5 @@
 ---
-title: Install Mainsail - The 3D Printer Interface
+title: Installation Overview
 description: Find guides, setup instructions, and resources to customize and optimize your Mainsail 3D printer interface.
 social:
   cards_layout_options:

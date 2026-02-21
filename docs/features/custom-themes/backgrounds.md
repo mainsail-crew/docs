@@ -1,5 +1,5 @@
 ---
-title: Backgrounds
+title: Custom Backgrounds
 description: Add custom background images to Mainsail's sidebar and main area
   using the .theme folder.
 social:

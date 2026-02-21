@@ -1,5 +1,5 @@
 ---
-title: Cura
+title: Cura Slicer Integration
 description: Configure Cura for use with Mainsail and Klipper.
 social:
   cards_layout_options:

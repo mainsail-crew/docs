@@ -1,5 +1,5 @@
 ---
-title: PrusaSlicer
+title: PrusaSlicer Integration
 description: Configure PrusaSlicer for use with Mainsail and Klipper.
 social:
   cards_layout_options:

@@ -1,5 +1,5 @@
 ---
-title: Custom CSS
+title: Custom CSS Styling
 description: Customize Mainsail's appearance with your own CSS styles.
 social:
   cards_layout_options:

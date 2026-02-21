@@ -1,5 +1,5 @@
 ---
-title: Print History and Statistics
+title: Print History & Statistics
 description: Track your print jobs and view detailed statistics including
   job status, print duration, and filament usage in Mainsail.
 social:

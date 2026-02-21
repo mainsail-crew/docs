@@ -1,5 +1,5 @@
 ---
-title: Bed Mesh
+title: Bed Mesh Visualization
 description: Visualize and manage bed mesh profiles in Mainsail. Calibrate, compare, and analyze your print bed surface with an interactive 3D heightmap.
 social:
   cards_layout_options:

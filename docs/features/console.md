@@ -1,5 +1,5 @@
 ---
-title: Console
+title: Console & G-Code Terminal
 description: Send G-code commands and Klipper macros directly to your printer with auto-complete, command reference, and customizable output filters.
 social:
   cards_layout_options:
