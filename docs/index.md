@@ -8,18 +8,11 @@ social:
 
 # Welcome to Mainsail
 
-Mainsail is a powerful and user-friendly web interface designed for managing and controlling 3D printers powered by
-Klipper firmware. It offers a sleek and intuitive dashboard that allows you to easily monitor prints, adjust settings,
-and manage your printer. Mainsail is highly customizable and integrates seamlessly with Klipper, providing real-time
-insights and advanced control features.
-
-## Why use Mainsail?
-
-Mainsail is ideal for anyone looking to enhance their 3D printing experience with Klipper. It offers a streamlined
-interface that simplifies printer management, making it easier to start prints, monitor progress, and fine-tune
-settings. With features like live print monitoring, detailed statistics, and macros-management, Mainsail helps you
-manage your printers to create efficient prints. Additionally, its active community and comprehensive documentation
-ensure that you have all the support you need to make the most of your 3D printing setup.
+Mainsail is a powerful and user-friendly web interface for managing and controlling 3D printers powered by Klipper
+firmware. Its sleek, intuitive dashboard makes it easy to start prints, monitor progress, and fine-tune settings — all
+in real time. With features like live print monitoring, detailed statistics, macro management, and a highly customizable
+layout, Mainsail helps you get the most out of your printers. Backed by an active community and comprehensive
+documentation, you have all the support you need to optimize your 3D printing workflow.
 
 ## Screenshots
 
