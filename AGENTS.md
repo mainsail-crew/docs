@@ -1,7 +1,9 @@
 # AGENTS.md - Mainsail Documentation
 
-Guidance for AI agents working on this Zensical documentation site for [Mainsail](https://docs.mainsail.xyz), a
+Guidance for AI agents working on this documentation site for [Mainsail](https://docs.mainsail.xyz), a
 3D printer web interface for Klipper firmware.
+
+**Site generator:** [Zensical](https://github.com/zensical/zensical)
 
 **Live site:** https://docs.mainsail.xyz | **Repo:** https://github.com/mainsail-crew/docs
 
@@ -33,6 +35,8 @@ docs/
 │   ├── mainsailos/           # OS image docs
 │   ├── sonar/                # Network detection docs
 │   └── index.md              # Homepage
+├── overrides/                # Template overrides (custom html_title logic)
+├── agent_docs/               # Detailed guides for AI agents
 ├── _data/                    # Data files (contributors, licenses, themes)
 ├── _scripts/                 # Build scripts (credits, themes generation)
 ├── zensical.toml             # Site config and navigation
@@ -50,83 +54,13 @@ docs/
 ### Frontmatter
 ```yaml
 ---
-title: Page Title for SEO
+title: Short Page Title
 description: Brief description for search engines and social cards.
 social:
   cards_layout_options:
     title: Short Social Card Title
 ---
 ```
-
-### Markdown Conventions
-- **Line length**: Maximum 120 characters per line (except frontmatter)
-- **Headings**: `# H1` for page title, `## H2` for sections
-- **Internal links**: `[Text](../path/to/file.md)` (relative paths)
-- **External links**: `[Text](https://example.com){:target="_blank"}`
-
-### Images
-```markdown
-![Alt text](../images/features/image-name.png)
-
-<!-- With caption -->
-<figure markdown="span">
-  ![Alt text](../images/features/image-name.png)
-  <figcaption>Caption text</figcaption>
-</figure>
-```
-
-### Admonitions
-```markdown
-!!! note "Optional Title"
-    Note content here.
-
-!!! tip
-    Helpful tip.
-
-!!! warning
-    Warning content.
-
-!!! information "Klipper Config"
-    Klipper-specific info.
-```
-
-### Code Blocks
-Use language identifiers: `ini` for Klipper config, `bash` for commands, `yaml` for YAML, `toml` for TOML.
-
-```ini
-[virtual_sdcard]
-path: ~/printer_data/gcodes
-```
-
-### Tabbed Content
-```markdown
-=== "Tab 1"
-    Content for tab 1
-
-=== "Tab 2"
-    Content for tab 2
-```
-
-## Zensical Theme & Features
-
-**Theme configuration** (from `zensical.toml`):
-- Variant: `modern` (Material-based)
-- Palette: `slate` scheme, `black` primary, `red` accent
-- Custom accent color override: Mainsail red `#d41216` (in `docs/stylesheets/custom.css`)
-
-**Site features**:
-- `content.action.edit` - Edit on GitHub
-- `content.code.copy` - Code copy buttons
-- `navigation.path` - Breadcrumb navigation
-- `navigation.sections` - Section-based sidebar navigation
-- `navigation.tabs` - Tabbed navigation in the topbar
-
-**Markdown extensions** (bundled with Zensical):
-- `admonition` - Callout boxes
-- `attr_list` - Element attributes
-- `pymdownx.superfences` - Enhanced code blocks
-- `pymdownx.tabbed` - Tabbed content
-- `pymdownx.highlight` - Syntax highlighting
 
 ## Writing Guidelines
 
@@ -182,3 +116,11 @@ nav = [
 ## CI/CD Notes
 - Build output (`site/`) is gitignored
 - Deploys via GitHub Pages
+
+## Detailed Guides
+
+Read these when the task requires it:
+
+- [Page Title Convention](agent_docs/page-titles.md) — `title` vs `html_title`, sub-project rules
+- [Markdown Guide](agent_docs/markdown-guide.md) — images, admonitions, code blocks, tabs
+- [Zensical Features](agent_docs/zensical-features.md) — theme, extensions, template overrides
