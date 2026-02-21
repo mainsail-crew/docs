@@ -1,5 +1,5 @@
 ---
-title: Upgrade from v4 to v5
+html_title: Upgrade from v4 to v5 with Built-in Migration - Crowsnest
 description: How to upgrade Crowsnest from version 4 to version 5 using the built-in migration tool.
 social:
   cards_layout_options:

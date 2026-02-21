@@ -1,5 +1,5 @@
 ---
-title: Common Issues
+html_title: Troubleshoot common issues with Crowsnest
 description: Troubleshoot common Crowsnest issues like low FPS, RTSP streams, and WebRTC problems.
 social:
   cards_layout_options:

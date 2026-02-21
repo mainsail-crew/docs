@@ -1,5 +1,5 @@
 ---
-title: How to use WYZE-Cams
+html_title: Use WYZE-Cams via docker-wyze-bridge - Crowsnest
 description: Guide to set up WYZE-Cams with Mainsail using the docker-wyze-bridge tool for WebRTC streaming.
 social:
   cards_layout_options:

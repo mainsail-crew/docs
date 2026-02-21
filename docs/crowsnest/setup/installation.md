@@ -1,5 +1,5 @@
 ---
-title: Installing Crowsnest
+html_title: Install on Raspberry Pi OS and Other Distros - Crowsnest
 description: Follow these steps to install Crowsnest on your system. This guide covers cloning the repository and running the installation process, plus updating Moonraker for automatic updates.
 social:
   cards_layout_options:

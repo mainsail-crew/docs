@@ -1,5 +1,5 @@
 ---
-title: "[crowsnest] Section"
+html_title: Global Settings, Logging & Log Rotation - Crowsnest
 description: Learn how to configure the [crowsnest] section in crowsnest.conf, including logging, log rotation, and network settings for optimal operation.
 social:
   cards_layout_options:

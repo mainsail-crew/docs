@@ -1,5 +1,5 @@
 ---
-title: Crowsnest Backends
+html_title: Streaming Backends for Webcam Services - Crowsnest
 description: Overview of available Crowsnest streaming backends including µStreamer, camera-streamer, and spyglass with configuration details and recommendations.
 social:
   cards_layout_options:

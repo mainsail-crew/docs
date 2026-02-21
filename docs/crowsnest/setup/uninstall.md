@@ -1,5 +1,5 @@
 ---
-title: Uninstalling Crowsnest
+html_title: Uninstall and Remove All Configuration - Crowsnest
 description: Learn how to fully remove Crowsnest, including configuration and update manager entries, with step-by-step instructions.
 social:
   cards_layout_options:

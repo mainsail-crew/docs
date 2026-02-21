@@ -1,5 +1,5 @@
 ---
-title: How to Generate a Clean Log
+html_title: Generate a Clean Debug Log for Troubleshooting - Crowsnest
 description: Step-by-step guide to generate a clean Crowsnest debug log for troubleshooting camera and streaming issues.
 social:
   cards_layout_options:

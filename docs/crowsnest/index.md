@@ -1,5 +1,5 @@
 ---
-title: Crowsnest
+html_title: Crowsnest - Webcam Streaming Daemon for 3D printers
 description: Overview of what Crowsnest is.
 social:
   cards_layout_options:

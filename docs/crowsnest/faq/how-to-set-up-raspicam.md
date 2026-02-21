@@ -1,5 +1,5 @@
 ---
-title: How to Set Up a Raspicam
+html_title: Set Up a Raspberry Pi Camera Module - Crowsnest
 description: Step-by-step guide to configure a Raspberry Pi camera module with Crowsnest and camera-streamer.
 social:
   cards_layout_options:

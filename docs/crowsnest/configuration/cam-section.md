@@ -1,5 +1,5 @@
 ---
-title: "[cam] section"
+html_title: Configure Camera Streams ([cam] Section) - Crowsnest
 description: Learn how to configure individual camera sections in crowsnest.conf, including streaming modes, device
   paths, resolution, and advanced options for each camera.
 social:
