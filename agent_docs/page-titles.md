@@ -10,7 +10,8 @@ The browser tab title is composed via the template override in `overrides/main.h
 
 ## Rules
 
-1. **Keep `title` short** (2–5 words) — `site_name` ("Mainsail - The 3D Printer Interface") is appended automatically.
+1. **Aim for 50–65 characters** total in the browser `<title>`. For `title`, account for the auto-appended
+   ` - Mainsail - The 3D Printer Interface` (39 chars). For `html_title`, the value IS the full title.
 2. **Never repeat "Mainsail"** in `title` — it's already in `site_name`.
 3. **No marketing taglines** in `title` (e.g., "The Easiest Way to Get Started"). SEO copy belongs in `description`.
 4. **Sub-project pages** (`docs/crowsnest/`, `docs/mainsailos/`, `docs/sonar/`) must always use `html_title` with
