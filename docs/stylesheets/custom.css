@@ -61,6 +61,21 @@
     pointer-events: none;
 }
 
+@media screen and (max-width: 76.2344em) {
+    .md-nav .md-nav__title[for="__drawer"] {
+        font-size: 0;
+    }
+
+    .md-nav .md-nav__title[for="__drawer"] .md-logo {
+        height: auto;
+        width: 100%;
+    }
+
+    .md-nav .md-nav__title[for="__drawer"] .md-logo img.md-logo__icon {
+        display: none;
+    }
+}
+
 /* =========================================================================
    Sidebar & Navigation
    ========================================================================= */
