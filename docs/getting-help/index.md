@@ -25,6 +25,24 @@ We provide support for all Mainsail-Crew software on the following platforms:
 To help us help you as quickly as possible, please keep the following general guidelines in mind, no matter which
 platform you choose.
 
+### Know your project
+
+Before asking for help, make sure you know which project your issue actually belongs to. Many projects have similar
+names but are developed and maintained by completely different teams. Asking in the wrong place just wastes everyone's
+time (including yours).
+
+Some common mix-ups:
+
+- **Mainsail** is the web interface. **MainsailOS** is a Raspberry Pi image that bundles Mainsail with Klipper,
+  Moonraker, and other tools. If you have a question about the OS image, SD card setup, or WiFi configuration,
+  that is a MainsailOS question, not a Mainsail one.
+- **Moonraker** is the API server that connects Klipper to frontends like Mainsail. **Mobileraker** is a separate
+  mobile app made by a different developer. If your phone app is misbehaving, please contact the Mobileraker project.
+- **RTSP** and **WebRTC** are two different video streaming protocols. Which one you need depends on your camera and
+  streaming setup. If your webcam stream is not working, check your streaming software (e.g. Crowsnest) first.
+
+When in doubt, check the project name in the URL, repository, or documentation page you are looking at.
+
 ### Is your issue part of the Mainsail universe?
 
 We support all software developed by the Mainsail-Crew, as well as closely related projects like Klipper and
