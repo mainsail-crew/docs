@@ -50,7 +50,7 @@ done separately.
 !!! warning "Configuration Changes After Update"
     After updating Klipper, certain configuration options or parameter names may have changed. It's important to review
     these changes to ensure your setup continues to function correctly. Please check the
-    [Klipper Configuration Changes](https://www.klipper3d.org/Config_Changes.html){target=_blank} page for the latest
+    [Klipper Configuration Changes](https://www.klipper3d.org/Config_Changes.html){:target="_blank"} page for the latest
     updates and adjust your `printer.cfg` file accordingly.
 
 ## Updating Moonraker
@@ -85,10 +85,10 @@ Moonraker on your SBC/Host.
     ```
 
 !!! warning "Configuration Changes After Update"
-    After updating Moonraker, certain configuration options or parameter names may have changed. It's important to review
-    these changes to ensure your setup continues to function correctly. Please check the
-    [Moonraker Configuration Changes](https://moonraker.readthedocs.io/en/latest/user_changes/){target=_blank} page for
-    the latest updates and adjust your `moonraker.conf` file accordingly.
+    After updating Moonraker, certain configuration options or parameter names may have changed. It's important to
+    review these changes to ensure your setup continues to function correctly. Please check the
+    [Moonraker Configuration Changes](https://moonraker.readthedocs.io/en/latest/user_changes/){:target="_blank"} page
+    for the latest updates and adjust your `moonraker.conf` file accordingly.
 
 ## Updating Mainsail
 

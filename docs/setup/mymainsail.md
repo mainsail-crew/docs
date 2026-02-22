@@ -9,10 +9,10 @@ social:
 # Explore Mainsail with my.mainsail.xyz
 
 Curious about Mainsail but not ready to install it on your system? The live demo at
-[my.mainsail.xyz](http://my.mainsail.xyz){target=_blank} lets you experience Mainsail’s powerful 3D printer interface
+[my.mainsail.xyz](http://my.mainsail.xyz){:target="_blank"} lets you experience Mainsail's powerful 3D printer interface
 directly in your browser. This online version allows you to explore the features and functionality of Mainsail without
-any setup or installation. It’s a perfect way to familiarize yourself with the interface, test out various options, and
-see how Mainsail can enhance your 3D printing experience—all before committing to a full installation.
+any setup or installation. It's a perfect way to familiarize yourself with the interface, test out various options, and
+see how Mainsail can enhance your 3D printing experience-all before committing to a full installation.
 
 ## Requirements
 
