@@ -63,10 +63,10 @@ Setting up `_CLIENT_VARIABLE`:
 
 ```ini title="Minimal example: Override park position"
 [gcode_macro _CLIENT_VARIABLE]
-variable_use_custom_pos   : True
-variable_custom_park_x    : 10.0
-variable_custom_park_y    : 10.0
-variable_custom_park_dz   : 5.0
+variable_use_custom_pos: True
+variable_custom_park_x:  10.0
+variable_custom_park_y:  10.0
+variable_custom_park_dz: 5.0
 gcode:
 ```
 
