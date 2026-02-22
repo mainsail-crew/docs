@@ -1,0 +1,11 @@
+{#-
+  Custom logo partial: full logo initially,
+  icon-only after scrolling past the tabs bar.
+-#}
+{% if config.theme.logo and config.extra.logo_full %}
+  <img src="{{ config.extra.logo_full | url }}" alt="logo" class="md-logo__full">
+  <img src="{{ config.theme.logo | url }}" alt="logo" class="md-logo__icon">
+{% else %}
+  {% set icon = config.theme.icon.logo or "material/library" %}
+  {% include ".icons/" ~ icon ~ ".svg" %}
+{% endif %}

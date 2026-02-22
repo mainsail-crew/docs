@@ -10,6 +10,61 @@
   --md-primary-fg-color: #d41216;
 }
 
+/* =========================================================================
+   Header logo: full branding → icon-only on scroll
+   ========================================================================= */
+
+/* Full logo (icon + "Mainsail" text) — visible at page top */
+.md-logo__full {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.md-header__button.md-logo {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.md-header__button.md-logo .md-logo__full {
+    height: 1.8rem;
+}
+
+.md-header__title {
+    margin-left: 0;
+}
+
+/* Icon-only logo — hidden at page top */
+.md-header__button.md-logo .md-logo__icon {
+    display: none;
+    height: 1.4rem;
+    width: auto;
+}
+
+/* On scroll (shadow = scrolled past tabs): swap logos */
+.md-header--shadow .md-header__button.md-logo {
+    padding-bottom: .2rem;
+    margin-bottom: .2rem;
+}
+
+.md-header--shadow .md-header__button.md-logo .md-logo__full {
+    display: none;
+}
+
+.md-header--shadow .md-header__button.md-logo .md-logo__icon {
+    display: block;
+}
+
+/* Hide site name text — it is part of the full logo now */
+.md-header .md-header__topic:first-child {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+/* =========================================================================
+   Sidebar & Navigation
+   ========================================================================= */
+
 /* Navi section header */
 .md-nav__item--section > label.md-nav__link {
   text-transform: uppercase;
