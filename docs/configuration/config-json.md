@@ -51,6 +51,19 @@ how Mainsail discovers printers on startup and how you can add more printers.
 | `browser` | Browser (localStorage) | Remote access, each user has their own printer list |
 | `json` | config.json file | Farms, Docker, central Mainsail instances |
 
+### Choosing a mode
+
+Not sure which mode fits your setup? Use this table:
+
+| Your situation                                                                                            | Recommended mode |
+|-----------------------------------------------------------------------------------------------------------|------------------|
+| You have a single printer and Mainsail runs on the same device as Moonraker                               | `moonraker`      |
+| You have 2–3 printers, each with its own Mainsail + Moonraker installation                                | `moonraker`      |
+| You access multiple printers from different devices or browsers, and each device should have its own list | `browser`        |
+| You run a shared Mainsail instance like [my.mainsail.xyz](https://my.mainsail.xyz){:target="_blank"}      | `browser`        |
+| You run a printer farm or Docker setup and want all users to see the same fixed printer list              | `json`           |
+| You deploy Mainsail centrally and want to manage printers via a config file                               | `json`           |
+
 ### moonraker (Default)
 
 Mainsail connects automatically to the Moonraker instance specified by `hostname`, `port`, and `path`. If these values
@@ -65,6 +78,13 @@ stored in the Moonraker database.
   "path": "/"
 }
 ```
+
+!!! tip "When to use moonraker mode"
+    This mode is ideal when:
+
+    - You have a single printer and Mainsail runs on the same device as Klipper/Moonraker
+    - You want your printer settings (themes, presets, macros) to sync across all browsers and devices automatically
+    - You have 2–3 printers and each one has its own dedicated Mainsail + Moonraker installation
 
 !!! warning "Limitations with multiple printers"
     - Each printer must be manually added to every other printer's Moonraker database
