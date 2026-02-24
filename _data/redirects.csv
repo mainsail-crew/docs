@@ -1,0 +1,89 @@
+# Redirects from old (GitBook) URLs to new (Zensical) URLs
+# Format: old_path,new_path
+#
+# Setup / Getting Started
+/setup/getting-started,/setup/
+/setup/getting-started/manual-setup,/setup/manual/
+/setup/getting-started/my.mainsail.xyz,/setup/mymainsail/
+/setup/getting-started/docker,/setup/docker/
+/setup/getting-started/kiauh,/setup/kiauh/
+#
+# Setup / Updates
+/setup/updates,/update/update-manager/
+/setup/updates/update-manager,/update/update-manager/
+/setup/updates/manual-update,/update/manual/
+#
+# Setup / Configuration
+/setup/configuration,/configuration/mainsail-cfg/
+/configuration,/configuration/mainsail-cfg/
+#
+# Overview / Features
+/overview/features,/features/bed-mesh/
+/overview/features/bed-mesh,/features/bed-mesh/
+/overview/features/bed-mesh.md,/features/bed-mesh/
+/overview/features/console,/features/console/
+/overview/features/dashboard-organisation,/features/dashboard-organisation/
+/overview/features/exclude-objects,/features/exclude-objects/
+/overview/features/hide-macros-outputs-or-fans,/features/hide-macros-outputs-or-fans/
+/overview/features/localization,/features/localization/
+/overview/features/macro-management-stub,/features/macro-management/
+/overview/features/macro-prompts,/features/macro-prompts/
+/overview/features/presets,/features/presets/
+/overview/features/print-history-and-statistics,/features/print-history-and-statistics/
+/overview/features/query-devices,/features/query-devices/
+/overview/features/built-in-themes,/features/built-in-themes/
+/overview/features/thumbnails,/features/thumbnails/
+/overview/features/webcam,/features/webcams/
+/features,/features/bed-mesh/
+#
+# Overview / Features / Themes
+/overview/features/themes,/features/custom-themes/
+/overview/features/themes/themes,/features/custom-themes/community-themes/
+/overview/features/themes/backgrounds,/features/custom-themes/backgrounds/
+/overview/features/themes/logos-and-icons,/features/custom-themes/logos-and-icons/
+/overview/features/themes/custom-navigation,/features/custom-themes/custom-navigation/
+/overview/features/themes/custom-css,/features/custom-themes/custom-css/
+/overview/features/themes/prepare,/features/custom-themes/
+#
+# Overview / Settings
+/overview/settings,/settings/general/
+/overview/settings/console,/settings/console/
+/overview/settings/control,/settings/control/
+/overview/settings/dashboard,/settings/dashboard/
+/overview/settings/editor,/settings/editor/
+/overview/settings/general,/settings/general/
+/overview/settings/macros,/settings/macros/
+/overview/settings/printers,/settings/printers/
+/overview/settings/ui-settings,/settings/ui-settings/
+/overview/settings/webcams,/settings/webcams/
+#
+# Overview / Slicer
+/overview/slicer,/slicers/
+/overview/slicer/cura,/slicers/cura/
+/overview/slicer/ideamaker,/slicers/ideamaker/
+/overview/slicer/prusaslicer,/slicers/prusaslicer/
+/overview/slicer/superslicer,/slicers/
+#
+# Overview / Quicktips
+/overview/quicktips,/faq/remote-access/
+/overview/quicktips/remote-access,/faq/remote-access/
+/overview/quicktips/config-json,/configuration/config-json/
+/overview/quicktips/slicer-upload,/slicers/
+/overview/quicktips/additional-sensors,/faq/printer-cfg-snippets/
+/overview/quicktips/disable-octoprint-lcd-menu,/faq/printer-cfg-snippets/
+#
+# FAQ / Getting Help
+/faq/getting-help/discord,/getting-help/discord/
+/faq/getting-help/github-discussions,/getting-help/github-discussions/
+#
+# FAQ index pages
+/faq/klipper_errors,/faq/klipper_errors/command-format-mismatch/
+/faq/mainsail_errors,/faq/mainsail_errors/connection-unauthorized/
+/faq/moonraker_warnings,/faq/moonraker_warnings/policykit-permissions/
+#
+# FAQ changed filenames (singular -> plural)
+/faq/klipper_warnings/deprecated_option,/faq/klipper_warnings/deprecated_options/
+/faq/klipper_warnings/runtime-warning,/faq/klipper_warnings/runtime-warnings/
+#
+# About / Development
+/about/development/environment,/development/development-setup/

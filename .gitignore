@@ -68,6 +68,9 @@ tmp
 .idea
 *~
 
+# Generated redirect manifest (created/deleted during build)
+_data/.redirects-manifest.json
+
 # Agent directories
 .claude
 .opencode
