@@ -137,6 +137,7 @@ nav = [
     { "FAQ" = [
       { "Change WiFi credentials" = "mainsailos/faq/change-wifi-credentials.md" },
       { "Enable Bluetooth on RPi" = "mainsailos/faq/enable-bluetooth-on-rpi.md" },
+      { "Linux RPi MCU" = "mainsailos/faq/linux-rpi-mcu.md" },
     ]},
   ]},
 
