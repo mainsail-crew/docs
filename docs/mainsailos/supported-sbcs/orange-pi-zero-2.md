@@ -59,18 +59,6 @@ after the first boot.
 |-----------|---------------|----------|---------------|----------------|
 | UART5     | `/dev/ttyS1`  | `uart5`  | PH2 (Pin 8)   | PH3 (Pin 10)   |
 
-!!! warning "Device Path"
-    Although the overlay is called `uart5`, the kernel registers it as `/dev/ttyS1` because it only numbers active
-    UARTs sequentially.
-
-### Wiring
-
-| Orange Pi Zero 2              | MCU Board | Description        |
-|-------------------------------|-----------|--------------------|
-| PH2 (TX) — Pin 8              | RX        | Transmit → Receive |
-| PH3 (RX) — Pin 10             | TX        | Receive ← Transmit |
-| GND (Pin 6 or any GND)        | GND       | Common ground      |
-
 !!! warning "Cross the TX/RX Lines"
     The TX pin of the SBC connects to the RX pin on the MCU, and vice versa.
 
