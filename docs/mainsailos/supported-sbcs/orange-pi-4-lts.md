@@ -117,9 +117,9 @@ The SPI1 bus is exposed on the 26-pin GPIO header:
 
 | Function | GPIO Pin   |
 |----------|------------|
-| TXD      | GPIO1_B0   |
-| RXD      | GPIO1_A7   |
-| CLK      | GPIO1_B1   |
+| MOSI     | GPIO1_B0   |
+| MISO     | GPIO1_A7   |
+| SCLK     | GPIO1_B1   |
 | CS       | GPIO1_B2   |
 
 ## I2C
