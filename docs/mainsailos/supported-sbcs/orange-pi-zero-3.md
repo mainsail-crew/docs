@@ -62,6 +62,10 @@ after the first boot.
 !!! warning "Cross the TX/RX Lines"
     The TX pin of the SBC connects to the RX pin on the MCU, and vice versa.
 
+!!! info "Debug UART"
+    The Orange Pi Zero 3 has a dedicated 3-pin debug UART header (GND, RX, TX) on the board. This is intended for
+    serial console access and is **not** suitable for MCU communication.
+
 ## SPI
 
 SPI1 is **enabled by default** in MainsailOS via the `spi-spidev` and `spidev1_1` device tree overlays. It is
