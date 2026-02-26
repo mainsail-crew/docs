@@ -87,7 +87,7 @@ Edit `/boot/armbianEnv.txt`:
 sudo nano /boot/armbianEnv.txt
 ```
 
-Replace the SPI overlay with the UART4 overlay:
+Replace the SPI overlay with the UART4 overlay and remove the SPI parameters:
 
 ```ini
 # Change this:
@@ -96,6 +96,7 @@ param_spidev_spi_bus=1
 
 # To this:
 overlays=uart4
+#param_spidev_spi_bus=1
 ```
 
 Then reboot. The UART device will be available at `/dev/ttyS4`.
@@ -103,6 +104,10 @@ Then reboot. The UART device will be available at `/dev/ttyS4`.
 | Interface | Device Path   | Overlay  | TX Pin      | RX Pin      |
 |-----------|---------------|----------|-------------|-------------|
 | UART4     | `/dev/ttyS4`  | `uart4`  | GPIO1_A7    | GPIO1_B0    |
+
+!!! warning "SPI1 No Longer Available"
+    After switching to UART4, the SPI1 bus will no longer be available. Accelerometers that use SPI (e.g., ADXL345)
+    will not work until you switch back to the `spi-spidev` overlay.
 
 !!! info "Debug UART"
     The Orange Pi 4 LTS has a dedicated 3-pin debug UART header (GND, RX, TX) next to the 26-pin GPIO header. This is
@@ -113,7 +118,7 @@ Then reboot. The UART device will be available at `/dev/ttyS4`.
 SPI1 is **enabled by default** in MainsailOS. The `spi-spidev` overlay and `spi-dev` kernel module are pre-configured
 for use with accelerometers for [Input Shaper](https://www.klipper3d.org/Measuring_Resonances.html){:target="_blank"}.
 
-The SPI1 bus is exposed on the 26-pin GPIO header:
+The SPI device is available at `/dev/spidev1.0`.
 
 | Function | GPIO Pin   |
 |----------|------------|
@@ -122,34 +127,33 @@ The SPI1 bus is exposed on the 26-pin GPIO header:
 | SCLK     | GPIO1_B1   |
 | CS       | GPIO1_B2   |
 
-## I2C
-
-Two I2C buses are available via device tree overlays:
-
-| Interface | Overlay | SDA Pin  | SCL Pin  |
-|-----------|---------|----------|----------|
-| I2C7      | `i2c7`  | GPIO2_A7 | GPIO2_A6 |
-| I2C8      | `i2c8`  | GPIO1_C4 | GPIO1_C5 |
-
-To enable an I2C bus, edit `/boot/armbianEnv.txt` and add the overlay:
+Example Klipper configuration for an ADXL345 accelerometer:
 
 ```ini
-overlays=i2c8
+[adxl345]
+cs_pin: host:gpiochip1/gpio42
+spi_bus: spidev1.0
 ```
 
-Then reboot. Verify the I2C device is available:
+!!! warning "UART4 Pin Conflict"
+    SPI1 shares its MOSI/MISO pins with UART4 (GPIO1_A7 and GPIO1_B0). You cannot use SPI1 and UART4 at the same time.
+    To switch to UART4, see the [UART section](#uart) above.
 
-```bash
-ls /dev/i2c-*
-```
+## I2C
 
-In your Klipper configuration, use the corresponding I2C bus:
+I2C3 is available on the GPIO header at `/dev/i2c-3` without any additional overlay configuration.
+
+| Interface | Device Path  | SDA Pin  | SCL Pin  |
+|-----------|--------------|----------|----------|
+| I2C3      | `/dev/i2c-3` | GPIO4_C0 | GPIO4_C1 |
+
+In your Klipper configuration, use `i2c_bus: i2c.3`:
 
 ```ini
 [temperature_sensor example]
 sensor_type: HTU21D
 i2c_mcu: host
-i2c_bus: i2c.8
+i2c_bus: i2c.3
 ```
 
 ## Further Resources
