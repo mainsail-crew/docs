@@ -114,6 +114,16 @@ Since the customisation step is skipped for Armbian-based images, Wi-Fi is not p
 connected via Ethernet, you can set up your Wi-Fi credentials before the first boot. Follow the
 [Change WiFi credentials](../faq/change-wifi-credentials.md) guide for instructions.
 
+## Default Login Credentials
+
+The default login credentials for MainsailOS on Armbian-based SBCs are:
+
+- **Username:** `pi`
+- **Password:** `armbian`
+
+!!! warning "Change Your Password"
+    For security reasons, we strongly recommend changing the default password after your first login.
+
 ## Finished 🎉
 
 Safely remove the SD card from your card reader, insert it into your SBC, and continue with the
