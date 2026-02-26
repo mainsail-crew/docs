@@ -1,8 +1,8 @@
 ---
 html_title: Serial MCU Connection (UART) - MainsailOS
 description: >-
-  Connect your printer's MCU to a Raspberry Pi via UART serial on MainsailOS. UART is pre-configured and ready to use
-  with /dev/serial0.
+  Connect your printer's MCU to your SBC via UART serial on MainsailOS. UART is pre-configured and ready to use on
+  supported boards.
 social:
   cards_layout_options:
     title: Serial MCU Connection (UART)
@@ -10,48 +10,70 @@ social:
 
 # Serial MCU Connection (UART)
 
-MainsailOS comes with the hardware UART (PL011) pre-configured and ready to use on Raspberry Pi. You can connect your
-printer's MCU directly to the GPIO serial pins. No additional configuration on the Raspberry Pi is needed.
+MainsailOS comes with the hardware UART pre-configured and ready to use on all supported boards. You can connect your
+printer's MCU directly to the GPIO serial pins. No additional configuration is needed.
+
+## Serial Device Path per Board
+
+Each board uses a different serial device path. Use the correct path for your board in your `printer.cfg`:
+
+| Board           | Serial Device    | TX Pin          | RX Pin           |
+|-----------------|------------------|-----------------|------------------|
+| Raspberry Pi    | `/dev/serial0`   | GPIO 14 (Pin 8) | GPIO 15 (Pin 10) |
+| Orange Pi Zero2 | _tbd_            | _tbd_           | _tbd_            |
+| Orange Pi Zero3 | `/dev/ttyS1`     | PH2 (Pin 8)     | PH3 (Pin 10)     |
+| Orange Pi 3 LTS | _not configured_ | —               | —                |
+| Orange Pi 4 LTS | _not configured_ | —               | —                |
+| BigTreeTech CB1 | _tbd_            | _tbd_           | _tbd_            |
+
+!!! note "Boards marked _not configured_"
+    Some boards in MainsailOS do not have a UART overlay enabled by default. UART serial communication is not available
+    out of the box on these boards. Only SPI is pre-configured.
 
 ## What MainsailOS Does for You
 
-On a standard Raspberry Pi OS, the primary UART (PL011) is assigned to Bluetooth, and the serial console occupies the
-serial port. To use UART for your printer's MCU, you would need to manually:
+MainsailOS pre-configures the UART interface so it is immediately available for communication with your printer's MCU.
+The exact steps depend on the board type.
 
-- Disable Bluetooth or remap it to the mini UART (`dtoverlay=disable-bt` or `dtoverlay=miniuart-bt`)
-- Enable the hardware UART (`enable_uart=1`)
-- Remove the serial console from `cmdline.txt` (`console=serial0,115200`)
-- Disable the Bluetooth-related systemd services (`hciuart.service`, `bluetooth.service`)
+??? info "Raspberry Pi — What was changed?"
+    On a standard Raspberry Pi OS, the primary UART (PL011) is assigned to Bluetooth, and the serial console occupies
+    the serial port. MainsailOS applies the following changes automatically:
 
-**MainsailOS handles all of this already.** The UART is enabled, Bluetooth is disabled, and the serial console is
-removed. So `/dev/serial0` is immediately available for communication with your printer's MCU.
+    - Disables Bluetooth by adding `dtoverlay=disable-bt` to `config.txt`
+    - Enables the hardware UART with `enable_uart=1` in `config.txt`
+    - Removes the serial console from `cmdline.txt` (`console=serial0,115200`)
+    - Disables the Bluetooth-related systemd services (`hciuart.service`, `bluetooth.service`)
 
-!!! tip "Need Bluetooth Instead?"
-    If you prefer to use Bluetooth and don't need UART, follow the [Enable Bluetooth on RPi](enable-bluetooth-on-rpi.md)
-    guide to reverse these settings.
+    **Need Bluetooth instead?** Follow the [Enable Bluetooth on RPi](enable-bluetooth-on-rpi.md) guide to reverse
+    these settings.
+
+??? info "Armbian Boards (Orange Pi) — What was changed?"
+    On Armbian-based boards, MainsailOS enables the appropriate UART device tree overlay in `/boot/armbianEnv.txt`.
+    For example, on the Orange Pi Zero3, the `uart5` overlay is added, which exposes `/dev/ttyS1` on pins 8 and 10.
 
 ## Wiring
 
-Connect your printer's MCU to the Raspberry Pi GPIO header using three wires:
+Connect your printer's MCU to your board's GPIO header using three wires. Refer to the
+[serial device table](#serial-device-path-per-board) above for the correct TX/RX pins on your board.
 
-| Raspberry Pi             | MCU Board | Description        |
-|--------------------------|-----------|--------------------|
-| GPIO 14 (TX) — Pin 8     | RX        | Transmit → Receive |
-| GPIO 15 (RX) — Pin 10    | TX        | Receive ← Transmit |
-| GND — Pin 6 (or any GND) | GND       | Common ground      |
+| SBC Pin | MCU Board | Description        |
+|---------|-----------|--------------------|
+| TX      | RX        | Transmit → Receive |
+| RX      | TX        | Receive ← Transmit |
+| GND     | GND       | Common ground      |
 
 !!! warning "Voltage Levels"
-    The Raspberry Pi GPIO operates at **3.3V**. Make sure your MCU board also uses 3.3V logic levels on its UART pins.
-    Connecting a 5V UART directly to the Raspberry Pi can damage the GPIO pins.
+    Most SBC GPIO pins operate at **3.3V**. Make sure your MCU board also uses 3.3V logic levels on its UART pins.
+    Connecting a 5V UART directly to 3.3V GPIO pins can damage your board.
 
 !!! warning "Cross the TX/RX Lines"
-    The TX pin of the Raspberry Pi connects to the RX pin on the MCU, and vice versa. This is a common source of
-    confusion. Always cross the transmit and receive lines.
+    The TX pin of the SBC connects to the RX pin on the MCU, and vice versa. This is a common source of confusion.
+    Always cross the transmit and receive lines.
 
 ## Flash Klipper Firmware for UART
 
 Your MCU must be flashed with Klipper firmware configured for serial (UART) communication instead of USB. Run the
-following on your Raspberry Pi:
+following on your SBC:
 
 ```bash
 cd ~/klipper/
@@ -82,13 +104,18 @@ documentation for specific flashing instructions.
 
 ## Configure Klipper
 
-Once the MCU is flashed and wired, add or update the `[mcu]` section in your `printer.cfg`:
+Once the MCU is flashed and wired, add or update the `[mcu]` section in your `printer.cfg` with the correct serial
+device path for your board (see [table above](#serial-device-path-per-board)):
 
 ```ini
 [mcu]
 serial: /dev/serial0
 restart_method: command
 ```
+
+!!! tip
+    Replace `/dev/serial0` with the correct device path for your board. For example, on an Orange Pi Zero3, use
+    `/dev/ttyS1`.
 
 Save the file and restart Klipper. Your printer should now communicate with the MCU over the UART serial connection.
 
@@ -98,5 +125,6 @@ If Klipper cannot connect to the MCU, check the following:
 
 - **Wiring**: Ensure TX/RX are crossed correctly and GND is connected
 - **Voltage levels**: Confirm your MCU uses 3.3V logic on its UART pins
+- **Serial device**: Verify you are using the correct device path for your board
 - **Firmware**: Verify the MCU was flashed with UART (not USB) communication enabled
 - **Baud rate**: Both Klipper firmware and `printer.cfg` must use the same baud rate (default: 250000)
