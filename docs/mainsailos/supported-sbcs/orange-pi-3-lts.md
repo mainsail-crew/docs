@@ -85,7 +85,7 @@ Example Klipper configuration for an ADXL345 accelerometer:
 
 ```ini
 [adxl345]
-cs_pin: host:None
+cs_pin: host:gpiochip1/gpio227
 spi_bus: spidev1.0
 ```
 
