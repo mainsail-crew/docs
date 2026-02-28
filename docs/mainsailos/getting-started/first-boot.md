@@ -38,7 +38,7 @@ may need to replace `mainsailos` with the hostname you chose while flashing the 
 ## Update Manager
 
 To find the Update Manager, select **Machine** in the sidebar navigation. The Update Manager is displayed at the
-right-bottom of the Machine page.
+bottom-right of the Machine page.
 
 When you open the Update Manager for the first time, it may show that some components have updates available.
 
