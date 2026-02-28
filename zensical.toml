@@ -135,6 +135,7 @@ nav = [
       { "First Boot" = "mainsailos/getting-started/first-boot.md" },
     ]},
     { "Supported SBCs" = [
+      { "Overview" = "mainsailos/supported-sbcs/index.md" },
       { "Raspberry Pi" = "mainsailos/supported-sbcs/raspberry-pi.md" },
       { "Orange Pi Zero 2" = "mainsailos/supported-sbcs/orange-pi-zero-2.md" },
       { "Orange Pi Zero 3" = "mainsailos/supported-sbcs/orange-pi-zero-3.md" },
