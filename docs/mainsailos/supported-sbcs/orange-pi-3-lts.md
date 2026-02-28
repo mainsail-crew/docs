@@ -73,17 +73,7 @@ Allwinner SoCs use a simple formula to convert pin names (e.g., PH3) to GPIO lin
 line number = port base + pin number
 ```
 
-| Port | Base |
-|------|------|
-| PA   | 0    |
-| PB   | 32   |
-| PC   | 64   |
-| PD   | 96   |
-| PE   | 128  |
-| PF   | 160  |
-| PG   | 192  |
-| PH   | 224  |
-| PL   | 0    |
+Where port base values are: PA=0, PB=32, PC=64, PD=96, PE=128, PF=160, PG=192, PH=224, PL=0.
 
 !!! note
     Port PL belongs to `gpiochip0` (r_pio) and starts at base 0. All other ports belong to `gpiochip1` (pio).
