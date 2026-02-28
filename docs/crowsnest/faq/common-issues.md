@@ -15,7 +15,7 @@ provide a [clean log file](clean-log.md).
 ## Low FPS
 
 Low FPS is common. Read this section carefully to troubleshoot potential causes. We collected most information in
-[this GitHub issue](https://github.com/mainsail-crew/crowsnest/issues/){:target="_blank"}.
+[this GitHub issue](https://github.com/mainsail-crew/crowsnest/issues/282){:target="_blank"}.
 
 Follow these steps in order. Revert changes if a step doesn't fix the issue before proceeding. All changes have to
 be made in your `crowsnest.conf`, unless mentioned otherwise.
