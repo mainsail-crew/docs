@@ -17,18 +17,18 @@ printer's MCU directly to the GPIO serial pins. No additional configuration is n
 
 Each board uses a different serial device path. Use the correct path for your board in your `printer.cfg`:
 
-| Board                                                     | Serial Device    | TX Pin          | RX Pin           |
-|-----------------------------------------------------------|------------------|-----------------|------------------|
-| [Raspberry Pi](../supported-sbcs/raspberry-pi.md)         | `/dev/serial0`   | GPIO 14 (Pin 8) | GPIO 15 (Pin 10) |
-| [Orange Pi Zero 2](../supported-sbcs/orange-pi-zero-2.md) | `/dev/ttyS1`     | PH2 (Pin 8)     | PH3 (Pin 10)     |
-| [Orange Pi Zero 3](../supported-sbcs/orange-pi-zero-3.md) | `/dev/ttyS1`     | PH2 (Pin 8)     | PH3 (Pin 10)     |
-| [Orange Pi 3 LTS](../supported-sbcs/orange-pi-3-lts.md)   | `/dev/ttyS3`     | PD23            | PD24             |
-| [Orange Pi 4 LTS](../supported-sbcs/orange-pi-4-lts.md)   | _not configured_ | —               | —                |
+| Board                                                     | Serial Device  | TX Pin          | RX Pin           |
+|-----------------------------------------------------------|----------------|-----------------|------------------|
+| [Raspberry Pi](../supported-sbcs/raspberry-pi.md)         | `/dev/serial0` | GPIO 14 (Pin 8) | GPIO 15 (Pin 10) |
+| [Orange Pi Zero 2](../supported-sbcs/orange-pi-zero-2.md) | `/dev/ttyS1`   | PH2 (Pin 8)     | PH3 (Pin 10)     |
+| [Orange Pi Zero 3](../supported-sbcs/orange-pi-zero-3.md) | `/dev/ttyS1`   | PH2 (Pin 8)     | PH3 (Pin 10)     |
+| [Orange Pi 3 LTS](../supported-sbcs/orange-pi-3-lts.md)   | `/dev/ttyS3`   | PD23            | PD24             |
+| [Orange Pi 4 LTS](../supported-sbcs/orange-pi-4-lts.md)   | `/dev/ttyS4`   | GPIO1_A7        | GPIO1_B0         |
 
-!!! note "Boards marked _not configured_"
-    Some boards in MainsailOS do not have a UART overlay enabled by default. UART serial communication is not available
-    out of the box on these boards. Only SPI is pre-configured. See the respective
-    [Supported SBCs](../supported-sbcs/raspberry-pi.md) page for details on manual configuration.
+!!! warning "Orange Pi 4 LTS: UART not enabled by default"
+    The Orange Pi 4 LTS does not have UART enabled by default because UART4 shares its pins with SPI1, which is
+    pre-configured for accelerometer use. You need to manually enable the UART4 overlay first. See the
+    [Orange Pi 4 LTS UART section](../supported-sbcs/orange-pi-4-lts.md#uart) for instructions.
 
 
 ## What MainsailOS Does for You
