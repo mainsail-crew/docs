@@ -8,8 +8,8 @@ social:
 
 # Orange Pi 3 LTS
 
-The Orange Pi 3 LTS is an SBC based on the Allwinner H6 SoC. It features a 26-pin GPIO header and is supported by
-MainsailOS through an Armbian-based image.
+You can use the Orange Pi 3 LTS, an SBC based on the Allwinner H6 SoC. Your board provides a 26-pin GPIO header and is
+supported by MainsailOS through an Armbian-based image.
 
 ## Board Overview
 

@@ -8,7 +8,7 @@ social:
 
 # Supported SBCs
 
-The list of supported SBCs is continually being expanded. Below is an overview of currently supported boards and those
+You can choose from a growing list of supported SBCs. Below you find an overview of currently supported boards and those
 planned for the future.
 
 ## Raspberry Pi

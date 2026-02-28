@@ -8,7 +8,7 @@ social:
 
 # Raspberry Pi
 
-All Raspberry Pi models with a 40-pin GPIO header are supported by MainsailOS. This page provides a hardware reference
+You can use any Raspberry Pi model with a 40-pin GPIO header with MainsailOS. This page provides a hardware reference
 for using GPIOs and communication interfaces with Klipper.
 
 ## Supported Models

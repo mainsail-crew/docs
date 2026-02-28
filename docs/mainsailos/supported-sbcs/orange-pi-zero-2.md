@@ -8,8 +8,8 @@ social:
 
 # Orange Pi Zero 2
 
-The Orange Pi Zero 2 is a compact SBC based on the Allwinner H616 SoC. It features a 26-pin GPIO header and is
-supported by MainsailOS through an Armbian-based image.
+You can use the Orange Pi Zero 2, a compact SBC based on the Allwinner H616 SoC. Your board provides a 26-pin GPIO
+header and is supported by MainsailOS through an Armbian-based image.
 
 ## Board Overview
 

@@ -8,8 +8,8 @@ social:
 
 # Orange Pi 4 LTS
 
-The Orange Pi 4 LTS is an SBC based on the Rockchip RK3399 SoC. It features a 26-pin GPIO header and is supported by
-MainsailOS through an Armbian-based image.
+You can use the Orange Pi 4 LTS, an SBC based on the Rockchip RK3399 SoC. Your board provides a 26-pin GPIO header and
+is supported by MainsailOS through an Armbian-based image.
 
 ## Board Overview
 
