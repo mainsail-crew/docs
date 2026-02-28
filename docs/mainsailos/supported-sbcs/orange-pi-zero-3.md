@@ -29,26 +29,67 @@ supported by MainsailOS through an Armbian-based image.
 
 ## GPIO Chip
 
-When using GPIOs with the [Linux MCU](../faq/linux-mcu.md) in Klipper, you need to identify the correct GPIO chip for
-your pins. The H618 SoC uses multiple GPIO chips.
+When using GPIOs with the [Linux MCU](../faq/linux-mcu.md) in Klipper, you need to identify the correct GPIO chip and
+line number for each pin. The H618 SoC exposes two GPIO controllers:
 
-Run the following to list available chips and their lines:
+| GPIO Chip    | Controller | Ports  |
+|--------------|------------|--------|
+| `gpiochip0`  | r_pio      | PL     |
+| `gpiochip1`  | pio        | PA–PI  |
 
-```bash
-sudo apt install gpiod
-gpioinfo
+### Header Pin Mapping
+
+The following table lists all GPIO pins on the 26-pin header with their Klipper pin references:
+
+| Pin Name | GPIO Chip    | Line | Klipper Pin                |
+|----------|--------------|------|----------------------------|
+| PC5      | `gpiochip1`  | 69   | `host:gpiochip1/gpio69`    |
+| PC6      | `gpiochip1`  | 70   | `host:gpiochip1/gpio70`    |
+| PC7      | `gpiochip1`  | 71   | `host:gpiochip1/gpio71`    |
+| PC8      | `gpiochip1`  | 72   | `host:gpiochip1/gpio72`    |
+| PC9      | `gpiochip1`  | 73   | `host:gpiochip1/gpio73`    |
+| PC10     | `gpiochip1`  | 74   | `host:gpiochip1/gpio74`    |
+| PC11     | `gpiochip1`  | 75   | `host:gpiochip1/gpio75`    |
+| PC14     | `gpiochip1`  | 78   | `host:gpiochip1/gpio78`    |
+| PC15     | `gpiochip1`  | 79   | `host:gpiochip1/gpio79`    |
+| PH2      | `gpiochip1`  | 226  | `host:gpiochip1/gpio226`   |
+| PH3      | `gpiochip1`  | 227  | `host:gpiochip1/gpio227`   |
+| PH4      | `gpiochip1`  | 228  | `host:gpiochip1/gpio228`   |
+| PH5      | `gpiochip1`  | 229  | `host:gpiochip1/gpio229`   |
+| PH6      | `gpiochip1`  | 230  | `host:gpiochip1/gpio230`   |
+| PH7      | `gpiochip1`  | 231  | `host:gpiochip1/gpio231`   |
+| PH8      | `gpiochip1`  | 232  | `host:gpiochip1/gpio232`   |
+| PH9      | `gpiochip1`  | 233  | `host:gpiochip1/gpio233`   |
+
+!!! warning "Pins with Dedicated Functions"
+    Some header pins serve dedicated roles (UART, SPI, I2C). Avoid using them as general-purpose GPIOs if the
+    corresponding overlay is enabled. Refer to the [GPIO Pinout](#gpio-pinout) diagram for pin functions.
+
+### Calculating GPIO Line Numbers
+
+Allwinner SoCs use a simple formula to convert pin names (e.g., PH9) to GPIO line numbers:
+
+```text
+line number = port base + pin number
 ```
 
-Example Klipper configuration:
+| Port | Base |
+|------|------|
+| PA   | 0    |
+| PB   | 32   |
+| PC   | 64   |
+| PD   | 96   |
+| PE   | 128  |
+| PF   | 160  |
+| PG   | 192  |
+| PH   | 224  |
+| PI   | 256  |
+| PL   | 0    |
 
-```ini
-[output_pin example]
-pin: host:gpiochip0/gpio20
-```
+!!! note
+    Port PL belongs to `gpiochip0` (r_pio) and starts at base 0. All other ports belong to `gpiochip1` (pio).
 
-!!! tip "Finding the Right Chip and Line"
-    Use `gpioinfo` to find the GPIO chip and line number for the pin you want to use. The chip and line mapping depends
-    on the Armbian device tree configuration.
+**Example:** PH9 → port base 224 + pin 9 = **233** → Klipper pin: `host:gpiochip1/gpio233`
 
 ## UART
 
