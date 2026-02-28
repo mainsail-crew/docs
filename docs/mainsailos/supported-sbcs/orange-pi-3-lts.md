@@ -86,7 +86,7 @@ line number = port base + pin number
 | PL   | 0    |
 
 !!! note
-Port PL belongs to `gpiochip0` (r_pio) and starts at base 0. All other ports belong to `gpiochip1` (pio).
+    Port PL belongs to `gpiochip0` (r_pio) and starts at base 0. All other ports belong to `gpiochip1` (pio).
 
 **Example:** PH3 → port base 224 + pin 3 = **227** → Klipper pin: `host:gpiochip1/gpio227`
 
