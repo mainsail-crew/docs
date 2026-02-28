@@ -43,15 +43,15 @@ The following table lists all GPIO pins on the 26-pin header with their Klipper 
 
 | Pin Name | GPIO Chip    | Line | Klipper Pin                |
 |----------|--------------|------|----------------------------|
+| PD15     | `gpiochip1`  | 111  | `host:gpiochip1/gpio111`   |
+| PD16     | `gpiochip1`  | 112  | `host:gpiochip1/gpio112`   |
+| PD18     | `gpiochip1`  | 114  | `host:gpiochip1/gpio114`   |
+| PD21     | `gpiochip1`  | 117  | `host:gpiochip1/gpio117`   |
 | PD22     | `gpiochip1`  | 118  | `host:gpiochip1/gpio118`   |
 | PD23     | `gpiochip1`  | 119  | `host:gpiochip1/gpio119`   |
 | PD24     | `gpiochip1`  | 120  | `host:gpiochip1/gpio120`   |
 | PD25     | `gpiochip1`  | 121  | `host:gpiochip1/gpio121`   |
 | PD26     | `gpiochip1`  | 122  | `host:gpiochip1/gpio122`   |
-| PD15     | `gpiochip1`  | 111  | `host:gpiochip1/gpio111`   |
-| PD16     | `gpiochip1`  | 112  | `host:gpiochip1/gpio112`   |
-| PD18     | `gpiochip1`  | 114  | `host:gpiochip1/gpio114`   |
-| PD21     | `gpiochip1`  | 117  | `host:gpiochip1/gpio117`   |
 | PH3      | `gpiochip1`  | 227  | `host:gpiochip1/gpio227`   |
 | PH4      | `gpiochip1`  | 228  | `host:gpiochip1/gpio228`   |
 | PH5      | `gpiochip1`  | 229  | `host:gpiochip1/gpio229`   |
@@ -89,19 +89,6 @@ line number = port base + pin number
 Port PL belongs to `gpiochip0` (r_pio) and starts at base 0. All other ports belong to `gpiochip1` (pio).
 
 **Example:** PH3 → port base 224 + pin 3 = **227** → Klipper pin: `host:gpiochip1/gpio227`
-
-### Verifying with gpioinfo
-
-You can verify GPIO chip assignments by installing the `gpiod` package:
-
-```bash
-sudo apt install gpiod
-gpioinfo
-```
-
-!!! tip
-    On the H6, `gpioinfo` shows lines as "unnamed". Use the [formula above](#calculating-gpio-line-numbers) and the
-    [header pin mapping table](#header-pin-mapping) to identify the correct chip and line for each pin.
 
 ## UART
 
