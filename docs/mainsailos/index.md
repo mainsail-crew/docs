@@ -36,18 +36,8 @@ The following software is included in MainsailOS images:
 
 ## Supported Hardware
 
-The list of supported SBCs is continually being expanded. Below is an overview of currently supported boards and those
-planned for the future.
-
-| Model                           | Supported | Base Image           | Note                 |
-|---------------------------------|:---------:|----------------------|----------------------|
-| Raspberry Pi 1 / Zero 1 / 2     |     ✅     | Raspberry Pi OS Lite | **not recommended**  |
-| Raspberry Pi Zero 2 / 3 / 4 / 5 |     ✅     | Raspberry Pi OS Lite |                      |
-| Orange Pi Zero 2 / Zero 3       |     ✅     | Armbian CLI          |                      |
-| Orange Pi 3 LTS / 4 LTS         |     ✅     | Armbian CLI          |                      |
-| Radxa Rock 4 SE / CM3           |     ❌     | Armbian CLI          | Work in Progress 🛠️ |
-| BigTreeTech CB1                 |     ❌     | Armbian CLI          | Planned 📅           |
-| Libre Computer Le Potato        |     ❌     | —                    | Planned 📅           |
+MainsailOS supports Raspberry Pi boards as well as several Armbian-based single board computers. For a full list of
+supported and planned boards, see the [Supported SBCs](supported-sbcs/index.md) overview.
 
 ## Getting Started
 

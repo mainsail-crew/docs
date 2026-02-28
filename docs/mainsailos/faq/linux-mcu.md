@@ -1,16 +1,16 @@
 ---
-html_title: Linux RPi MCU - MainsailOS
-description: Learn how to set up your SBC (e.g. Raspberry Pi) as a secondary MCU in Klipper to use GPIOs and buses (I2C, SPI) directly within your printer configuration.
+html_title: Linux MCU - MainsailOS
+description: Learn how to set up your SBC as a secondary MCU in Klipper to use GPIOs and buses (I2C, SPI) directly within your printer configuration.
 social:
   cards_layout_options:
-    title: Linux RPi MCU
+    title: Linux MCU
 ---
 
-# Linux RPi MCU
+# Linux MCU
 
-Your single-board computer (SBC), such as a Raspberry Pi, can be used as a secondary MCU in Klipper. This allows you to
-use the GPIOs and buses (I2C, SPI) of your SBC directly in your Klipper configuration. For example to control
-additional fans, LEDs, or to read sensors without needing extra hardware.
+Your single-board computer (SBC) can be used as a secondary MCU in Klipper. This allows you to use the GPIOs and buses
+(I2C, SPI) of your SBC directly in your Klipper configuration — for example, to control additional fans, LEDs, or to
+read sensors without needing extra hardware.
 
 ## Install the Systemd Service
 
@@ -37,7 +37,7 @@ make menuconfig
 <figcaption>make menuconfig</figcaption>
 </figure>
 
-In the menu, set **Microcontroller Architecture** to **Linux process**, then press `Q` to exit and press `Y` to save the
+In the menu, set **Microcontroller Architecture** to **Linux process**, then press `Q` to exit and `Y` to save the
 configuration.
 
 ## Flash the Micro-Controller
@@ -70,7 +70,7 @@ serial: /tmp/klipper_host_mcu
 After saving, restart Klipper. You can now reference the host MCU pins in your configuration using the `host:` prefix,
 for example:
 
-```ini title="Example 1: A led strip controlled by the GPIO20 on the RPi"
+```ini title="Example 1: An LED strip controlled via GPIO20"
 [output_pin caselight]
 pin: host:gpio20
 # You can also write the pin in extended form by specifying
@@ -78,7 +78,7 @@ pin: host:gpio20
 #pin: host:gpiochip0/gpio20
 ```
 
-```ini title="Example 2: Using the i2c bus of the RPi to read a sensor"
+```ini title="Example 2: Using I2C to read a sensor"
 [temperature_sensor enclosure_temp]
 sensor_type: HTU21D
 i2c_mcu: host
