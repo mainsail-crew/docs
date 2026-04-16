@@ -64,7 +64,7 @@ Before clearing the log, it will create a backup up to 5 times.
 This can help diagnose issues, as the log will contain only information from the latest restart and a backup of old executions still exist for reference.
 
 ```ini
-delete_log: true
+rollover_on_start: true
 ```
 
 !!! tip

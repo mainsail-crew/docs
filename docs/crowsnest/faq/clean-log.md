@@ -17,7 +17,7 @@ these steps to generate one:
     ```ini
     [crowsnest]
     log_level: debug
-    delete_log: true
+    rollover_on_start: true
     ```
 
 2.  Click **Save and Restart** in the Mainsail editor to apply the changes and restart Crowsnest with a fresh log.
@@ -38,5 +38,5 @@ these steps to generate one:
     ```ini
     [crowsnest]
     log_level: verbose
-    delete_log: false
+    rollover_on_start: false
     ``` 
