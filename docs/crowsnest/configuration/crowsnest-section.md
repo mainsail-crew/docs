@@ -55,15 +55,15 @@ Available options:
 !!! note
     Once configured, consider setting `log_level` to `quiet` to minimize disk usage.
 
-## delete_log
+## rollover_on_start
 
 Default: `false`
 
-If set to `true`, the existing log file will be deleted every time Crowsnest restarts.  
-This can help diagnose issues, as the log will contain only information from the latest restart.
+If set to `true`, the existing log file will be rollover every time Crowsnest restarts up to 5 times.  
+This can help diagnose issues, as the log will contain only information from the latest restart and a backup of old executions still exist for reference.
 
 ```ini
-delete_log: true
+rollover_on_start: true
 ```
 
 !!! tip
