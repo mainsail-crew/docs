@@ -60,7 +60,6 @@ Available options:
 Default: `false`
 
 If set to `true`, the existing log file will be rollover every time Crowsnest restarts up to 5 times.  
-Before clearing the log, it will create a backup up to 5 times.  
 This can help diagnose issues, as the log will contain only information from the latest restart and a backup of old executions still exist for reference.
 
 ```ini
