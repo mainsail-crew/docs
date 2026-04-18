@@ -11,8 +11,8 @@ To use WebRTC, replace `?action=stream` with `webrtc` in your webcam URL configu
     This feature only works if you are using `mode: camera-streamer` or `mode: spyglass` on a Raspberry Pi.
 
 !!! info "Raspberry Pi 5 users"
-    Due to hardware limitations (no hardware encoders), crowsnest will disable WebRTC on the Pi 5. You can enable it
-    again by setting `mode: spyglass` and `custom_flags: --no-disable_webrtc`, but we advise against this.
+    Due to hardware limitations (no hardware encoders), WebRTC is disabled by default on the Pi 5. You can enable it
+    again by setting `mode: spyglass` and `custom_flags: --force-webrtc`, but we do not recommend using it.
     There is no support for `mode: camera-streamer` on the Pi 5!
 
 !!! warning

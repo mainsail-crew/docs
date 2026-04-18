@@ -54,15 +54,10 @@ fully hardware-accelerated MJPEG and H.264 video streams for Pi cameras on Raspb
 
 - **Project Link:** [GitHub - mainsail-crew/spyglass](https://github.com/mainsail-crew/spyglass){:target="_blank"}
 
-spyglass is developed and maintained by the Mainsail team, which allows for faster issue resolution without external
+spyglass is developed and maintained by the Mainsail crew, which allows for faster issue resolution without external
 dependencies. It is exclusively available on Raspberry Pi SBCs and only supports Pi cameras.
 
 To use this backend, set `mode: spyglass` in your `crowsnest.conf`.
-
-
-!!! info "Raspberry Pi 5 users"
-    Due to hardware limitations (no hardware encoders), crowsnest will disable WebRTC on the Pi 5. You can enable it
-    again by setting `custom_flags: --no-disable_webrtc`, but we advise against this.
 
 ## Which backend should I choose?
 This flowchart outlines our recommendations for most users.
