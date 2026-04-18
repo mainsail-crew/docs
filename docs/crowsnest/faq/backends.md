@@ -61,8 +61,8 @@ To use this backend, set `mode: spyglass` in your `crowsnest.conf`.
 
 
 !!! info "Raspberry Pi 5 users"
-    Due to hardware limitations (no hardware encoders), spyglass on Pi 5 will use software encoding, which can lead to
-    high CPU usage and reduced performance. We recommend using µStreamer instead for Pi 5 devices.
+    Due to hardware limitations (no hardware encoders), crowsnest will disable WebRTC on the Pi 5. You can enable it
+    again by setting `custom_flags: --no-disable_webrtc`, but we advise against this.
 
 ## Which backend should I choose?
 This flowchart outlines our recommendations for most users.
