@@ -55,7 +55,7 @@ There can be a lot of different problems regarding WebRTC. The most common issue
 ### camera-streamer on non Raspberry Pi systems
 
 camera-streamer has WebRTC support, but only on Raspberry Pi SBCs excluding the Pi 5. If you use it on a
-non Raspberry Pi system, you cannot use WebRTC.
+non Raspberry Pi system or a Pi 5, you cannot use WebRTC.
 
 ### Wrong URL or service in Mainsail
 
