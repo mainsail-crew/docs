@@ -17,6 +17,7 @@ Crowsnest includes a built-in migration tool to simplify the upgrade process fro
 
     ```bash
     cd ~/crowsnest
+    git pull
     make upgrade
     ```
 
