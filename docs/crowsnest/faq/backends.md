@@ -59,6 +59,17 @@ dependencies. It is exclusively available on Raspberry Pi SBCs and only supports
 
 To use this backend, set `mode: spyglass` in your `crowsnest.conf`.
 
+!!! warning "Potential crash if resolution too high"
+    The Raspberry Pi has a limited hardware video encoder, which causes a special limitation in Spyglass:
+
+    Any resolution higher than `1920x1080` can lead to a crash of Spyglass. The optimal resolution of `1640x1232` for a Picamera v2 is fine. A resolution of `2000x1200` would lead to a crash.
+
+    Therefore `1920x1080` should be the highest resolution you choose for a `16:9` sensor, e.g. Picamera v3, and `1640x1232` for a `4:3` sensor, e.g. Picamera v1 & v2.
+
+!!! note
+    If you want to use the full resolution for your camera sensor with Spyglass set `custom_flags: -sw` in your `crowsnest.conf`. This will allow to use the full resolution of your sensor at the cost of CPU performance, and it will disable WebRTC.
+
+
 ## Which backend should I choose?
 This flowchart outlines our recommendations for most users.
 
