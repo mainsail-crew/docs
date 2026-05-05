@@ -45,22 +45,12 @@ installation, you will be asked if you want the script to do this for you.
 type: git_repo
 path: ~/crowsnest
 origin: https://github.com/mainsail-crew/crowsnest.git
-install_script: tools/pkglist.sh
-```
-
-<!-- Crowsnest v5 update block
-```ini
-[update_manager crowsnest]
-type: git_repo
-path: ~/crowsnest
-origin: https://github.com/mryel00/crowsnest-dev.git
-primary_branch: pynest
+primary_branch: v5
 managed_services: crowsnest
 system_dependencies: system-dependencies.json
 virtualenv: ~/crowsnest-env
 requirements: requirements.txt
 ```
- -->
 
 !!! tip
     Don't forget to reboot after installation!
