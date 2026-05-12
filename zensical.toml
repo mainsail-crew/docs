@@ -162,6 +162,7 @@ nav = [
       { "[cam] section" = "crowsnest/configuration/cam-section.md" },
     ]},
     { "FAQ" = [
+      { "APT" = "crowsnest/faq/apt.md" },
       { "Backends" = "crowsnest/faq/backends.md" },
       { "Clean Log" = "crowsnest/faq/clean-log.md" },
       { "Common Issues" = "crowsnest/faq/common-issues.md" },
