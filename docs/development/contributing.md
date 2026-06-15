@@ -119,6 +119,26 @@ The list of vouched contributors is maintained in
     it checked again. Becoming an active, trusted member of the community, through issues  is the
     path to being vouched.
 
+### How to Become a Trusted Contributor
+
+If your pull request was closed because you are not yet vouched, this is **not** a rejection of your work, and it is
+not permanent. The vouch system simply asks new contributors to build a little trust with the project first. Here is
+how you can get vouched:
+
+- **Engage with the community.** Open well-described issues, help others reproduce or diagnose bugs, and join the
+  discussion on our [Discord server](https://discord.gg/mainsail){:target="_blank"}. Issues are open to everyone and
+  are a great first step.
+- **Start small.** Smaller, focused, and well-documented pull requests are easier to review and help maintainers get
+  to know your work.
+- **Be responsive.** Reply to questions and review feedback on your issues and pull requests.
+
+Once a maintainer vouches for you, you become a trusted contributor. You can then reopen your closed PR or comment
+`/recheck` to have it re-evaluated, and your future pull requests will no longer be closed automatically.
+
+!!! tip
+    If you believe you should already be vouched, feel free to reach out to a maintainer on our
+    [Discord server](https://discord.gg/mainsail){:target="_blank"} in the `#public-dev-talk` channel.
+
 ## Submitting a Pull Request
 
 ### 1. Fork and Clone
