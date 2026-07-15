@@ -34,8 +34,8 @@ We would like to thank the projects Mainsail is built on, especially
 | **Sindarius** | [https://github.com/Sindarius](https://github.com/Sindarius){:target="_blank"} |
 | **winbin** | [https://github.com/winbin](https://github.com/winbin){:target="_blank"} |
 | **le3tspeak** | [https://github.com/le3tspeak](https://github.com/le3tspeak){:target="_blank"} |
-| **Samuel-0-0** | [https://github.com/Samuel-0-0](https://github.com/Samuel-0-0){:target="_blank"} |
 | **moggieuk** | [https://github.com/moggieuk](https://github.com/moggieuk){:target="_blank"} |
+| **Samuel-0-0** | [https://github.com/Samuel-0-0](https://github.com/Samuel-0-0){:target="_blank"} |
 | **steadyjaw** | [https://github.com/steadyjaw](https://github.com/steadyjaw){:target="_blank"} |
 | **srbjessen** | [https://github.com/srbjessen](https://github.com/srbjessen){:target="_blank"} |
 | **juliazero** | [https://github.com/juliazero](https://github.com/juliazero){:target="_blank"} |
@@ -51,22 +51,23 @@ We would like to thank the projects Mainsail is built on, especially
 | **cgrossi70** | [https://github.com/cgrossi70](https://github.com/cgrossi70){:target="_blank"} |
 | **eliteSchwein** | [https://github.com/eliteSchwein](https://github.com/eliteSchwein){:target="_blank"} |
 | **vajonam** | [https://github.com/vajonam](https://github.com/vajonam){:target="_blank"} |
+| **phm07** | [https://github.com/phm07](https://github.com/phm07){:target="_blank"} |
+| **weblate** | [https://github.com/weblate](https://github.com/weblate){:target="_blank"} |
 | **FrYakaTKoP** | [https://github.com/FrYakaTKoP](https://github.com/FrYakaTKoP){:target="_blank"} |
-| **ded-doggo** | [https://github.com/ded-doggo](https://github.com/ded-doggo){:target="_blank"} |
-| **prcutler** | [https://github.com/prcutler](https://github.com/prcutler){:target="_blank"} |
 
 ## Licenses
 
 | Project | License | Repository |
 |:---|:---:|:---|
-| **@codemirror/commands** | MIT | [https://github.com/codemirror/commands](https://github.com/codemirror/commands){:target="_blank"} |
+| **@codemirror/commands** | MIT | [git+https://code.haverbeke.berlin/codemirror/commands](git+https://code.haverbeke.berlin/codemirror/commands){:target="_blank"} |
 | **@codemirror/lang-css** | MIT | [https://github.com/codemirror/lang-css](https://github.com/codemirror/lang-css){:target="_blank"} |
 | **@codemirror/lang-json** | MIT | [https://github.com/codemirror/lang-json](https://github.com/codemirror/lang-json){:target="_blank"} |
-| **@codemirror/language** | MIT | [https://github.com/codemirror/language](https://github.com/codemirror/language){:target="_blank"} |
-| **@codemirror/legacy-modes** | MIT | [https://github.com/codemirror/legacy-modes](https://github.com/codemirror/legacy-modes){:target="_blank"} |
-| **@codemirror/search** | MIT | [https://github.com/codemirror/search](https://github.com/codemirror/search){:target="_blank"} |
-| **@codemirror/state** | MIT | [https://github.com/codemirror/state](https://github.com/codemirror/state){:target="_blank"} |
-| **@codemirror/view** | MIT | [https://github.com/codemirror/view](https://github.com/codemirror/view){:target="_blank"} |
+| **@codemirror/lang-yaml** | MIT | [https://github.com/codemirror/lang-yaml](https://github.com/codemirror/lang-yaml){:target="_blank"} |
+| **@codemirror/language** | MIT | [git+https://code.haverbeke.berlin/codemirror/language](git+https://code.haverbeke.berlin/codemirror/language){:target="_blank"} |
+| **@codemirror/legacy-modes** | MIT | [git+https://code.haverbeke.berlin/codemirror/legacy-modes](git+https://code.haverbeke.berlin/codemirror/legacy-modes){:target="_blank"} |
+| **@codemirror/search** | MIT | [git+https://code.haverbeke.berlin/codemirror/search](git+https://code.haverbeke.berlin/codemirror/search){:target="_blank"} |
+| **@codemirror/state** | MIT | [git+https://code.haverbeke.berlin/codemirror/state](git+https://code.haverbeke.berlin/codemirror/state){:target="_blank"} |
+| **@codemirror/view** | MIT | [git+https://code.haverbeke.berlin/codemirror/view](git+https://code.haverbeke.berlin/codemirror/view){:target="_blank"} |
 | **@jaames/iro** | MPL-2.0 | [https://github.com/jaames/iro.js](https://github.com/jaames/iro.js){:target="_blank"} |
 | **@lezer/highlight** | MIT | [https://github.com/lezer-parser/highlight](https://github.com/lezer-parser/highlight){:target="_blank"} |
 | **@sindarius/gcodeviewer** | LGPL-3.0-or-later | [https://github.com/Sindarius/npm_gcodeviewer](https://github.com/Sindarius/npm_gcodeviewer){:target="_blank"} |
@@ -75,7 +76,8 @@ We would like to thank the projects Mainsail is built on, especially
 | **codemirror** | MIT | [https://github.com/codemirror/basic-setup](https://github.com/codemirror/basic-setup){:target="_blank"} |
 | **core-js** | MIT | [https://github.com/zloirock/core-js](https://github.com/zloirock/core-js){:target="_blank"} |
 | **detect-browser** | MIT | [https://github.com/DamonOehlman/detect-browser](https://github.com/DamonOehlman/detect-browser){:target="_blank"} |
-| **echarts-gl** | BSD | [https://github.com/ecomfe/echarts-gl](https://github.com/ecomfe/echarts-gl){:target="_blank"} |
+| **dompurify** | (MPL-2.0 OR Apache-2.0) | [https://github.com/cure53/DOMPurify](https://github.com/cure53/DOMPurify){:target="_blank"} |
+| **echarts-gl** | MIT | [https://github.com/ecomfe/echarts-gl](https://github.com/ecomfe/echarts-gl){:target="_blank"} |
 | **echarts** | Apache-2.0 | [https://github.com/apache/echarts](https://github.com/apache/echarts){:target="_blank"} |
 | **hls.js** | Apache-2.0 | [https://github.com/video-dev/hls.js](https://github.com/video-dev/hls.js){:target="_blank"} |
 | **jmuxer** | UNKNOWN | [https://github.com/samirkumardas/jmuxer](https://github.com/samirkumardas/jmuxer){:target="_blank"} |

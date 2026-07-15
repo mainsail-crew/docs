@@ -1,8 +1,8 @@
 {
     "@codemirror/commands": {
         "licenses": "MIT",
-        "repository": "https://github.com/codemirror/commands",
-        "licenseUrl": "https://github.com/codemirror/commands/raw/master/LICENSE",
+        "repository": "git+https://code.haverbeke.berlin/codemirror/commands",
+        "licenseUrl": "git+https://code.haverbeke.berlin/codemirror/commands",
         "parents": "mainsail"
     },
     "@codemirror/lang-css": {
@@ -17,34 +17,40 @@
         "licenseUrl": "https://github.com/codemirror/lang-json/raw/master/LICENSE",
         "parents": "mainsail"
     },
+    "@codemirror/lang-yaml": {
+        "licenses": "MIT",
+        "repository": "https://github.com/codemirror/lang-yaml",
+        "licenseUrl": "https://github.com/codemirror/lang-yaml/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
     "@codemirror/language": {
         "licenses": "MIT",
-        "repository": "https://github.com/codemirror/language",
-        "licenseUrl": "https://github.com/codemirror/language/raw/master/LICENSE",
+        "repository": "git+https://code.haverbeke.berlin/codemirror/language",
+        "licenseUrl": "git+https://code.haverbeke.berlin/codemirror/language",
         "parents": "mainsail"
     },
     "@codemirror/legacy-modes": {
         "licenses": "MIT",
-        "repository": "https://github.com/codemirror/legacy-modes",
-        "licenseUrl": "https://github.com/codemirror/legacy-modes/raw/master/LICENSE",
+        "repository": "git+https://code.haverbeke.berlin/codemirror/legacy-modes",
+        "licenseUrl": "git+https://code.haverbeke.berlin/codemirror/legacy-modes",
         "parents": "mainsail"
     },
     "@codemirror/search": {
         "licenses": "MIT",
-        "repository": "https://github.com/codemirror/search",
-        "licenseUrl": "https://github.com/codemirror/search/raw/master/LICENSE",
+        "repository": "git+https://code.haverbeke.berlin/codemirror/search",
+        "licenseUrl": "git+https://code.haverbeke.berlin/codemirror/search",
         "parents": "mainsail"
     },
     "@codemirror/state": {
         "licenses": "MIT",
-        "repository": "https://github.com/codemirror/state",
-        "licenseUrl": "https://github.com/codemirror/state/raw/master/LICENSE",
+        "repository": "git+https://code.haverbeke.berlin/codemirror/state",
+        "licenseUrl": "git+https://code.haverbeke.berlin/codemirror/state",
         "parents": "mainsail"
     },
     "@codemirror/view": {
         "licenses": "MIT",
-        "repository": "https://github.com/codemirror/view",
-        "licenseUrl": "https://github.com/codemirror/view/raw/master/LICENSE",
+        "repository": "git+https://code.haverbeke.berlin/codemirror/view",
+        "licenseUrl": "git+https://code.haverbeke.berlin/codemirror/view",
         "parents": "mainsail"
     },
     "@jaames/iro": {
@@ -95,8 +101,14 @@
         "licenseUrl": "https://github.com/DamonOehlman/detect-browser/raw/master/LICENSE",
         "parents": "mainsail"
     },
+    "dompurify": {
+        "licenses": "(MPL-2.0 OR Apache-2.0)",
+        "repository": "https://github.com/cure53/DOMPurify",
+        "licenseUrl": "https://github.com/cure53/DOMPurify/raw/master/LICENSE",
+        "parents": "mainsail"
+    },
     "echarts-gl": {
-        "licenses": "BSD",
+        "licenses": "MIT",
         "repository": "https://github.com/ecomfe/echarts-gl",
         "licenseUrl": "https://github.com/ecomfe/echarts-gl/raw/master/LICENSE",
         "parents": "mainsail"
