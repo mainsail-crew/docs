@@ -65,6 +65,7 @@ nav = [
         { "Print History and Statistics" = "features/print-history-and-statistics.md" },
         { "Printer Power Device" = "features/printer-power-device.md" },
         { "Query devices" = "features/query-devices.md" },
+        { "Spool Management" = "features/spool-management.md" },
         { "Thumbnails" = "features/thumbnails.md" },
         { "Webcams" = "features/webcams.md" },
       ]},
