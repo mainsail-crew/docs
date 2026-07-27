@@ -26,7 +26,7 @@ spool.
   weight, and length
 - **Spool Selection**: Switch the active spool directly from the dashboard panel
 - **Automatic Tracking**: Moonraker reports the used filament back to Spoolman
-  after a print
+  at the interval defined by `sync_rate`
 - **Filament Data**: Vendor, material, and color are shown in Mainsail
 
 ## Setup Spoolman
