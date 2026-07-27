@@ -11,8 +11,9 @@ social:
 
 Mainsail has full support for [Spoolman](https://github.com/Donkie/Spoolman), a
 filament management system that keeps track of your spools, vendors, and
-filament types. Once Spoolman is connected to Moonraker, Mainsail shows the
-active spool and automatically subtracts the used filament after each print.
+filament types. Once Spoolman is connected to Moonraker, it automatically
+subtracts the used filament during each print and Mainsail shows the active
+spool.
 
 <figure markdown="span">
 ![Spoolman panel in Mainsail](../images/features/spool-management-panel.png)
