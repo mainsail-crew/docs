@@ -53,6 +53,27 @@ This tab shows serial connections to your printer mainboard. Use these paths in 
 serial: /dev/serial/by-id/usb-Klipper_...
 ```
 
+Mainsail can display up to three paths for the same serial device:
+
+- **Device path** (for example, `/dev/ttyACM0`): Assigned when Linux detects the device. The name can change after
+  a restart or when devices are connected in a different order.
+- **Path by ID** (for example, `/dev/serial/by-id/usb-Klipper_...`): Identifies the device by the ID it reports. It
+  remains the same if you connect the device to another USB port.
+- **Path by hardware** (for example, `/dev/serial/by-path/platform-...`): Identifies the physical USB connection. It
+  remains the same while you use the same port and USB topology, but points to a different device if you replace what
+  is connected there.
+
+!!! tip "Recommended Path"
+    Use **Path by ID** for a USB-connected MCU whenever it is available. Use **Path by hardware** when a device does
+    not provide a unique ID or when you intentionally want the configuration tied to a specific USB port. Avoid the
+    **Device path** for USB devices because it is not persistent.
+
+    Hardware UARTs may only provide a **Device path**, such as `/dev/ttyS0` or `/dev/ttyAMA0`. In that case, use the
+    available path.
+
+For technical details about these fields, see the
+[Moonraker serial device documentation](https://moonraker.readthedocs.io/en/latest/external_api/machine/#list-serial-devices){:target="_blank"}.
+
 ## USB Devices
 
 This tab is intended for debugging. It shows whether the system recognizes connected USB
