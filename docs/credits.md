@@ -27,33 +27,33 @@ We would like to thank the projects Mainsail is built on, especially
 
 | Contributor | Profile |
 |:---|:---|
-| **dw-0** | [https://github.com/dw-0](https://github.com/dw-0){:target="_blank"} |
 | **freasy** | [https://github.com/freasy](https://github.com/freasy){:target="_blank"} |
 | **pataar** | [https://github.com/pataar](https://github.com/pataar){:target="_blank"} |
 | **lixxbox** | [https://github.com/lixxbox](https://github.com/lixxbox){:target="_blank"} |
 | **Sindarius** | [https://github.com/Sindarius](https://github.com/Sindarius){:target="_blank"} |
 | **winbin** | [https://github.com/winbin](https://github.com/winbin){:target="_blank"} |
 | **le3tspeak** | [https://github.com/le3tspeak](https://github.com/le3tspeak){:target="_blank"} |
-| **moggieuk** | [https://github.com/moggieuk](https://github.com/moggieuk){:target="_blank"} |
 | **Samuel-0-0** | [https://github.com/Samuel-0-0](https://github.com/Samuel-0-0){:target="_blank"} |
+| **moggieuk** | [https://github.com/moggieuk](https://github.com/moggieuk){:target="_blank"} |
 | **steadyjaw** | [https://github.com/steadyjaw](https://github.com/steadyjaw){:target="_blank"} |
 | **srbjessen** | [https://github.com/srbjessen](https://github.com/srbjessen){:target="_blank"} |
 | **juliazero** | [https://github.com/juliazero](https://github.com/juliazero){:target="_blank"} |
-| **ZISQO** | [https://github.com/ZISQO](https://github.com/ZISQO){:target="_blank"} |
-| **mdziekon** | [https://github.com/mdziekon](https://github.com/mdziekon){:target="_blank"} |
 | **bartlammers** | [https://github.com/bartlammers](https://github.com/bartlammers){:target="_blank"} |
-| **CodingJustForRun** | [https://github.com/CodingJustForRun](https://github.com/CodingJustForRun){:target="_blank"} |
-| **chai-md** | [https://github.com/chai-md](https://github.com/chai-md){:target="_blank"} |
-| **rackrick** | [https://github.com/rackrick](https://github.com/rackrick){:target="_blank"} |
+| **mdziekon** | [https://github.com/mdziekon](https://github.com/mdziekon){:target="_blank"} |
+| **ZISQO** | [https://github.com/ZISQO](https://github.com/ZISQO){:target="_blank"} |
 | **translucentfocus** | [https://github.com/translucentfocus](https://github.com/translucentfocus){:target="_blank"} |
+| **rackrick** | [https://github.com/rackrick](https://github.com/rackrick){:target="_blank"} |
+| **chai-md** | [https://github.com/chai-md](https://github.com/chai-md){:target="_blank"} |
+| **CodingJustForRun** | [https://github.com/CodingJustForRun](https://github.com/CodingJustForRun){:target="_blank"} |
 | **Birkemosen** | [https://github.com/Birkemosen](https://github.com/Birkemosen){:target="_blank"} |
-| **AntoszHUN** | [https://github.com/AntoszHUN](https://github.com/AntoszHUN){:target="_blank"} |
 | **cgrossi70** | [https://github.com/cgrossi70](https://github.com/cgrossi70){:target="_blank"} |
 | **eliteSchwein** | [https://github.com/eliteSchwein](https://github.com/eliteSchwein){:target="_blank"} |
 | **vajonam** | [https://github.com/vajonam](https://github.com/vajonam){:target="_blank"} |
-| **phm07** | [https://github.com/phm07](https://github.com/phm07){:target="_blank"} |
-| **weblate** | [https://github.com/weblate](https://github.com/weblate){:target="_blank"} |
+| **ded-doggo** | [https://github.com/ded-doggo](https://github.com/ded-doggo){:target="_blank"} |
 | **FrYakaTKoP** | [https://github.com/FrYakaTKoP](https://github.com/FrYakaTKoP){:target="_blank"} |
+| **weblate** | [https://github.com/weblate](https://github.com/weblate){:target="_blank"} |
+| **phm07** | [https://github.com/phm07](https://github.com/phm07){:target="_blank"} |
+| **prcutler** | [https://github.com/prcutler](https://github.com/prcutler){:target="_blank"} |
 
 ## Licenses
 
