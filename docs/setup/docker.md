@@ -192,3 +192,23 @@ Docker applications. This guide will show you how to set up Mainsail using Docke
     
     Docker Compose will automatically pull the latest image, recreate the container, and start it using the updated
     version.
+
+## Container Health Check
+
+Starting with **v2.20.0**, the image provides a `/healthz` endpoint (HTTP `200`, body `ok`) and a built-in
+`HEALTHCHECK`. No configuration is needed; `docker ps` shows the container as `(healthy)`.
+
+- The endpoint can also be used by reverse proxies or uptime monitors, e.g. `http://<your-ip>:8080/healthz`.
+- The `-unprivileged` image listens on port 8080 inside the container, so its check uses
+  `http://127.0.0.1:8080/healthz`.
+
+To override the defaults in Docker Compose (e.g. for `depends_on` with `condition: service_healthy`):
+
+``` yaml
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/healthz"]
+      interval: 30s
+      timeout: 3s
+      start_period: 5s
+      retries: 3
+```
