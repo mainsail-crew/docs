@@ -14,63 +14,72 @@ fails or runs out of filament — even with the app closed. Notifications are de
 browser's own push service, so your phone does not need to reach the printer to receive one.
 
 !!! information "Requirements"
-    Mainsail must be served over **HTTPS**. Over plain HTTP the browser exposes no service worker
-    and no Push API, so the feature cannot work. `localhost` also counts as secure during
-    development.
+    The **page** must be served from an HTTPS origin, because browsers expose no service worker
+    and no Push API over plain HTTP. The printer itself does not need a certificate: the remote
+    access services on the [Remote Access](../faq/remote-access.md) page terminate TLS for you and
+    serve Mainsail from their own HTTPS origin.
+
+    This was verified against a printer serving only plain HTTP on port 80, using
+    [OctoEverywhere](https://octoeverywhere.com/) — no certificate, no nginx change, no domain and
+    no port forwarding. [Obico](https://www.obico.io/), Cloudflare Tunnel and
+    [Tailscale](https://tailscale.com/kb/1242/tailscale-serve) work the same way. `localhost` also
+    counts as secure during development.
 
 !!! warning "iOS"
     On iOS the Push API only exists once the web app has been **added to the home screen**. Open
     Mainsail in Safari, share → *Add to Home Screen*, then open it from the home screen icon. The
     Notifications tab tells you if this step is still missing.
 
-## Create a VAPID key pair
+## Getting an HTTPS origin
 
-Web Push messages are signed with a VAPID key pair. The private key stays on the printer; the
-public half goes into Mainsail.
+If you reach Mainsail at a LAN address such as `http://printer.local`, the Notifications
+section will tell you a secure connection is required. The printer does not need a certificate
+of its own — it is enough to reach Mainsail through something that terminates TLS for it.
 
-Run this on the printer. It creates `~/printer_data/webpush/`, writes the private key there,
-and prints the public half:
+[OctoEverywhere](https://octoeverywhere.com/) is the shortest path, and is free. On the
+printer:
 
 ```bash
-mkdir -p ~/printer_data/webpush
-cd ~/printer_data/webpush
-
-python3 - <<'PY'
-import base64
-import os
-
-from cryptography.hazmat.primitives import serialization
-from cryptography.hazmat.primitives.asymmetric import ec
-
-key = ec.generate_private_key(ec.SECP256R1())
-with open("private_key.pem", "wb") as f:
-    f.write(key.private_bytes(serialization.Encoding.PEM,
-                              serialization.PrivateFormat.PKCS8,
-                              serialization.NoEncryption()))
-os.chmod("private_key.pem", 0o600)
-
-pub = key.public_key().public_bytes(serialization.Encoding.X962,
-                                    serialization.PublicFormat.UncompressedPoint)
-print(base64.urlsafe_b64encode(pub).rstrip(b"=").decode())
-PY
+git clone https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere
+cd OctoPrint-OctoEverywhere
+./install.sh
 ```
 
-Copy the printed key — you need it in the next step.
+The installer finds the frontend by itself — confirm when it offers *Mainsail on port 80* —
+and then prints a code. Enter that at [octoeverywhere.com/code](https://octoeverywhere.com/code)
+to link the printer to a free account.
 
-!!! warning "Keep the private key out of the config directory"
-    `~/printer_data/webpush/` sits outside the config root on purpose. Anything inside the
-    config root can be downloaded through Mainsail's file manager, so a key stored there would
-    be readable by anyone who can reach the interface. The command above also restricts the
-    file to your user with `chmod 600`.
+Nothing on the printer changes: it keeps serving plain HTTP, nginx is untouched, no certificate
+is installed and no port is forwarded. You simply gain a second address of the form
+`https://<printer-name>.octoeverywhere.com`, which is a secure origin.
+
+!!! warning "Install the web app from the HTTPS address"
+    A push subscription belongs to the origin that created it. Add **that** address to your
+    home screen and enable notifications there. The LAN address is a different origin, cannot
+    subscribe over plain HTTP, and will never receive anything.
+
+[Obico](https://www.obico.io/), Cloudflare Tunnel and
+[Tailscale](https://tailscale.com/kb/1242/tailscale-serve) provide an HTTPS origin the same
+way, if you would rather self-host or already use one of them.
 
 ## Subscribe your device
 
 1. Open the **Interface Settings** by clicking the **cogs icon** in the top-right corner.
 2. Switch to the **Notifications** section.
-3. Paste the printed public key into **VAPID Public Key**.
-4. Turn on **Enable Notifications** and accept the browser's permission prompt.
+3. Turn on **Enable Notifications** and accept the browser's permission prompt.
 
 ![Notifications section of the Interface Settings](../images/features/notifications.png)
+
+On the first device, Mainsail generates the VAPID key pair in the browser and writes the private
+half to `webpush/vapid_private.pem` in the config directory. There is no key to generate by hand
+and nothing to paste.
+
+!!! warning "Both halves live in the config directory"
+    `vapid_private.pem` and `subscriptions.json` sit in the config root, as that is the only place
+    Mainsail can write through Moonraker. Anything there is readable by whoever can reach the
+    interface, and the two files together are enough for someone to send a notification to your
+    devices. They grant no access to the printer itself. Worth knowing if your Moonraker is
+    reachable by people you do not trust.
 
 Your device is written to `webpush/subscriptions.json` in the config directory, merged with any
 devices already listed. Each entry is the `endpoint` and `keys` pair the browser produced, which is
@@ -85,7 +94,7 @@ Moonraker's `[notifier]` sends through Apprise, which speaks Web Push with the `
 
 ```ini
 [notifier webpush]
-url: vapid://you@example.com/<device>?keyfile=/home/pi/printer_data/webpush/private_key.pem&subfile=/home/pi/printer_data/config/webpush/subscriptions.json
+url: vapid://you@example.com/<device>?keyfile=/home/pi/printer_data/config/webpush/vapid_private.pem&subfile=/home/pi/printer_data/config/webpush/subscriptions.json
 events: complete, error, cancelled
 body: {% if event_message %}{event_message}{% else %}Print {event_name}
     {event_args[1].filename}{% endif %}
@@ -203,7 +212,7 @@ NOTIFY TITLE="Bed levelled" MESSAGE="Starting the first layer"
 | Symptom | Cause |
 | --- | --- |
 | The **Notifications** section is missing | It is listed on mobile layouts only. |
-| "Push notifications require a secure connection" | Mainsail is being served over HTTP. |
+| "Push notifications require a secure connection" | Mainsail is being served over HTTP. Reach it through one of the HTTPS options under [Remote Access](../faq/remote-access.md). |
 | "Add Mainsail to your home screen…" | iOS only exposes push to an installed web app. |
 | The test notification works but the printer never notifies | Your device is not in `subscriptions.json`, or the `<device>` name in the notifier URL does not match its key. |
 | Progress or runout settings are missing | The matching macros are not present on the printer. |
