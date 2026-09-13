@@ -28,11 +28,17 @@ browser's own push service, so your phone does not need to reach the printer to 
 Web Push messages are signed with a VAPID key pair. The private key stays on the printer; the
 public half goes into Mainsail.
 
-Run this on the printer:
+Run this on the printer. It creates `~/printer_data/webpush/`, writes the private key there,
+and prints the public half:
 
-```sh
+```bash
+mkdir -p ~/printer_data/webpush
+cd ~/printer_data/webpush
+
 python3 - <<'PY'
 import base64
+import os
+
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric import ec
 
@@ -41,15 +47,21 @@ with open("private_key.pem", "wb") as f:
     f.write(key.private_bytes(serialization.Encoding.PEM,
                               serialization.PrivateFormat.PKCS8,
                               serialization.NoEncryption()))
+os.chmod("private_key.pem", 0o600)
+
 pub = key.public_key().public_bytes(serialization.Encoding.X962,
                                     serialization.PublicFormat.UncompressedPoint)
 print(base64.urlsafe_b64encode(pub).rstrip(b"=").decode())
 PY
 ```
 
+Copy the printed key — you need it in the next step.
+
 !!! warning "Keep the private key out of the config directory"
-    Anything inside the config root can be downloaded through Mainsail's file manager. Store
-    `private_key.pem` somewhere else, for example `~/printer_data/webpush/`.
+    `~/printer_data/webpush/` sits outside the config root on purpose. Anything inside the
+    config root can be downloaded through Mainsail's file manager, so a key stored there would
+    be readable by anyone who can reach the interface. The command above also restricts the
+    file to your user with `chmod 600`.
 
 ## Subscribe your device
 
@@ -182,7 +194,7 @@ and sensor list.
 With the `NOTIFY` macro installed, any G-code can raise a notification, including from your slicer's
 start or end G-code:
 
-```
+```gcode
 NOTIFY TITLE="Bed levelled" MESSAGE="Starting the first layer"
 ```
 
