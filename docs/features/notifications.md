@@ -107,7 +107,7 @@ what it writes:
 ```ini
 [notifier webpush]
 url: vapid://webpush@example.com/<device>/<device>?keyfile=/home/pi/printer_data/config/webpush/vapid_private.pem&subfile=/home/pi/printer_data/config/webpush/subscriptions.json
-events: complete, error, cancelled
+events: started, complete, error, cancelled
 body: {% if event_message %}{event_message}{% else %}Print {event_name}
     {event_args[1].filename}{% endif %}
 ```
