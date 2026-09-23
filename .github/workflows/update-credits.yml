@@ -3,18 +3,24 @@ name: Update Credits
 on:
   push:
     branches:
-      - docs
+      - zensical
     paths:
       - '.github/workflows/update-credits.yml'
+      - '_scripts/collect-licenses.js'
       - '_scripts/generate-credits.js'
       - '_scripts/credits-header.md'
-      - '_data/contributors.json'
-      - '_data/licenses.json'
 
   schedule:
     - cron: '0 8 15 * *'
 
   workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-credits
+  cancel-in-progress: true
 
 jobs:
   update-credits:
@@ -22,39 +28,39 @@ jobs:
 
     steps:
       - name: Checkout docs repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Checkout Mainsail repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           path: ./mainsail
           repository: mainsail-crew/mainsail
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Download contributors list
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          wget -O _data/contributors.json \
-            "https://api.github.com/repositories/240875926/contributors?anon=0"
+          gh api --paginate "repos/mainsail-crew/mainsail/contributors?per_page=100" \
+            --jq '.[] | {login, html_url, type, contributions}' \
+            | jq -s '.' > _data/contributors.json
 
-      - name: Generate license information
-        run: |
-          cd mainsail
-          npm ci
-          npm i npm-license-crawler -g
-          npm-license-crawler --production --onlyDirectDependencies --omitVersion \
-            --dependencies --json $GITHUB_WORKSPACE/_data/licenses.json
-          sed -e 's/\*//g' -i $GITHUB_WORKSPACE/_data/licenses.json
-          sed -e "s|git@github.com|https://github.com|" -i $GITHUB_WORKSPACE/_data/licenses.json
+      - name: Install Mainsail production dependencies
+        working-directory: ./mainsail
+        run: npm ci --omit=dev --ignore-scripts --no-audit --no-fund
+
+      - name: Collect license information
+        run: node _scripts/collect-licenses.js ./mainsail
 
       - name: Generate credits.md
         run: node _scripts/generate-credits.js
 
       - name: Commit and push
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v11
         with:
           add: |
             _data/contributors.json

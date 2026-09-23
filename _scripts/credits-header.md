@@ -8,7 +8,7 @@ social:
 
 # Credits
 
-We would like acknowledge the valuable contributions that many people and projects have made to Mainsail, especially
+We would like to acknowledge the valuable contributions that many people and projects have made to Mainsail, especially
 the following:
 
 - contributors, who help make Mainsail better
@@ -18,7 +18,7 @@ the following:
   [Ko-fi](https://ko-fi.com/mainsail){:target="_blank"}
 
 We would like to thank the projects Mainsail is built on, especially
-[Klipper](https://github.com/KevinOConnor/klipper){:target="_blank"} and
+[Klipper](https://github.com/Klipper3d/klipper){:target="_blank"} and
 [Moonraker](https://github.com/Arksine/moonraker){:target="_blank"}.
 
 **THANK YOU for your continued support.**

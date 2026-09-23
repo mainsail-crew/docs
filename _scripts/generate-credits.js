@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-// Filter contributors (maintainer + bots)
+// Filter contributors (maintainer + bots). Accounts with type "Bot" are filtered automatically.
 const contributorFilter = ["meteyou", "dependabot[bot]", "github-actions[bot]"];
 
 // Paths
@@ -14,17 +14,17 @@ let pageContent = fs.readFileSync(path.join(scriptsDir, "credits-header.md"), "u
 
 // --- Contributors section ---
 const contributorsRaw = fs.readFileSync(path.join(dataDir, "contributors.json"), "utf8");
-const contributors = JSON.parse(contributorsRaw);
+const contributors = JSON.parse(contributorsRaw).filter(
+    (c) => c.type !== "Bot" && !contributorFilter.includes(c.login)
+);
 
 pageContent += "\n## Contributors\n\n";
 pageContent += "| Contributor | Profile |\n";
 pageContent += "|:---|:---|\n";
 
-contributors
-    .filter((c) => !contributorFilter.includes(c.login))
-    .forEach((c) => {
-        pageContent += `| **${c.login}** | [${c.html_url}](${c.html_url}){:target="_blank"} |\n`;
-    });
+contributors.forEach((c) => {
+    pageContent += `| **${c.login}** | [${c.html_url}](${c.html_url}){:target="_blank"} |\n`;
+});
 
 // --- Licenses section ---
 const licensesRaw = fs.readFileSync(path.join(dataDir, "licenses.json"), "utf8");
@@ -45,5 +45,5 @@ Object.keys(licenses).forEach((key) => {
 // Write output
 fs.writeFileSync(outputPath, pageContent, { encoding: "utf8" });
 console.log(
-    `Generated credits.md with ${contributors.length - contributorFilter.length} contributors and ${Object.keys(licenses).length} licenses.`
+    `Generated credits.md with ${contributors.length} contributors and ${Object.keys(licenses).length} licenses.`
 );
