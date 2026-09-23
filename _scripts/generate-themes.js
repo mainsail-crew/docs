@@ -29,7 +29,7 @@ records.forEach((row, index) => {
 
     // Handle optional note as subtitle
     const note = row.short_note?.trim() ? `*${row.short_note.trim()}*` : "";
-    entry = entry.replace(/{{ note }}\n/g, note ? `${note}\n\n` : "");
+    entry = entry.replace(/{{ note }}\n/g, note ? `${note}\n` : "");
 
     pageContent += entry;
 });
