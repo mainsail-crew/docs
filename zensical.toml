@@ -64,6 +64,7 @@ nav = [
         { "Presets" = "features/presets.md" },
         { "Print History and Statistics" = "features/print-history-and-statistics.md" },
         { "Printer Power Device" = "features/printer-power-device.md" },
+        { "Push Notifications" = "features/notifications.md" },
         { "Query devices" = "features/query-devices.md" },
         { "Spool Management" = "features/spool-management.md" },
         { "Thumbnails" = "features/thumbnails.md" },
