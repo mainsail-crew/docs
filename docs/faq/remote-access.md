@@ -33,6 +33,10 @@ There are several options for sending status messages, some include additional f
 
 - **Discord:** [Mooncord](https://github.com/eliteSchwein/mooncord){:target="_blank"} by eliteSchwein is a bot
   that sends you status messages over Discord.
+- **Mainsail:** Mainsail itself can push print progress, completion, errors and filament runout straight
+  to your phone from the installed web app — no bot, no account and nothing extra running on the printer.
+  It needs Mainsail reached over HTTPS, which any of the remote access options below provides. See
+  [Push Notifications](../features/notifications.md).
 - **Moonraker:** [Moonraker](https://moonraker.readthedocs.io/en/latest/configuration/#notifier){:target="_blank"}
   has built-in notification support for a variety of services via Apprise.
 - **Obico for Klipper:**
