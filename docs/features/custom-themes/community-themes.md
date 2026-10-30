@@ -202,3 +202,13 @@ For details on setting up the `.theme` folder, see [Custom Themes](../custom-the
 **Repository:** [Paraxdev/NeoNoirMainsailTheme](https://github.com/Paraxdev/NeoNoirMainsailTheme/){:target="_blank"}
 
 ![NeoNoir](https://raw.githubusercontent.com/Paraxdev/NeoNoirMainsailTheme/master/screenshot.jpg){ loading=lazy }
+
+
+### Sticker Book
+*Cartoony light and dark theme*
+
+**ID:** `19`  
+**Author:** [philrennie](https://github.com/philrennie/){:target="_blank"}  
+**Repository:** [philrennie/mainsail-sticker-book](https://github.com/philrennie/mainsail-sticker-book/){:target="_blank"}
+
+![Sticker Book](https://raw.githubusercontent.com/philrennie/mainsail-sticker-book/main/screenshot.jpg){ loading=lazy }
