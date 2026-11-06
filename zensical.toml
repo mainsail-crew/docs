@@ -192,6 +192,13 @@ nav = [
 ]
 
 # -----------------------------------------------------------------------------
+# Redirects
+# -----------------------------------------------------------------------------
+
+[project.plugins.redirects.redirect_maps]
+"remotemode.md" = "configuration/config-json.md"
+
+# -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
 [project.theme]
@@ -240,4 +247,3 @@ link = "https://discord.gg/mainsail"
 name = "Mainsail-Crew on YouTube"
 icon = "fontawesome/brands/youtube"
 link = "https://www.youtube.com/@Mainsail-Crew"
-
