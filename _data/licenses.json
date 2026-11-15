@@ -11,6 +11,10 @@
         "licenses": "MIT",
         "repository": "https://github.com/codemirror/lang-json"
     },
+    "@codemirror/lang-markdown": {
+        "licenses": "MIT",
+        "repository": "https://code.haverbeke.berlin/codemirror/lang-markdown"
+    },
     "@codemirror/lang-yaml": {
         "licenses": "MIT",
         "repository": "https://github.com/codemirror/lang-yaml"
@@ -34,6 +38,10 @@
     "@codemirror/view": {
         "licenses": "MIT",
         "repository": "https://code.haverbeke.berlin/codemirror/view"
+    },
+    "@ctrl/tinycolor": {
+        "licenses": "MIT",
+        "repository": "https://github.com/scttcper/tinycolor"
     },
     "@jaames/iro": {
         "licenses": "MPL-2.0",
@@ -98,6 +106,10 @@
     "lodash.throttle": {
         "licenses": "MIT",
         "repository": "https://github.com/lodash/lodash"
+    },
+    "marked": {
+        "licenses": "MIT",
+        "repository": "https://github.com/markedjs/marked"
     },
     "overlayscrollbars": {
         "licenses": "MIT",
