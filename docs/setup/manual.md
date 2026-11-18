@@ -566,11 +566,13 @@ server {
 
 Save the file with `CTRL+S` and close the editor with `CTRL+X`.
 
-At last, we have to create the storage directories from the Mainsail web interface and enable the nginx configuration
-file. To do this, run the following command:
+Finally, create the directory for the Mainsail files, grant NGINX access to your home directory, and enable the NGINX
+configuration. To do this, run the following commands:
 
 ``` bash
 mkdir ~/mainsail
+sudo usermod -aG pi www-data
+chmod g+x ~
 sudo rm /etc/nginx/sites-enabled/default
 sudo ln -s /etc/nginx/sites-available/mainsail /etc/nginx/sites-enabled/
 sudo systemctl restart nginx
